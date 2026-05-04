@@ -1,0 +1,1082 @@
+[
+  {
+    "k": "考",
+    "on": "コウ",
+    "kun": "かんが（える）",
+    "m": "think, consider",
+    "ex": [
+      {
+        "w": "考える",
+        "r": "かんがえる",
+        "m": "to think"
+      },
+      {
+        "w": "考え方",
+        "r": "かんがえかた",
+        "m": "way of thinking"
+      }
+    ],
+    "theme": "thinking"
+  },
+  {
+    "k": "思",
+    "on": "シ",
+    "kun": "おも（う）",
+    "m": "think, feel",
+    "ex": [
+      {
+        "w": "思う",
+        "r": "おもう",
+        "m": "to think, feel"
+      },
+      {
+        "w": "思い出",
+        "r": "おもいで",
+        "m": "memory"
+      }
+    ],
+    "theme": "thinking"
+  },
+  {
+    "k": "知",
+    "on": "チ",
+    "kun": "し（る）",
+    "m": "know",
+    "ex": [
+      {
+        "w": "知る",
+        "r": "しる",
+        "m": "to know"
+      },
+      {
+        "w": "知識",
+        "r": "ちしき",
+        "m": "knowledge"
+      }
+    ],
+    "theme": "thinking"
+  },
+  {
+    "k": "信",
+    "on": "シン",
+    "kun": "しん（じる）",
+    "m": "trust, believe",
+    "ex": [
+      {
+        "w": "信じる",
+        "r": "しんじる",
+        "m": "to believe"
+      },
+      {
+        "w": "自信",
+        "r": "じしん",
+        "m": "self-confidence"
+      }
+    ],
+    "theme": "thinking"
+  },
+  {
+    "k": "疑",
+    "on": "ギ",
+    "kun": "うたが（う）",
+    "m": "doubt",
+    "ex": [
+      {
+        "w": "疑う",
+        "r": "うたがう",
+        "m": "to doubt"
+      },
+      {
+        "w": "疑問",
+        "r": "ぎもん",
+        "m": "question, doubt"
+      }
+    ],
+    "theme": "thinking"
+  },
+  {
+    "k": "進",
+    "on": "シン",
+    "kun": "すす（む）",
+    "m": "advance, proceed",
+    "ex": [
+      {
+        "w": "進む",
+        "r": "すすむ",
+        "m": "to advance"
+      },
+      {
+        "w": "進歩",
+        "r": "しんぽ",
+        "m": "progress"
+      }
+    ],
+    "theme": "movement"
+  },
+  {
+    "k": "戻",
+    "on": "レイ",
+    "kun": "もど（る）",
+    "m": "return, go back",
+    "ex": [
+      {
+        "w": "戻る",
+        "r": "もどる",
+        "m": "to return"
+      },
+      {
+        "w": "戻す",
+        "r": "もどす",
+        "m": "to put back"
+      }
+    ],
+    "theme": "movement"
+  },
+  {
+    "k": "渡",
+    "on": "ト",
+    "kun": "わた（る）",
+    "m": "cross, hand over",
+    "ex": [
+      {
+        "w": "渡る",
+        "r": "わたる",
+        "m": "to cross"
+      },
+      {
+        "w": "渡す",
+        "r": "わたす",
+        "m": "to hand over"
+      }
+    ],
+    "theme": "movement"
+  },
+  {
+    "k": "通",
+    "on": "ツウ",
+    "kun": "とお（る）",
+    "m": "pass through",
+    "ex": [
+      {
+        "w": "通る",
+        "r": "とおる",
+        "m": "to pass"
+      },
+      {
+        "w": "交通",
+        "r": "こうつう",
+        "m": "traffic"
+      }
+    ],
+    "theme": "movement"
+  },
+  {
+    "k": "届",
+    "on": "",
+    "kun": "とど（く）",
+    "m": "reach, deliver",
+    "ex": [
+      {
+        "w": "届く",
+        "r": "とどく",
+        "m": "to reach"
+      },
+      {
+        "w": "届ける",
+        "r": "とどける",
+        "m": "to deliver"
+      }
+    ],
+    "theme": "movement"
+  },
+  {
+    "k": "政",
+    "on": "セイ",
+    "kun": "まつりごと",
+    "m": "government, politics",
+    "ex": [
+      {
+        "w": "政治",
+        "r": "せいじ",
+        "m": "politics"
+      },
+      {
+        "w": "政府",
+        "r": "せいふ",
+        "m": "government"
+      }
+    ],
+    "theme": "society"
+  },
+  {
+    "k": "経",
+    "on": "ケイ",
+    "kun": "へ（る）",
+    "m": "pass through, manage",
+    "ex": [
+      {
+        "w": "経済",
+        "r": "けいざい",
+        "m": "economy"
+      },
+      {
+        "w": "経験",
+        "r": "けいけん",
+        "m": "experience"
+      }
+    ],
+    "theme": "society"
+  },
+  {
+    "k": "済",
+    "on": "サイ",
+    "kun": "す（む）",
+    "m": "finish, settle",
+    "ex": [
+      {
+        "w": "済む",
+        "r": "すむ",
+        "m": "to finish"
+      },
+      {
+        "w": "経済",
+        "r": "けいざい",
+        "m": "economy"
+      }
+    ],
+    "theme": "society"
+  },
+  {
+    "k": "法",
+    "on": "ホウ",
+    "kun": "",
+    "m": "law, method",
+    "ex": [
+      {
+        "w": "法律",
+        "r": "ほうりつ",
+        "m": "law"
+      },
+      {
+        "w": "方法",
+        "r": "ほうほう",
+        "m": "method"
+      }
+    ],
+    "theme": "society"
+  },
+  {
+    "k": "権",
+    "on": "ケン",
+    "kun": "",
+    "m": "right, authority",
+    "ex": [
+      {
+        "w": "権利",
+        "r": "けんり",
+        "m": "right"
+      },
+      {
+        "w": "政権",
+        "r": "せいけん",
+        "m": "political power"
+      }
+    ],
+    "theme": "society"
+  },
+  {
+    "k": "喜",
+    "on": "キ",
+    "kun": "よろこ（ぶ）",
+    "m": "rejoice, joy",
+    "ex": [
+      {
+        "w": "喜ぶ",
+        "r": "よろこぶ",
+        "m": "to be happy"
+      },
+      {
+        "w": "喜び",
+        "r": "よろこび",
+        "m": "joy"
+      }
+    ],
+    "theme": "emotion"
+  },
+  {
+    "k": "怒",
+    "on": "ド",
+    "kun": "おこ（る）/いか（る）",
+    "m": "anger",
+    "ex": [
+      {
+        "w": "怒る",
+        "r": "おこる",
+        "m": "to get angry"
+      }
+    ],
+    "theme": "emotion"
+  },
+  {
+    "k": "哀",
+    "on": "アイ",
+    "kun": "あわ（れ）",
+    "m": "sorrow, pity",
+    "ex": [
+      {
+        "w": "哀しい",
+        "r": "かなしい",
+        "m": "sad (alt.)"
+      }
+    ],
+    "theme": "emotion"
+  },
+  {
+    "k": "楽",
+    "on": "ガク/ラク",
+    "kun": "たの（しい）",
+    "m": "enjoy, music",
+    "ex": [
+      {
+        "w": "楽しい",
+        "r": "たのしい",
+        "m": "fun"
+      },
+      {
+        "w": "音楽",
+        "r": "おんがく",
+        "m": "music"
+      }
+    ],
+    "theme": "emotion"
+  },
+  {
+    "k": "恐",
+    "on": "キョウ",
+    "kun": "おそ（れる）/こわ（い）",
+    "m": "fear",
+    "ex": [
+      {
+        "w": "恐い",
+        "r": "こわい",
+        "m": "scary"
+      },
+      {
+        "w": "恐怖",
+        "r": "きょうふ",
+        "m": "fear"
+      }
+    ],
+    "theme": "emotion"
+  },
+  {
+    "k": "病",
+    "on": "ビョウ",
+    "kun": "や（む）",
+    "m": "illness",
+    "ex": [
+      {
+        "w": "病気",
+        "r": "びょうき",
+        "m": "illness"
+      },
+      {
+        "w": "病院",
+        "r": "びょういん",
+        "m": "hospital"
+      }
+    ],
+    "theme": "health"
+  },
+  {
+    "k": "院",
+    "on": "イン",
+    "kun": "",
+    "m": "institution",
+    "ex": [
+      {
+        "w": "病院",
+        "r": "びょういん",
+        "m": "hospital"
+      },
+      {
+        "w": "大学院",
+        "r": "だいがくいん",
+        "m": "graduate school"
+      }
+    ],
+    "theme": "health"
+  },
+  {
+    "k": "治",
+    "on": "ジ/チ",
+    "kun": "なお（る）",
+    "m": "heal, govern",
+    "ex": [
+      {
+        "w": "治る",
+        "r": "なおる",
+        "m": "to heal"
+      },
+      {
+        "w": "政治",
+        "r": "せいじ",
+        "m": "politics"
+      }
+    ],
+    "theme": "health"
+  },
+  {
+    "k": "医",
+    "on": "イ",
+    "kun": "",
+    "m": "medicine, doctor",
+    "ex": [
+      {
+        "w": "医者",
+        "r": "いしゃ",
+        "m": "doctor"
+      },
+      {
+        "w": "医学",
+        "r": "いがく",
+        "m": "medicine"
+      }
+    ],
+    "theme": "health"
+  },
+  {
+    "k": "薬",
+    "on": "ヤク",
+    "kun": "くすり",
+    "m": "medicine, drug",
+    "ex": [
+      {
+        "w": "薬",
+        "r": "くすり",
+        "m": "medicine"
+      },
+      {
+        "w": "薬局",
+        "r": "やっきょく",
+        "m": "pharmacy"
+      }
+    ],
+    "theme": "health"
+  },
+  {
+    "k": "森",
+    "on": "シン",
+    "kun": "もり",
+    "m": "forest",
+    "ex": [
+      {
+        "w": "森",
+        "r": "もり",
+        "m": "forest"
+      },
+      {
+        "w": "森林",
+        "r": "しんりん",
+        "m": "forest"
+      }
+    ],
+    "theme": "nature"
+  },
+  {
+    "k": "林",
+    "on": "リン",
+    "kun": "はやし",
+    "m": "woods, grove",
+    "ex": [
+      {
+        "w": "林",
+        "r": "はやし",
+        "m": "woods"
+      },
+      {
+        "w": "森林",
+        "r": "しんりん",
+        "m": "forest"
+      }
+    ],
+    "theme": "nature"
+  },
+  {
+    "k": "葉",
+    "on": "ヨウ",
+    "kun": "は",
+    "m": "leaf",
+    "ex": [
+      {
+        "w": "葉",
+        "r": "は",
+        "m": "leaf"
+      },
+      {
+        "w": "言葉",
+        "r": "ことば",
+        "m": "word"
+      }
+    ],
+    "theme": "nature"
+  },
+  {
+    "k": "枝",
+    "on": "シ",
+    "kun": "えだ",
+    "m": "branch",
+    "ex": [
+      {
+        "w": "枝",
+        "r": "えだ",
+        "m": "branch"
+      }
+    ],
+    "theme": "nature"
+  },
+  {
+    "k": "根",
+    "on": "コン",
+    "kun": "ね",
+    "m": "root",
+    "ex": [
+      {
+        "w": "根",
+        "r": "ね",
+        "m": "root"
+      },
+      {
+        "w": "根本",
+        "r": "こんぽん",
+        "m": "basis"
+      }
+    ],
+    "theme": "nature"
+  },
+  {
+    "k": "倍",
+    "on": "バイ",
+    "kun": "",
+    "m": "double, times",
+    "ex": [
+      {
+        "w": "二倍",
+        "r": "にばい",
+        "m": "double, twice"
+      }
+    ],
+    "theme": "quantity"
+  },
+  {
+    "k": "半",
+    "on": "ハン",
+    "kun": "なか（ば）",
+    "m": "half",
+    "ex": [
+      {
+        "w": "半分",
+        "r": "はんぶん",
+        "m": "half"
+      },
+      {
+        "w": "半年",
+        "r": "はんとし",
+        "m": "half year"
+      }
+    ],
+    "theme": "quantity"
+  },
+  {
+    "k": "全",
+    "on": "ゼン",
+    "kun": "すべ（て）",
+    "m": "all, whole",
+    "ex": [
+      {
+        "w": "全部",
+        "r": "ぜんぶ",
+        "m": "all"
+      },
+      {
+        "w": "全然",
+        "r": "ぜんぜん",
+        "m": "not at all"
+      }
+    ],
+    "theme": "quantity"
+  },
+  {
+    "k": "部",
+    "on": "ブ",
+    "kun": "",
+    "m": "section, part",
+    "ex": [
+      {
+        "w": "全部",
+        "r": "ぜんぶ",
+        "m": "all"
+      },
+      {
+        "w": "部屋",
+        "r": "へや",
+        "m": "room"
+      }
+    ],
+    "theme": "quantity"
+  },
+  {
+    "k": "両",
+    "on": "リョウ",
+    "kun": "",
+    "m": "both",
+    "ex": [
+      {
+        "w": "両親",
+        "r": "りょうしん",
+        "m": "both parents"
+      },
+      {
+        "w": "両方",
+        "r": "りょうほう",
+        "m": "both"
+      }
+    ],
+    "theme": "quantity"
+  },
+  {
+    "k": "昔",
+    "on": "セキ",
+    "kun": "むかし",
+    "m": "long ago",
+    "ex": [
+      {
+        "w": "昔",
+        "r": "むかし",
+        "m": "long ago"
+      }
+    ],
+    "theme": "time"
+  },
+  {
+    "k": "将",
+    "on": "ショウ",
+    "kun": "",
+    "m": "future, leader",
+    "ex": [
+      {
+        "w": "将来",
+        "r": "しょうらい",
+        "m": "future"
+      }
+    ],
+    "theme": "time"
+  },
+  {
+    "k": "過",
+    "on": "カ",
+    "kun": "す（ぎる）",
+    "m": "pass, exceed",
+    "ex": [
+      {
+        "w": "過ぎる",
+        "r": "すぎる",
+        "m": "to exceed"
+      },
+      {
+        "w": "過去",
+        "r": "かこ",
+        "m": "past"
+      }
+    ],
+    "theme": "time"
+  },
+  {
+    "k": "末",
+    "on": "マツ",
+    "kun": "すえ",
+    "m": "end",
+    "ex": [
+      {
+        "w": "週末",
+        "r": "しゅうまつ",
+        "m": "weekend"
+      },
+      {
+        "w": "月末",
+        "r": "げつまつ",
+        "m": "end of month"
+      }
+    ],
+    "theme": "time"
+  },
+  {
+    "k": "初",
+    "on": "ショ",
+    "kun": "はじ（め）/はつ",
+    "m": "first, beginning",
+    "ex": [
+      {
+        "w": "初めて",
+        "r": "はじめて",
+        "m": "for the first time"
+      },
+      {
+        "w": "最初",
+        "r": "さいしょ",
+        "m": "first"
+      }
+    ],
+    "theme": "time"
+  },
+  {
+    "k": "伝",
+    "on": "デン",
+    "kun": "つた（える）",
+    "m": "transmit, convey",
+    "ex": [
+      {
+        "w": "伝える",
+        "r": "つたえる",
+        "m": "to convey"
+      },
+      {
+        "w": "伝言",
+        "r": "でんごん",
+        "m": "message"
+      }
+    ],
+    "theme": "communication"
+  },
+  {
+    "k": "語",
+    "on": "ゴ",
+    "kun": "かた（る）",
+    "m": "word, language",
+    "ex": [
+      {
+        "w": "日本語",
+        "r": "にほんご",
+        "m": "Japanese"
+      },
+      {
+        "w": "単語",
+        "r": "たんご",
+        "m": "vocabulary"
+      }
+    ],
+    "theme": "communication"
+  },
+  {
+    "k": "訳",
+    "on": "ヤク",
+    "kun": "わけ",
+    "m": "translate, reason",
+    "ex": [
+      {
+        "w": "翻訳",
+        "r": "ほんやく",
+        "m": "translation"
+      },
+      {
+        "w": "訳",
+        "r": "わけ",
+        "m": "reason"
+      }
+    ],
+    "theme": "communication"
+  },
+  {
+    "k": "説",
+    "on": "セツ",
+    "kun": "と（く）",
+    "m": "explain, theory",
+    "ex": [
+      {
+        "w": "説明",
+        "r": "せつめい",
+        "m": "explanation"
+      },
+      {
+        "w": "小説",
+        "r": "しょうせつ",
+        "m": "novel"
+      }
+    ],
+    "theme": "communication"
+  },
+  {
+    "k": "議",
+    "on": "ギ",
+    "kun": "",
+    "m": "deliberation",
+    "ex": [
+      {
+        "w": "会議",
+        "r": "かいぎ",
+        "m": "meeting"
+      },
+      {
+        "w": "議論",
+        "r": "ぎろん",
+        "m": "discussion"
+      }
+    ],
+    "theme": "communication"
+  },
+  {
+    "k": "努",
+    "on": "ド",
+    "kun": "つと（める）",
+    "m": "diligence",
+    "ex": [
+      {
+        "w": "努力",
+        "r": "どりょく",
+        "m": "effort"
+      },
+      {
+        "w": "努める",
+        "r": "つとめる",
+        "m": "to strive"
+      }
+    ],
+    "theme": "effort"
+  },
+  {
+    "k": "成",
+    "on": "セイ",
+    "kun": "な（る）",
+    "m": "become, achieve",
+    "ex": [
+      {
+        "w": "成功",
+        "r": "せいこう",
+        "m": "success"
+      },
+      {
+        "w": "成績",
+        "r": "せいせき",
+        "m": "grades"
+      }
+    ],
+    "theme": "effort"
+  },
+  {
+    "k": "失",
+    "on": "シツ",
+    "kun": "うしな（う）",
+    "m": "lose, fail",
+    "ex": [
+      {
+        "w": "失敗",
+        "r": "しっぱい",
+        "m": "failure"
+      },
+      {
+        "w": "失う",
+        "r": "うしなう",
+        "m": "to lose"
+      }
+    ],
+    "theme": "effort"
+  },
+  {
+    "k": "勝",
+    "on": "ショウ",
+    "kun": "か（つ）",
+    "m": "win",
+    "ex": [
+      {
+        "w": "勝つ",
+        "r": "かつ",
+        "m": "to win"
+      },
+      {
+        "w": "勝負",
+        "r": "しょうぶ",
+        "m": "match"
+      }
+    ],
+    "theme": "effort"
+  },
+  {
+    "k": "負",
+    "on": "フ",
+    "kun": "ま（ける）",
+    "m": "lose, bear",
+    "ex": [
+      {
+        "w": "負ける",
+        "r": "まける",
+        "m": "to lose"
+      },
+      {
+        "w": "勝負",
+        "r": "しょうぶ",
+        "m": "match"
+      }
+    ],
+    "theme": "effort"
+  },
+  {
+    "k": "向",
+    "on": "コウ",
+    "kun": "む（く）",
+    "m": "face, direction",
+    "ex": [
+      {
+        "w": "向こう",
+        "r": "むこう",
+        "m": "the other side"
+      },
+      {
+        "w": "方向",
+        "r": "ほうこう",
+        "m": "direction"
+      }
+    ],
+    "theme": "position"
+  },
+  {
+    "k": "反",
+    "on": "ハン",
+    "kun": "そ（る）",
+    "m": "opposite, anti-",
+    "ex": [
+      {
+        "w": "反対",
+        "r": "はんたい",
+        "m": "opposite, oppose"
+      }
+    ],
+    "theme": "position"
+  },
+  {
+    "k": "側",
+    "on": "ソク",
+    "kun": "がわ",
+    "m": "side",
+    "ex": [
+      {
+        "w": "右側",
+        "r": "みぎがわ",
+        "m": "right side"
+      }
+    ],
+    "theme": "position"
+  },
+  {
+    "k": "端",
+    "on": "タン",
+    "kun": "はし",
+    "m": "edge, end",
+    "ex": [
+      {
+        "w": "端",
+        "r": "はし",
+        "m": "edge"
+      }
+    ],
+    "theme": "position"
+  },
+  {
+    "k": "周",
+    "on": "シュウ",
+    "kun": "まわ（り）",
+    "m": "circumference, around",
+    "ex": [
+      {
+        "w": "周り",
+        "r": "まわり",
+        "m": "surroundings"
+      }
+    ],
+    "theme": "position"
+  },
+  {
+    "k": "機",
+    "on": "キ",
+    "kun": "はた",
+    "m": "machine, opportunity",
+    "ex": [
+      {
+        "w": "機械",
+        "r": "きかい",
+        "m": "machine"
+      },
+      {
+        "w": "機会",
+        "r": "きかい",
+        "m": "opportunity"
+      }
+    ],
+    "theme": "modern"
+  },
+  {
+    "k": "械",
+    "on": "カイ",
+    "kun": "",
+    "m": "machine",
+    "ex": [
+      {
+        "w": "機械",
+        "r": "きかい",
+        "m": "machine"
+      }
+    ],
+    "theme": "modern"
+  },
+  {
+    "k": "術",
+    "on": "ジュツ",
+    "kun": "",
+    "m": "art, technique",
+    "ex": [
+      {
+        "w": "技術",
+        "r": "ぎじゅつ",
+        "m": "technology"
+      },
+      {
+        "w": "美術",
+        "r": "びじゅつ",
+        "m": "fine art"
+      }
+    ],
+    "theme": "modern"
+  },
+  {
+    "k": "科",
+    "on": "カ",
+    "kun": "",
+    "m": "section, course",
+    "ex": [
+      {
+        "w": "科学",
+        "r": "かがく",
+        "m": "science"
+      },
+      {
+        "w": "教科書",
+        "r": "きょうかしょ",
+        "m": "textbook"
+      }
+    ],
+    "theme": "modern"
+  },
+  {
+    "k": "研",
+    "on": "ケン",
+    "kun": "と（ぐ）",
+    "m": "polish, research",
+    "ex": [
+      {
+        "w": "研究",
+        "r": "けんきゅう",
+        "m": "research"
+      }
+    ],
+    "theme": "modern"
+  }
+]
