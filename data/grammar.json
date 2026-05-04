@@ -1,0 +1,695 @@
+[
+  {
+    "id": "garu",
+    "title": "～がる / ～がっている",
+    "titleEn": "Showing signs of (someone else's feelings)",
+    "explanation": "<p><strong>がる</strong> attaches to い-adjective stems and な-adjectives describing emotions to express what someone else (third person) appears to feel or want. You can't directly state another person's feelings in Japanese — がる makes it observational.</p>\n    <ul>\n      <li>Form: <code>い-adj stem + がる</code> / <code>な-adj + がる</code></li>\n      <li>欲しい (want) → 欲しがる (appear to want)</li>\n      <li>嬉しい (happy) → 嬉しがる (appear happy)</li>\n      <li>怖い (scary) → 怖がる (be afraid)</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "弟が新しい自転車を欲しがっています。",
+        "r": "おとうとが あたらしい じてんしゃを ほしがって います。",
+        "en": "My little brother wants a new bicycle."
+      },
+      {
+        "jp": "子供が暗い部屋を怖がります。",
+        "r": "こどもが くらい へやを こわがります。",
+        "en": "Children are afraid of dark rooms."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "弟は新しいおもちゃを___。",
+        "choices": [
+          "欲しがっています",
+          "欲しいです",
+          "欲しくないです",
+          "欲しいでしょう"
+        ],
+        "answer": 0,
+        "explain": "Use 欲しがる for someone else's wants — direct 欲しいです is for own feelings."
+      },
+      {
+        "q": "Which is correct for 'My friend seems sad'?",
+        "choices": [
+          "友達は悲しいです。",
+          "友達は悲しがっています。",
+          "友達は悲しかったです。",
+          "友達は悲しくなかったです。"
+        ],
+        "answer": 1,
+        "explain": "悲しがる expresses an observed emotion in another person."
+      }
+    ]
+  },
+  {
+    "id": "youni-naru",
+    "title": "～ようになる",
+    "titleEn": "To come to do / become able to",
+    "explanation": "<p>Expresses a change of state — someone has come to do something (a habit they didn't have before, or a newly acquired ability).</p>\n    <ul>\n      <li>Form: <code>verb dictionary form + ようになる</code></li>\n      <li>Often paired with 食べる, できる, 話す to indicate a gradual change.</li>\n      <li>Negative: <code>～なくなる</code> (came to stop doing).</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "毎朝ジョギングをするようになりました。",
+        "r": "まいあさ じょぎんぐを する ように なりました。",
+        "en": "I've come to jog every morning."
+      },
+      {
+        "jp": "日本語が話せるようになりました。",
+        "r": "にほんごが はなせる ように なりました。",
+        "en": "I've become able to speak Japanese."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "練習したら、漢字が___。",
+        "choices": [
+          "書きます",
+          "書けるようになりました",
+          "書かない",
+          "書きたい"
+        ],
+        "answer": 1,
+        "explain": "～ようになる expresses gained ability."
+      },
+      {
+        "q": "最近、彼は野菜を食べる___。",
+        "choices": [
+          "ようになりました",
+          "ようにします",
+          "ことになりました",
+          "ことにします"
+        ],
+        "answer": 0,
+        "explain": "～ようになる describes a change in habit/behavior over time."
+      }
+    ]
+  },
+  {
+    "id": "youni-suru",
+    "title": "～ようにする",
+    "titleEn": "To make a point of / try to",
+    "explanation": "<p>Expresses an effort or conscious decision to do (or not do) something habitually. Different from ～ようになる (which is a state change), this is about deliberate action.</p>\n    <ul>\n      <li>Form: <code>verb dict / ない form + ようにする</code></li>\n      <li>毎日運動するようにしています = I make an effort to exercise every day</li>\n      <li>遅刻しないようにしてください = Please try not to be late</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "毎日早く寝るようにしています。",
+        "r": "まいにち はやく ねる ように して います。",
+        "en": "I make a point of going to bed early every day."
+      },
+      {
+        "jp": "甘いものを食べないようにしています。",
+        "r": "あまい ものを たべない ように して います。",
+        "en": "I'm trying not to eat sweets."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "健康のため、毎日歩く___。",
+        "choices": [
+          "ことにします",
+          "ようにしています",
+          "ことになります",
+          "ようになります"
+        ],
+        "answer": 1,
+        "explain": "ようにする = conscious effort, ようになる = automatic change."
+      },
+      {
+        "q": "What's the difference between ようになる and ようにする?",
+        "choices": [
+          "No difference",
+          "なる = state change; する = conscious effort",
+          "なる = future; する = past",
+          "Both mean the same"
+        ],
+        "answer": 1,
+        "explain": "Key distinction: なる happens to you; する is something you do."
+      }
+    ]
+  },
+  {
+    "id": "tokoro",
+    "title": "～ところ (about to / just / in the middle of)",
+    "titleEn": "Time markers with ところ",
+    "explanation": "<p>ところ marks a precise time relative to an action:</p>\n    <ul>\n      <li><code>verb dict + ところ</code> = about to do (just before)</li>\n      <li><code>verb -te いる + ところ</code> = in the middle of doing</li>\n      <li><code>verb -ta + ところ</code> = just did (just finished)</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "今、出かけるところです。",
+        "r": "いま、でかける ところです。",
+        "en": "I'm just about to go out."
+      },
+      {
+        "jp": "今、食べているところです。",
+        "r": "いま、たべて いる ところです。",
+        "en": "I'm in the middle of eating."
+      },
+      {
+        "jp": "今、食べたところです。",
+        "r": "いま、たべた ところです。",
+        "en": "I just finished eating."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "今、料理を作っている___です。",
+        "choices": [
+          "ところ",
+          "とき",
+          "あいだ",
+          "うち"
+        ],
+        "answer": 0,
+        "explain": "ところ with ている = in the middle of."
+      },
+      {
+        "q": "今、家を出る___です。",
+        "choices": [
+          "ところ",
+          "ばかり",
+          "ためる",
+          "ものだ"
+        ],
+        "answer": 0,
+        "explain": "Verb-dict + ところ = about to."
+      },
+      {
+        "q": "ご飯を食べた___です。(just finished)",
+        "choices": [
+          "ばかり",
+          "ところ",
+          "Both A and B",
+          "Neither"
+        ],
+        "answer": 2,
+        "explain": "Both ばかり and ところ can mean 'just did' but with subtle differences (ばかり emphasizes recency, ところ emphasizes the precise moment)."
+      }
+    ]
+  },
+  {
+    "id": "bakari",
+    "title": "～たばかり / ～てばかりいる",
+    "titleEn": "Just done / always doing (only)",
+    "explanation": "<p>Two main uses:</p>\n    <ul>\n      <li><code>verb -ta + ばかり</code> = just did (recently, subjectively close in time)</li>\n      <li><code>verb -te + ばかりいる</code> = always doing only that (often negative nuance)</li>\n      <li><code>noun + ばかり</code> = only / just (that one thing)</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "日本に来たばかりです。",
+        "r": "にほんに きた ばかりです。",
+        "en": "I just came to Japan (recently)."
+      },
+      {
+        "jp": "彼はゲームばかりしています。",
+        "r": "かれは げーむ ばかり して います。",
+        "en": "He's always (only) playing games."
+      },
+      {
+        "jp": "肉ばかり食べないでください。",
+        "r": "にく ばかり たべないで ください。",
+        "en": "Please don't only eat meat."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "起きた___なので、まだ眠いです。",
+        "choices": [
+          "ところ",
+          "ばかり",
+          "あいだ",
+          "うち"
+        ],
+        "answer": 1,
+        "explain": "～たばかり = just woke up (subjective recency)."
+      },
+      {
+        "q": "彼は文句___言っています。",
+        "choices": [
+          "ばかり",
+          "だけ",
+          "しか",
+          "ぐらい"
+        ],
+        "answer": 0,
+        "explain": "ばかり with verb-て = always doing only that (negative tone)."
+      }
+    ]
+  },
+  {
+    "id": "kamo",
+    "title": "～かもしれない",
+    "titleEn": "It may be / might be",
+    "explanation": "<p>Expresses possibility — the speaker thinks something might be true. Less certain than でしょう.</p>\n    <ul>\n      <li>Form: <code>plain form + かもしれない</code> (polite: かもしれません)</li>\n      <li>な-adjectives and nouns drop だ before かもしれない: 静かかもしれない, 学生かもしれない.</li>\n      <li>Casual: かも</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "明日、雨が降るかもしれません。",
+        "r": "あした、あめが ふるかも しれません。",
+        "en": "It might rain tomorrow."
+      },
+      {
+        "jp": "彼は来ないかもしれない。",
+        "r": "かれは こないかも しれない。",
+        "en": "He might not come."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "彼は今、家に___。",
+        "choices": [
+          "いるかもしれません",
+          "いますかもしれません",
+          "あるかもしれません",
+          "いないだろう"
+        ],
+        "answer": 0,
+        "explain": "Plain form (いる) + かもしれません, never with ます."
+      },
+      {
+        "q": "Which is correct? 'It may be quiet.'",
+        "choices": [
+          "静かだかもしれない",
+          "静かかもしれない",
+          "静かでかもしれない",
+          "静かにかもしれない"
+        ],
+        "answer": 1,
+        "explain": "な-adjectives drop だ before かもしれない."
+      }
+    ]
+  },
+  {
+    "id": "hazu",
+    "title": "～はず",
+    "titleEn": "Should be / supposed to be",
+    "explanation": "<p>Expresses speaker's expectation based on reasoning or evidence — 'it should be' / 'it ought to be.' Different from べき (moral obligation).</p>\n    <ul>\n      <li>Form: <code>plain form + はず</code></li>\n      <li>な-adj: 静かなはず; noun: 学生のはず</li>\n      <li>Negative: ～ないはず or ～はずがない (no way it could be)</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "彼はもう着いているはずです。",
+        "r": "かれは もう ついて いる はずです。",
+        "en": "He should have already arrived."
+      },
+      {
+        "jp": "そんなはずはありません。",
+        "r": "そんな はずは ありません。",
+        "en": "That can't be the case."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "田中さんは日本人だから、漢字が___。",
+        "choices": [
+          "読めるはずです",
+          "読みたいです",
+          "読めばいいです",
+          "読まれたいです"
+        ],
+        "answer": 0,
+        "explain": "はず = logical expectation based on the reasoning."
+      },
+      {
+        "q": "彼は約束したから、来る___。",
+        "choices": [
+          "かもしれない",
+          "はずだ",
+          "ようだ",
+          "らしい"
+        ],
+        "answer": 1,
+        "explain": "はず emphasizes a logical expectation; かもしれない is just possibility."
+      }
+    ]
+  },
+  {
+    "id": "noni",
+    "title": "～のに",
+    "titleEn": "Although / despite (with frustration)",
+    "explanation": "<p>Expresses contrast or unexpected result, often with a tone of frustration, surprise, or regret. Stronger emotional weight than けれど.</p>\n    <ul>\n      <li>Form: <code>plain form + のに</code></li>\n      <li>な-adj/noun: 静かなのに / 学生なのに</li>\n      <li>Often translated 'although', 'even though', 'but...' with surprise.</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "勉強したのに、テストに失敗しました。",
+        "r": "べんきょうした のに、てすとに しっぱいしました。",
+        "en": "Even though I studied, I failed the test."
+      },
+      {
+        "jp": "雨なのに、出かけました。",
+        "r": "あめなのに、でかけました。",
+        "en": "Even though it was raining, I went out."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "高い___、おいしくない。",
+        "choices": [
+          "けれども",
+          "のに",
+          "ので",
+          "から"
+        ],
+        "answer": 1,
+        "explain": "のに carries surprise/frustration; perfect for unexpected disappointing result."
+      },
+      {
+        "q": "Connect: 静か + のに → ___",
+        "choices": [
+          "静かなのに",
+          "静かのに",
+          "静かだのに",
+          "静かにのに"
+        ],
+        "answer": 0,
+        "explain": "な-adjectives become 〜なのに."
+      }
+    ]
+  },
+  {
+    "id": "tsumori",
+    "title": "～つもり",
+    "titleEn": "To intend to / plan to",
+    "explanation": "<p>Expresses intention or assumption.</p>\n    <ul>\n      <li><code>verb dict + つもりだ</code> = intend to do</li>\n      <li><code>verb ない + つもりだ</code> = intend not to do</li>\n      <li><code>verb た + つもり</code> = act as if you've done / believe you've done</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "来年、日本に行くつもりです。",
+        "r": "らいねん、にほんに いく つもりです。",
+        "en": "I intend to go to Japan next year."
+      },
+      {
+        "jp": "もう食べないつもりです。",
+        "r": "もう たべない つもりです。",
+        "en": "I don't intend to eat any more."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "夏休みに何を___?",
+        "choices": [
+          "するつもりですか",
+          "してありますか",
+          "するばかりですか",
+          "したことですか"
+        ],
+        "answer": 0,
+        "explain": "つもり asks about intentions/plans."
+      },
+      {
+        "q": "ダイエットしているから、ケーキを___。",
+        "choices": [
+          "食べるつもりです",
+          "食べないつもりです",
+          "食べたつもりです",
+          "食べてつもりです"
+        ],
+        "answer": 1,
+        "explain": "Use ない+つもり for negative intention."
+      }
+    ]
+  },
+  {
+    "id": "you-volitional",
+    "title": "～(よ)うとする",
+    "titleEn": "To try / attempt to",
+    "explanation": "<p>Expresses an attempt or trying to do something — often with effort or about-to nuance.</p>\n    <ul>\n      <li>Form: <code>volitional + とする</code> (行こうとする, 食べようとする)</li>\n      <li>Often used for unsuccessful or about-to attempts.</li>\n      <li>Compare with ～てみる (try and see).</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "電車に乗ろうとした時、ドアが閉まりました。",
+        "r": "でんしゃに のろうと した とき、どあが しまりました。",
+        "en": "Just as I was about to board the train, the door closed."
+      },
+      {
+        "jp": "毎日、早く起きようとしています。",
+        "r": "まいにち、はやく おきようと して います。",
+        "en": "I'm trying to get up early every day."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Volitional form of 食べる:",
+        "choices": [
+          "食べる",
+          "食べよう",
+          "食べた",
+          "食べて"
+        ],
+        "answer": 1,
+        "explain": "ichidan: -る → -よう."
+      },
+      {
+        "q": "Volitional form of 行く:",
+        "choices": [
+          "行こう",
+          "行きよう",
+          "行きた",
+          "行こ"
+        ],
+        "answer": 0,
+        "explain": "godan -く → -こう."
+      }
+    ]
+  },
+  {
+    "id": "tara-ba",
+    "title": "～たら / ～ば (conditionals)",
+    "titleEn": "Conditional forms",
+    "explanation": "<p>Two N3 conditionals:</p>\n    <ul>\n      <li><code>verb -たら</code> = if/when (general conditional, often natural-sounding)</li>\n      <li><code>verb -ば</code> = if (more hypothetical, often paired with another verb's potential)</li>\n      <li>と and なら are the other two — practice all four to master conditions.</li>\n    </ul>\n    <p>Examples: 雨が降ったら、行きません。 / 安ければ買います。</p>",
+    "examples": [
+      {
+        "jp": "宿題が終わったら、遊んでもいいです。",
+        "r": "しゅくだいが おわったら、あそんでも いいです。",
+        "en": "Once homework is done, you may play."
+      },
+      {
+        "jp": "もっと安ければ買います。",
+        "r": "もっと やすければ かいます。",
+        "en": "If it were cheaper, I'd buy it."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "How does 高い become its conditional ば-form?",
+        "choices": [
+          "高いば",
+          "高ければ",
+          "高くば",
+          "高かったら"
+        ],
+        "answer": 1,
+        "explain": "い-adjective: drop い → ければ."
+      },
+      {
+        "q": "What's the ば-form of 行く?",
+        "choices": [
+          "行けば",
+          "行ったらば",
+          "行きば",
+          "行こば"
+        ],
+        "answer": 0,
+        "explain": "godan: -く → -けば."
+      }
+    ]
+  },
+  {
+    "id": "passive",
+    "title": "受身形 (Passive form)",
+    "titleEn": "Passive voice",
+    "explanation": "<p>Used to express passive action, often with a sense of suffering (迷惑の受身) — something done to you that affects you.</p>\n    <ul>\n      <li>godan: -u → -areru (読む → 読まれる)</li>\n      <li>ichidan: -ru → -rareru (食べる → 食べられる)</li>\n      <li>Irregular: する → される / 来る → 来られる</li>\n      <li>Marker: 〜に for the agent, 〜を for the affected object.</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "私は先生に褒められました。",
+        "r": "わたしは せんせいに ほめられました。",
+        "en": "I was praised by the teacher."
+      },
+      {
+        "jp": "弟にケーキを食べられました。",
+        "r": "おとうとに けーきを たべられました。",
+        "en": "My cake got eaten by my younger brother (suffering passive)."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Passive of 書く is:",
+        "choices": [
+          "書かれる",
+          "書けれる",
+          "書きれる",
+          "書こうれる"
+        ],
+        "answer": 0,
+        "explain": "godan: 書く → 書か(れ)る."
+      },
+      {
+        "q": "Passive of 食べる:",
+        "choices": [
+          "食べれる",
+          "食べられる",
+          "食べありる",
+          "食べさせる"
+        ],
+        "answer": 1,
+        "explain": "ichidan: 食べる → 食べ(られ)る."
+      }
+    ]
+  },
+  {
+    "id": "causative",
+    "title": "使役形 (Causative form)",
+    "titleEn": "Causative — make/let do",
+    "explanation": "<p>Expresses making or letting someone do something.</p>\n    <ul>\n      <li>godan: -u → -aseru (書く → 書かせる)</li>\n      <li>ichidan: -ru → -saseru (食べる → 食べさせる)</li>\n      <li>Irregular: する → させる / 来る → 来させる</li>\n      <li>Marker: 〜を for forced (use force) or 〜に for letting/permission.</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "母は弟に野菜を食べさせます。",
+        "r": "ははは おとうとに やさいを たべさせます。",
+        "en": "Mom makes my brother eat vegetables."
+      },
+      {
+        "jp": "子供を公園で遊ばせました。",
+        "r": "こどもを こうえんで あそばせました。",
+        "en": "I let my child play in the park."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Causative of 行く:",
+        "choices": [
+          "行かれる",
+          "行かせる",
+          "行こせる",
+          "行けせる"
+        ],
+        "answer": 1,
+        "explain": "godan: 行く → 行か(せ)る."
+      },
+      {
+        "q": "Causative of 来る:",
+        "choices": [
+          "来させる",
+          "来られる",
+          "来せる",
+          "来しせる"
+        ],
+        "answer": 0,
+        "explain": "Irregular: 来る → 来させる."
+      }
+    ]
+  },
+  {
+    "id": "keigo-honorific",
+    "title": "尊敬語 (Honorific keigo)",
+    "titleEn": "Honorific language basics",
+    "explanation": "<p>Used to elevate the listener or topic (your boss, customer, teacher). Three patterns:</p>\n    <ul>\n      <li><code>お + verb stem + になる</code>: お読みになる (read)</li>\n      <li>Special verbs: 行く/来る/いる → いらっしゃる; 食べる/飲む → 召し上がる; 言う → おっしゃる</li>\n      <li>Passive form (-areru/-rareru) is also a softer honorific: 読まれる, 食べられる</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "先生は何時にいらっしゃいますか。",
+        "r": "せんせいは なんじに いらっしゃいますか。",
+        "en": "What time will the teacher come?"
+      },
+      {
+        "jp": "お客様、何を召し上がりますか。",
+        "r": "おきゃくさま、なにを めしあがりますか。",
+        "en": "Sir/Ma'am, what will you eat?"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Honorific for 食べる:",
+        "choices": [
+          "食べられる",
+          "召し上がる",
+          "頂く",
+          "おっしゃる"
+        ],
+        "answer": 1,
+        "explain": "召し上がる is the special honorific verb for eating/drinking."
+      },
+      {
+        "q": "What is いらっしゃる the honorific of?",
+        "choices": [
+          "食べる",
+          "見る",
+          "行く・来る・いる",
+          "言う"
+        ],
+        "answer": 2,
+        "explain": "いらっしゃる covers all three."
+      }
+    ]
+  },
+  {
+    "id": "keigo-humble",
+    "title": "謙譲語 (Humble keigo)",
+    "titleEn": "Humble language basics",
+    "explanation": "<p>Used to lower yourself when speaking about your own actions to elevate the listener. Two patterns:</p>\n    <ul>\n      <li><code>お + verb stem + する</code>: お持ちする (carry)</li>\n      <li>Special verbs: 行く/来る → 参る; 言う → 申す/申し上げる; 食べる/飲む → 頂く; する → 致す</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "明日、こちらから参ります。",
+        "r": "あした、こちらから まいります。",
+        "en": "I will come from here tomorrow."
+      },
+      {
+        "jp": "山田と申します。",
+        "r": "やまだと もうします。",
+        "en": "I am Yamada (lit. 'I am called Yamada')."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Humble form of 言う when introducing yourself:",
+        "choices": [
+          "おっしゃる",
+          "申す",
+          "言われる",
+          "言わせる"
+        ],
+        "answer": 1,
+        "explain": "申す/申します for humble speech about your own statements."
+      },
+      {
+        "q": "Humble form of 食べる:",
+        "choices": [
+          "召し上がる",
+          "頂く",
+          "食べられる",
+          "食べさせる"
+        ],
+        "answer": 1,
+        "explain": "頂く is humble for receiving/eating/drinking."
+      }
+    ]
+  },
+  {
+    "id": "tai-tagaru",
+    "title": "～たい / ～たがる",
+    "titleEn": "Want to do (own vs others')",
+    "explanation": "<p>Express wanting to do something:</p>\n    <ul>\n      <li><code>verb stem + たい</code> = I want to do (own desire). Conjugates like an い-adjective.</li>\n      <li><code>verb stem + たがる</code> = (someone else) appears to want to do</li>\n      <li>Particles: 〜が or 〜を both common with たい (が is more traditional).</li>\n    </ul>",
+    "examples": [
+      {
+        "jp": "日本に行きたいです。",
+        "r": "にほんに いきたいです。",
+        "en": "I want to go to Japan."
+      },
+      {
+        "jp": "弟は新しいゲームをやりたがっています。",
+        "r": "おとうとは あたらしい げーむを やりたがって います。",
+        "en": "My little brother wants to play the new game."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Past tense of 食べたい (negative):",
+        "choices": [
+          "食べたいなかった",
+          "食べたくなかった",
+          "食べたかった",
+          "食べなくたかった"
+        ],
+        "answer": 1,
+        "explain": "たい conjugates like an い-adjective: たい→たくない→たくなかった."
+      },
+      {
+        "q": "He wants to go: ___",
+        "choices": [
+          "彼は行きたいです",
+          "彼は行きたがっています",
+          "彼は行きませんか",
+          "彼は行こう"
+        ],
+        "answer": 1,
+        "explain": "Use たがる for third-person desire."
+      }
+    ]
+  }
+]
