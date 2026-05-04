@@ -409,7 +409,7 @@
     "w": "貿易",
     "r": "ぼうえき",
     "m": "trade",
-    "pos": "noun",
+    "pos": "noun, suru-verb",
     "theme": "work",
     "ex": [
       {
@@ -518,20 +518,6 @@
     ]
   },
   {
-    "w": "荷物",
-    "r": "にもつ",
-    "m": "luggage, baggage",
-    "pos": "noun",
-    "theme": "travel",
-    "ex": [
-      {
-        "jp": "荷物が重いです。",
-        "r": "にもつが おもいです。",
-        "en": "My luggage is heavy."
-      }
-    ]
-  },
-  {
     "w": "切符",
     "r": "きっぷ",
     "m": "ticket",
@@ -542,6 +528,20 @@
         "jp": "切符を買いました。",
         "r": "きっぷを かいました。",
         "en": "I bought a ticket."
+      }
+    ]
+  },
+  {
+    "w": "荷物",
+    "r": "にもつ",
+    "m": "luggage, baggage",
+    "pos": "noun",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "荷物が重いです。",
+        "r": "にもつが おもいです。",
+        "en": "My luggage is heavy."
       }
     ]
   },
@@ -665,23 +665,51 @@
     "theme": "emotions",
     "ex": [
       {
-        "jp": "暗い道は怖いです。",
-        "r": "くらい みちは こわいです。",
-        "en": "Dark roads are scary."
+        "jp": "夜の道は怖いです。",
+        "r": "よるの みちは こわいです。",
+        "en": "The road at night is scary."
+      }
+    ]
+  },
+  {
+    "w": "感じる",
+    "r": "かんじる",
+    "m": "to feel",
+    "pos": "ichidan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "幸せを感じます。",
+        "r": "しあわせを かんじます。",
+        "en": "I feel happy."
+      }
+    ]
+  },
+  {
+    "w": "気持ち",
+    "r": "きもち",
+    "m": "feeling, mood",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "今日は気持ちがいいです。",
+        "r": "きょうは きもちが いいです。",
+        "en": "I feel good today."
       }
     ]
   },
   {
     "w": "心配",
     "r": "しんぱい",
-    "m": "worry, anxiety",
-    "pos": "noun, suru-verb",
+    "m": "worry, concern",
+    "pos": "noun, suru-verb, na-adjective",
     "theme": "emotions",
     "ex": [
       {
-        "jp": "将来が心配です。",
-        "r": "しょうらいが しんぱいです。",
-        "en": "I'm worried about the future."
+        "jp": "心配しないでください。",
+        "r": "しんぱい しないで ください。",
+        "en": "Please don't worry."
       }
     ]
   },
@@ -689,13 +717,13 @@
     "w": "安心",
     "r": "あんしん",
     "m": "relief, peace of mind",
-    "pos": "noun, suru-verb",
+    "pos": "noun, suru-verb, na-adjective",
     "theme": "emotions",
     "ex": [
       {
-        "jp": "無事でよかった、安心しました。",
-        "r": "ぶじで よかった、あんしんしました。",
-        "en": "I'm relieved you're safe."
+        "jp": "無事で安心しました。",
+        "r": "ぶじで あんしんしました。",
+        "en": "I was relieved that you're safe."
       }
     ]
   },
@@ -709,7 +737,7 @@
       {
         "jp": "そのニュースに驚きました。",
         "r": "その にゅーすに おどろきました。",
-        "en": "I was surprised by the news."
+        "en": "I was surprised by that news."
       }
     ]
   },
@@ -721,23 +749,9 @@
     "theme": "emotions",
     "ex": [
       {
-        "jp": "父が怒っています。",
-        "r": "ちちが おこって います。",
-        "en": "My father is angry."
-      }
-    ]
-  },
-  {
-    "w": "笑う",
-    "r": "わらう",
-    "m": "to laugh, smile",
-    "pos": "godan verb",
-    "theme": "emotions",
-    "ex": [
-      {
-        "jp": "みんなで笑いました。",
-        "r": "みんなで わらいました。",
-        "en": "We all laughed together."
+        "jp": "先生が怒っています。",
+        "r": "せんせいが おこって います。",
+        "en": "The teacher is angry."
       }
     ]
   },
@@ -756,44 +770,30 @@
     ]
   },
   {
-    "w": "気持ち",
-    "r": "きもち",
-    "m": "feeling, emotion",
-    "pos": "noun",
+    "w": "笑う",
+    "r": "わらう",
+    "m": "to laugh, smile",
+    "pos": "godan verb",
     "theme": "emotions",
     "ex": [
       {
-        "jp": "あなたの気持ちが分かります。",
-        "r": "あなたの きもちが わかります。",
-        "en": "I understand your feelings."
+        "jp": "みんなで笑いました。",
+        "r": "みんなで わらいました。",
+        "en": "We all laughed together."
       }
     ]
   },
   {
-    "w": "感じる",
-    "r": "かんじる",
-    "m": "to feel",
-    "pos": "ichidan verb",
-    "theme": "emotions",
+    "w": "食事",
+    "r": "しょくじ",
+    "m": "meal",
+    "pos": "noun, suru-verb",
+    "theme": "food",
     "ex": [
       {
-        "jp": "寒さを感じます。",
-        "r": "さむさを かんじます。",
-        "en": "I feel the cold."
-      }
-    ]
-  },
-  {
-    "w": "好み",
-    "r": "このみ",
-    "m": "preference, taste",
-    "pos": "noun",
-    "theme": "emotions",
-    "ex": [
-      {
-        "jp": "私の好みではありません。",
-        "r": "わたしの このみでは ありません。",
-        "en": "It's not to my taste."
+        "jp": "食事の前に手を洗います。",
+        "r": "しょくじの まえに てを あらいます。",
+        "en": "I wash my hands before meals."
       }
     ]
   },
@@ -805,9 +805,51 @@
     "theme": "food",
     "ex": [
       {
-        "jp": "このスープは味が薄いです。",
-        "r": "この すーぷは あじが うすいです。",
-        "en": "This soup tastes bland."
+        "jp": "このスープの味はいいです。",
+        "r": "この すーぷの あじは いいです。",
+        "en": "This soup tastes good."
+      }
+    ]
+  },
+  {
+    "w": "甘い",
+    "r": "あまい",
+    "m": "sweet",
+    "pos": "i-adjective",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "このケーキは甘いです。",
+        "r": "この けーきは あまいです。",
+        "en": "This cake is sweet."
+      }
+    ]
+  },
+  {
+    "w": "辛い",
+    "r": "からい",
+    "m": "spicy, hot",
+    "pos": "i-adjective",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "この料理は辛いです。",
+        "r": "この りょうりは からいです。",
+        "en": "This dish is spicy."
+      }
+    ]
+  },
+  {
+    "w": "苦い",
+    "r": "にがい",
+    "m": "bitter",
+    "pos": "i-adjective",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "このコーヒーは苦いです。",
+        "r": "この こーひーは にがいです。",
+        "en": "This coffee is bitter."
       }
     ]
   },
@@ -833,65 +875,23 @@
     "theme": "food",
     "ex": [
       {
-        "jp": "砂糖を入れますか。",
-        "r": "さとうを いれますか。",
-        "en": "Will you add sugar?"
-      }
-    ]
-  },
-  {
-    "w": "辛い",
-    "r": "からい",
-    "m": "spicy, hot",
-    "pos": "i-adjective",
-    "theme": "food",
-    "ex": [
-      {
-        "jp": "このカレーは辛いです。",
-        "r": "この かれーは からいです。",
-        "en": "This curry is spicy."
-      }
-    ]
-  },
-  {
-    "w": "甘い",
-    "r": "あまい",
-    "m": "sweet",
-    "pos": "i-adjective",
-    "theme": "food",
-    "ex": [
-      {
-        "jp": "このケーキは甘いです。",
-        "r": "この けーきは あまいです。",
-        "en": "This cake is sweet."
-      }
-    ]
-  },
-  {
-    "w": "苦い",
-    "r": "にがい",
-    "m": "bitter",
-    "pos": "i-adjective",
-    "theme": "food",
-    "ex": [
-      {
-        "jp": "コーヒーは苦いです。",
-        "r": "こーひーは にがいです。",
-        "en": "Coffee is bitter."
+        "jp": "コーヒーに砂糖を入れます。",
+        "r": "こーひーに さとうを いれます。",
+        "en": "I put sugar in my coffee."
       }
     ]
   },
   {
     "w": "焼く",
     "r": "やく",
-    "m": "to grill, bake, roast",
+    "m": "to bake, grill, roast",
     "pos": "godan verb",
     "theme": "food",
     "ex": [
       {
-        "jp": "魚を焼きます。",
-        "r": "さかなを やきます。",
-        "en": "I'll grill fish."
+        "jp": "魚を焼きました。",
+        "r": "さかなを やきました。",
+        "en": "I grilled some fish."
       }
     ]
   },
@@ -910,20 +910,6 @@
     ]
   },
   {
-    "w": "冷たい",
-    "r": "つめたい",
-    "m": "cold (to touch)",
-    "pos": "i-adjective",
-    "theme": "food",
-    "ex": [
-      {
-        "jp": "冷たい水をください。",
-        "r": "つめたい みずを ください。",
-        "en": "Cold water please."
-      }
-    ]
-  },
-  {
     "w": "新鮮",
     "r": "しんせん",
     "m": "fresh",
@@ -931,37 +917,9 @@
     "theme": "food",
     "ex": [
       {
-        "jp": "新鮮な魚です。",
-        "r": "しんせんな さかなです。",
-        "en": "It's fresh fish."
-      }
-    ]
-  },
-  {
-    "w": "食事",
-    "r": "しょくじ",
-    "m": "meal",
-    "pos": "noun, suru-verb",
-    "theme": "food",
-    "ex": [
-      {
-        "jp": "一緒に食事しましょう。",
-        "r": "いっしょに しょくじしましょう。",
-        "en": "Let's have a meal together."
-      }
-    ]
-  },
-  {
-    "w": "健康",
-    "r": "けんこう",
-    "m": "health",
-    "pos": "noun, na-adjective",
-    "theme": "health",
-    "ex": [
-      {
-        "jp": "健康が一番大切です。",
-        "r": "けんこうが いちばん たいせつです。",
-        "en": "Health is most important."
+        "jp": "魚は新鮮です。",
+        "r": "さかなは しんせんです。",
+        "en": "The fish is fresh."
       }
     ]
   },
@@ -973,9 +931,9 @@
     "theme": "health",
     "ex": [
       {
-        "jp": "病気で休みました。",
-        "r": "びょうきで やすみました。",
-        "en": "I rested due to illness."
+        "jp": "祖母が病気です。",
+        "r": "そぼが びょうきです。",
+        "en": "My grandmother is ill."
       }
     ]
   },
@@ -987,7 +945,7 @@
     "theme": "health",
     "ex": [
       {
-        "jp": "風邪をひきました。",
+        "jp": "風邪を引きました。",
         "r": "かぜを ひきました。",
         "en": "I caught a cold."
       }
@@ -1010,42 +968,14 @@
   {
     "w": "痛い",
     "r": "いたい",
-    "m": "painful",
+    "m": "painful, sore",
     "pos": "i-adjective",
     "theme": "health",
     "ex": [
       {
         "jp": "頭が痛いです。",
         "r": "あたまが いたいです。",
-        "en": "My head hurts."
-      }
-    ]
-  },
-  {
-    "w": "薬",
-    "r": "くすり",
-    "m": "medicine",
-    "pos": "noun",
-    "theme": "health",
-    "ex": [
-      {
-        "jp": "薬を飲みました。",
-        "r": "くすりを のみました。",
-        "en": "I took medicine."
-      }
-    ]
-  },
-  {
-    "w": "治る",
-    "r": "なおる",
-    "m": "to heal, recover",
-    "pos": "godan verb",
-    "theme": "health",
-    "ex": [
-      {
-        "jp": "風邪が治りました。",
-        "r": "かぜが なおりました。",
-        "en": "My cold healed."
+        "en": "I have a headache."
       }
     ]
   },
@@ -1057,23 +987,51 @@
     "theme": "health",
     "ex": [
       {
-        "jp": "足に怪我をしました。",
-        "r": "あしに けがを しました。",
-        "en": "I injured my leg."
+        "jp": "昨日、怪我をしました。",
+        "r": "きのう、けがを しました。",
+        "en": "I got injured yesterday."
       }
     ]
   },
   {
-    "w": "疲れる",
-    "r": "つかれる",
-    "m": "to get tired",
-    "pos": "ichidan verb",
+    "w": "薬",
+    "r": "くすり",
+    "m": "medicine",
+    "pos": "noun",
     "theme": "health",
     "ex": [
       {
-        "jp": "今日は疲れました。",
-        "r": "きょうは つかれました。",
-        "en": "I'm tired today."
+        "jp": "薬を飲んでください。",
+        "r": "くすりを のんで ください。",
+        "en": "Please take the medicine."
+      }
+    ]
+  },
+  {
+    "w": "治る",
+    "r": "なおる",
+    "m": "to be cured, heal",
+    "pos": "godan verb",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "風邪が治りました。",
+        "r": "かぜが なおりました。",
+        "en": "My cold got better."
+      }
+    ]
+  },
+  {
+    "w": "健康",
+    "r": "けんこう",
+    "m": "health",
+    "pos": "noun, na-adjective",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "健康が一番大切です。",
+        "r": "けんこうが いちばん たいせつです。",
+        "en": "Health is the most important thing."
       }
     ]
   },
@@ -1085,37 +1043,37 @@
     "theme": "health",
     "ex": [
       {
-        "jp": "今、眠いです。",
-        "r": "いま、ねむいです。",
-        "en": "I'm sleepy now."
+        "jp": "今日は眠いです。",
+        "r": "きょうは ねむいです。",
+        "en": "I'm sleepy today."
       }
     ]
   },
   {
-    "w": "教育",
-    "r": "きょういく",
-    "m": "education",
-    "pos": "noun, suru-verb",
-    "theme": "education",
+    "w": "疲れる",
+    "r": "つかれる",
+    "m": "to get tired",
+    "pos": "ichidan verb",
+    "theme": "health",
     "ex": [
       {
-        "jp": "教育は大切です。",
-        "r": "きょういくは たいせつです。",
-        "en": "Education is important."
+        "jp": "仕事で疲れました。",
+        "r": "しごとで つかれました。",
+        "en": "I'm tired from work."
       }
     ]
   },
   {
     "w": "学習",
     "r": "がくしゅう",
-    "m": "study, learning",
+    "m": "learning, study",
     "pos": "noun, suru-verb",
     "theme": "education",
     "ex": [
       {
-        "jp": "日本語の学習を続けます。",
-        "r": "にほんごの がくしゅうを つづけます。",
-        "en": "I'll continue studying Japanese."
+        "jp": "言語の学習は楽しいです。",
+        "r": "げんごの がくしゅうは たのしいです。",
+        "en": "Language learning is fun."
       }
     ]
   },
@@ -1134,6 +1092,20 @@
     ]
   },
   {
+    "w": "授業",
+    "r": "じゅぎょう",
+    "m": "class, lesson",
+    "pos": "noun",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "授業は9時から始まります。",
+        "r": "じゅぎょうは くじから はじまります。",
+        "en": "Class begins at 9 o'clock."
+      }
+    ]
+  },
+  {
     "w": "試験",
     "r": "しけん",
     "m": "exam, test",
@@ -1141,16 +1113,16 @@
     "theme": "education",
     "ex": [
       {
-        "jp": "試験に合格しました。",
-        "r": "しけんに ごうかくしました。",
-        "en": "I passed the exam."
+        "jp": "来週、試験があります。",
+        "r": "らいしゅう、しけんが あります。",
+        "en": "There's an exam next week."
       }
     ]
   },
   {
     "w": "成績",
     "r": "せいせき",
-    "m": "grades, results",
+    "m": "grade, school results",
     "pos": "noun",
     "theme": "education",
     "ex": [
@@ -1169,37 +1141,37 @@
     "theme": "education",
     "ex": [
       {
-        "jp": "今年大学を卒業します。",
-        "r": "ことし だいがくを そつぎょうします。",
-        "en": "I'll graduate from university this year."
+        "jp": "3月に卒業します。",
+        "r": "さんがつに そつぎょうします。",
+        "en": "I'll graduate in March."
       }
     ]
   },
   {
     "w": "入学",
     "r": "にゅうがく",
-    "m": "entering school, admission",
+    "m": "admission, enrollment",
     "pos": "noun, suru-verb",
     "theme": "education",
     "ex": [
       {
-        "jp": "4月に入学します。",
-        "r": "しがつに にゅうがくします。",
-        "en": "I'll enter school in April."
+        "jp": "4月に大学に入学します。",
+        "r": "しがつに だいがくに にゅうがくします。",
+        "en": "I'll enter university in April."
       }
     ]
   },
   {
-    "w": "授業",
-    "r": "じゅぎょう",
-    "m": "lesson, class",
-    "pos": "noun",
+    "w": "教育",
+    "r": "きょういく",
+    "m": "education",
+    "pos": "noun, suru-verb",
     "theme": "education",
     "ex": [
       {
-        "jp": "授業は9時からです。",
-        "r": "じゅぎょうは くじからです。",
-        "en": "Class starts at 9."
+        "jp": "教育は重要です。",
+        "r": "きょういくは じゅうようです。",
+        "en": "Education is important."
       }
     ]
   },
@@ -1227,49 +1199,35 @@
       {
         "jp": "辞書で意味を調べます。",
         "r": "じしょで いみを しらべます。",
-        "en": "I look up meanings in a dictionary."
+        "en": "I look up meanings in the dictionary."
       }
     ]
   },
   {
-    "w": "知識",
-    "r": "ちしき",
-    "m": "knowledge",
-    "pos": "noun",
+    "w": "覚える",
+    "r": "おぼえる",
+    "m": "to memorize, remember",
+    "pos": "ichidan verb",
     "theme": "education",
     "ex": [
       {
-        "jp": "知識を増やしたいです。",
-        "r": "ちしきを ふやしたいです。",
-        "en": "I want to increase my knowledge."
+        "jp": "漢字を覚えます。",
+        "r": "かんじを おぼえます。",
+        "en": "I memorize kanji."
       }
     ]
   },
   {
-    "w": "意見",
-    "r": "いけん",
-    "m": "opinion",
-    "pos": "noun",
+    "w": "忘れる",
+    "r": "わすれる",
+    "m": "to forget",
+    "pos": "ichidan verb",
     "theme": "education",
     "ex": [
       {
-        "jp": "あなたの意見を教えてください。",
-        "r": "あなたの いけんを おしえて ください。",
-        "en": "Please tell me your opinion."
-      }
-    ]
-  },
-  {
-    "w": "社会",
-    "r": "しゃかい",
-    "m": "society",
-    "pos": "noun",
-    "theme": "society",
-    "ex": [
-      {
-        "jp": "日本の社会は変わっています。",
-        "r": "にほんの しゃかいは かわって います。",
-        "en": "Japanese society is changing."
+        "jp": "名前を忘れました。",
+        "r": "なまえを わすれました。",
+        "en": "I forgot the name."
       }
     ]
   },
@@ -1302,6 +1260,48 @@
     ]
   },
   {
+    "w": "法律",
+    "r": "ほうりつ",
+    "m": "law",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "日本の法律を学びます。",
+        "r": "にほんの ほうりつを まなびます。",
+        "en": "I study Japanese law."
+      }
+    ]
+  },
+  {
+    "w": "規則",
+    "r": "きそく",
+    "m": "rule, regulation",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "規則を守ってください。",
+        "r": "きそくを まもって ください。",
+        "en": "Please follow the rules."
+      }
+    ]
+  },
+  {
+    "w": "社会",
+    "r": "しゃかい",
+    "m": "society",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "日本の社会は変わっています。",
+        "r": "にほんの しゃかいは かわって います。",
+        "en": "Japanese society is changing."
+      }
+    ]
+  },
+  {
     "w": "文化",
     "r": "ぶんか",
     "m": "culture",
@@ -1316,20 +1316,6 @@
     ]
   },
   {
-    "w": "歴史",
-    "r": "れきし",
-    "m": "history",
-    "pos": "noun",
-    "theme": "society",
-    "ex": [
-      {
-        "jp": "歴史を勉強しています。",
-        "r": "れきしを べんきょうして います。",
-        "en": "I'm studying history."
-      }
-    ]
-  },
-  {
     "w": "宗教",
     "r": "しゅうきょう",
     "m": "religion",
@@ -1337,37 +1323,51 @@
     "theme": "society",
     "ex": [
       {
-        "jp": "日本の宗教について話しましょう。",
-        "r": "にほんの しゅうきょうに ついて はなしましょう。",
-        "en": "Let's talk about Japanese religion."
+        "jp": "宗教は人によって違います。",
+        "r": "しゅうきょうは ひとに よって ちがいます。",
+        "en": "Religion varies from person to person."
       }
     ]
   },
   {
-    "w": "規則",
-    "r": "きそく",
-    "m": "rule, regulation",
+    "w": "環境",
+    "r": "かんきょう",
+    "m": "environment",
     "pos": "noun",
     "theme": "society",
     "ex": [
       {
-        "jp": "会社の規則を守ります。",
-        "r": "かいしゃの きそくを まもります。",
-        "en": "I follow the company rules."
+        "jp": "環境問題は深刻です。",
+        "r": "かんきょう もんだいは しんこくです。",
+        "en": "Environmental problems are serious."
       }
     ]
   },
   {
-    "w": "法律",
-    "r": "ほうりつ",
-    "m": "law",
+    "w": "歴史",
+    "r": "れきし",
+    "m": "history",
     "pos": "noun",
     "theme": "society",
     "ex": [
       {
-        "jp": "法律を守ってください。",
-        "r": "ほうりつを まもって ください。",
-        "en": "Please obey the law."
+        "jp": "日本の歴史を学びます。",
+        "r": "にほんの れきしを まなびます。",
+        "en": "I study Japanese history."
+      }
+    ]
+  },
+  {
+    "w": "事故",
+    "r": "じこ",
+    "m": "accident",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "交通事故がありました。",
+        "r": "こうつう じこが ありました。",
+        "en": "There was a traffic accident."
       }
     ]
   },
@@ -1386,58 +1386,86 @@
     ]
   },
   {
-    "w": "事故",
-    "r": "じこ",
-    "m": "accident",
-    "pos": "noun",
-    "theme": "society",
-    "ex": [
-      {
-        "jp": "昨日、事故がありました。",
-        "r": "きのう、じこが ありました。",
-        "en": "There was an accident yesterday."
-      }
-    ]
-  },
-  {
-    "w": "環境",
-    "r": "かんきょう",
-    "m": "environment",
-    "pos": "noun",
-    "theme": "society",
-    "ex": [
-      {
-        "jp": "環境を大切にしましょう。",
-        "r": "かんきょうを たいせつに しましょう。",
-        "en": "Let's value the environment."
-      }
-    ]
-  },
-  {
-    "w": "自然",
-    "r": "しぜん",
-    "m": "nature",
-    "pos": "noun, na-adjective",
-    "theme": "society",
-    "ex": [
-      {
-        "jp": "自然が好きです。",
-        "r": "しぜんが すきです。",
-        "en": "I love nature."
-      }
-    ]
-  },
-  {
-    "w": "性格",
-    "r": "せいかく",
-    "m": "personality, character",
+    "w": "親",
+    "r": "おや",
+    "m": "parent",
     "pos": "noun",
     "theme": "people",
     "ex": [
       {
-        "jp": "彼は優しい性格です。",
-        "r": "かれは やさしい せいかくです。",
-        "en": "He has a kind personality."
+        "jp": "親に感謝しています。",
+        "r": "おやに かんしゃして います。",
+        "en": "I'm grateful to my parents."
+      }
+    ]
+  },
+  {
+    "w": "夫婦",
+    "r": "ふうふ",
+    "m": "husband and wife, couple",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "あの夫婦は仲がいいです。",
+        "r": "あの ふうふは なかが いいです。",
+        "en": "That couple gets along well."
+      }
+    ]
+  },
+  {
+    "w": "娘",
+    "r": "むすめ",
+    "m": "daughter",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "娘は5歳です。",
+        "r": "むすめは ごさいです。",
+        "en": "My daughter is 5."
+      }
+    ]
+  },
+  {
+    "w": "息子",
+    "r": "むすこ",
+    "m": "son",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "息子は中学生です。",
+        "r": "むすこは ちゅうがくせいです。",
+        "en": "My son is a middle school student."
+      }
+    ]
+  },
+  {
+    "w": "孫",
+    "r": "まご",
+    "m": "grandchild",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "孫が生まれました。",
+        "r": "まごが うまれました。",
+        "en": "My grandchild was born."
+      }
+    ]
+  },
+  {
+    "w": "恋人",
+    "r": "こいびと",
+    "m": "lover, sweetheart",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "恋人と映画を見ました。",
+        "r": "こいびとと えいがを みました。",
+        "en": "I watched a movie with my partner."
       }
     ]
   },
@@ -1456,20 +1484,6 @@
     ]
   },
   {
-    "w": "恋人",
-    "r": "こいびと",
-    "m": "lover, sweetheart",
-    "pos": "noun",
-    "theme": "people",
-    "ex": [
-      {
-        "jp": "彼女は私の恋人です。",
-        "r": "かのじょは わたしの こいびとです。",
-        "en": "She is my girlfriend."
-      }
-    ]
-  },
-  {
     "w": "結婚",
     "r": "けっこん",
     "m": "marriage",
@@ -1477,8 +1491,8 @@
     "theme": "people",
     "ex": [
       {
-        "jp": "来年、結婚します。",
-        "r": "らいねん、けっこんします。",
+        "jp": "来年結婚します。",
+        "r": "らいねん けっこんします。",
         "en": "I'll get married next year."
       }
     ]
@@ -1491,107 +1505,79 @@
     "theme": "people",
     "ex": [
       {
-        "jp": "離婚するつもりはありません。",
-        "r": "りこんする つもりは ありません。",
-        "en": "I don't intend to divorce."
+        "jp": "離婚率が上がっています。",
+        "r": "りこん りつが あがって います。",
+        "en": "The divorce rate is rising."
       }
     ]
   },
   {
-    "w": "親",
-    "r": "おや",
-    "m": "parent",
+    "w": "性格",
+    "r": "せいかく",
+    "m": "personality, character",
     "pos": "noun",
     "theme": "people",
     "ex": [
       {
-        "jp": "親に感謝しています。",
-        "r": "おやに かんしゃして います。",
-        "en": "I'm grateful to my parents."
+        "jp": "彼女は性格が明るいです。",
+        "r": "かのじょは せいかくが あかるいです。",
+        "en": "She has a cheerful personality."
       }
     ]
   },
   {
-    "w": "息子",
-    "r": "むすこ",
-    "m": "son",
+    "w": "好み",
+    "r": "このみ",
+    "m": "taste, preference",
     "pos": "noun",
     "theme": "people",
     "ex": [
       {
-        "jp": "息子が大学生になりました。",
-        "r": "むすこが だいがくせいに なりました。",
-        "en": "My son became a university student."
+        "jp": "私の好みではありません。",
+        "r": "わたしの このみでは ありません。",
+        "en": "It's not to my taste."
       }
     ]
   },
   {
-    "w": "娘",
-    "r": "むすめ",
-    "m": "daughter",
+    "w": "季節",
+    "r": "きせつ",
+    "m": "season",
     "pos": "noun",
-    "theme": "people",
+    "theme": "time",
     "ex": [
       {
-        "jp": "娘は3歳です。",
-        "r": "むすめは さんさいです。",
-        "en": "My daughter is 3."
+        "jp": "日本には四つの季節があります。",
+        "r": "にほんには よっつの きせつが あります。",
+        "en": "Japan has four seasons."
       }
     ]
   },
   {
-    "w": "孫",
-    "r": "まご",
-    "m": "grandchild",
+    "w": "昔",
+    "r": "むかし",
+    "m": "long ago, in the past",
     "pos": "noun",
-    "theme": "people",
+    "theme": "time",
     "ex": [
       {
-        "jp": "孫が生まれました。",
-        "r": "まごが うまれました。",
-        "en": "A grandchild was born."
-      }
-    ]
-  },
-  {
-    "w": "夫婦",
-    "r": "ふうふ",
-    "m": "married couple",
-    "pos": "noun",
-    "theme": "people",
-    "ex": [
-      {
-        "jp": "あの夫婦は仲がいいです。",
-        "r": "あの ふうふは なかが いいです。",
-        "en": "That couple gets along well."
-      }
-    ]
-  },
-  {
-    "w": "約束",
-    "r": "やくそく",
-    "m": "promise, appointment",
-    "pos": "noun, suru-verb",
-    "theme": "people",
-    "ex": [
-      {
-        "jp": "約束を守ります。",
-        "r": "やくそくを まもります。",
-        "en": "I'll keep my promise."
+        "jp": "昔、ここに城がありました。",
+        "r": "むかし、ここに しろが ありました。",
+        "en": "There was a castle here long ago."
       }
     ]
   },
   {
     "w": "最近",
     "r": "さいきん",
-    "m": "recently, lately",
+    "m": "recently",
     "pos": "noun, adverb",
     "theme": "time",
     "ex": [
       {
-        "jp": "最近、忙しいです。",
-        "r": "さいきん、いそがしいです。",
-        "en": "I've been busy lately."
+        "jp": "最近忙しいです。",
+        "r": "さいきん いそがしいです。",
+        "en": "I've been busy recently."
       }
     ]
   },
@@ -1610,6 +1596,34 @@
     ]
   },
   {
+    "w": "以前",
+    "r": "いぜん",
+    "m": "before, formerly",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "以前東京に住んでいました。",
+        "r": "いぜん とうきょうに すんで いました。",
+        "en": "I lived in Tokyo before."
+      }
+    ]
+  },
+  {
+    "w": "以後",
+    "r": "いご",
+    "m": "after this, from now on",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "以後気をつけます。",
+        "r": "いご きを つけます。",
+        "en": "I'll be careful from now on."
+      }
+    ]
+  },
+  {
     "w": "過去",
     "r": "かこ",
     "m": "past",
@@ -1619,7 +1633,7 @@
       {
         "jp": "過去のことは忘れましょう。",
         "r": "かこの ことは わすれましょう。",
-        "en": "Let's forget the past."
+        "en": "Let's forget about the past."
       }
     ]
   },
@@ -1631,37 +1645,37 @@
     "theme": "time",
     "ex": [
       {
-        "jp": "現在、東京に住んでいます。",
-        "r": "げんざい、とうきょうに すんで います。",
-        "en": "I currently live in Tokyo."
+        "jp": "現在、研究中です。",
+        "r": "げんざい、けんきゅう ちゅうです。",
+        "en": "I'm currently doing research."
       }
     ]
   },
   {
-    "w": "以前",
-    "r": "いぜん",
-    "m": "before, formerly",
+    "w": "期間",
+    "r": "きかん",
+    "m": "period (of time)",
     "pos": "noun",
     "theme": "time",
     "ex": [
       {
-        "jp": "以前、京都に住んでいました。",
-        "r": "いぜん、きょうとに すんで いました。",
-        "en": "I used to live in Kyoto."
+        "jp": "期間限定のセールです。",
+        "r": "きかん げんていの せーるです。",
+        "en": "It's a limited-time sale."
       }
     ]
   },
   {
-    "w": "以後",
-    "r": "いご",
-    "m": "after, since then",
+    "w": "瞬間",
+    "r": "しゅんかん",
+    "m": "moment, instant",
     "pos": "noun",
     "theme": "time",
     "ex": [
       {
-        "jp": "以後、気をつけます。",
-        "r": "いご、きを つけます。",
-        "en": "I'll be careful from now on."
+        "jp": "その瞬間を忘れません。",
+        "r": "その しゅんかんを わすれません。",
+        "en": "I won't forget that moment."
       }
     ]
   },
@@ -1680,58 +1694,16 @@
     ]
   },
   {
-    "w": "時間",
-    "r": "じかん",
-    "m": "time, hour",
-    "pos": "noun",
-    "theme": "time",
+    "w": "自然",
+    "r": "しぜん",
+    "m": "nature",
+    "pos": "noun, na-adjective",
+    "theme": "nature",
     "ex": [
       {
-        "jp": "時間がありません。",
-        "r": "じかんが ありません。",
-        "en": "I don't have time."
-      }
-    ]
-  },
-  {
-    "w": "期間",
-    "r": "きかん",
-    "m": "period, term",
-    "pos": "noun",
-    "theme": "time",
-    "ex": [
-      {
-        "jp": "試験期間は一週間です。",
-        "r": "しけんきかんは いっしゅうかんです。",
-        "en": "The exam period is one week."
-      }
-    ]
-  },
-  {
-    "w": "瞬間",
-    "r": "しゅんかん",
-    "m": "moment, instant",
-    "pos": "noun",
-    "theme": "time",
-    "ex": [
-      {
-        "jp": "その瞬間、彼が来ました。",
-        "r": "その しゅんかん、かれが きました。",
-        "en": "At that moment, he came."
-      }
-    ]
-  },
-  {
-    "w": "昔",
-    "r": "むかし",
-    "m": "long ago, the past",
-    "pos": "noun",
-    "theme": "time",
-    "ex": [
-      {
-        "jp": "昔、ここに大きい木がありました。",
-        "r": "むかし、ここに おおきい きが ありました。",
-        "en": "Long ago, there was a big tree here."
+        "jp": "自然が大好きです。",
+        "r": "しぜんが だいすきです。",
+        "en": "I love nature."
       }
     ]
   },
@@ -1743,9 +1715,9 @@
     "theme": "nature",
     "ex": [
       {
-        "jp": "今日はいい天気ですね。",
-        "r": "きょうは いい てんきですね。",
-        "en": "Nice weather today."
+        "jp": "今日は天気がいいです。",
+        "r": "きょうは てんきが いいです。",
+        "en": "The weather is nice today."
       }
     ]
   },
@@ -1757,23 +1729,9 @@
     "theme": "nature",
     "ex": [
       {
-        "jp": "日本の気候は四季があります。",
-        "r": "にほんの きこうは しきが あります。",
-        "en": "Japan's climate has four seasons."
-      }
-    ]
-  },
-  {
-    "w": "季節",
-    "r": "きせつ",
-    "m": "season",
-    "pos": "noun",
-    "theme": "nature",
-    "ex": [
-      {
-        "jp": "好きな季節は春です。",
-        "r": "すきな きせつは はるです。",
-        "en": "My favorite season is spring."
+        "jp": "日本の気候は温暖です。",
+        "r": "にほんの きこうは おんだんです。",
+        "en": "Japan's climate is mild."
       }
     ]
   },
@@ -1799,23 +1757,9 @@
     "theme": "nature",
     "ex": [
       {
-        "jp": "地震が起きました。",
-        "r": "じしんが おきました。",
-        "en": "An earthquake occurred."
-      }
-    ]
-  },
-  {
-    "w": "海",
-    "r": "うみ",
-    "m": "sea, ocean",
-    "pos": "noun",
-    "theme": "nature",
-    "ex": [
-      {
-        "jp": "海で泳ぎたいです。",
-        "r": "うみで およぎたいです。",
-        "en": "I want to swim in the sea."
+        "jp": "昨夜、地震がありました。",
+        "r": "さくや、じしんが ありました。",
+        "en": "There was an earthquake last night."
       }
     ]
   },
@@ -1827,23 +1771,9 @@
     "theme": "nature",
     "ex": [
       {
-        "jp": "山に登ります。",
-        "r": "やまに のぼります。",
-        "en": "I climb the mountain."
-      }
-    ]
-  },
-  {
-    "w": "森",
-    "r": "もり",
-    "m": "forest",
-    "pos": "noun",
-    "theme": "nature",
-    "ex": [
-      {
-        "jp": "森を散歩します。",
-        "r": "もりを さんぽします。",
-        "en": "I take a walk in the forest."
+        "jp": "富士山は高い山です。",
+        "r": "ふじさんは たかい やまです。",
+        "en": "Mt. Fuji is a tall mountain."
       }
     ]
   },
@@ -1855,9 +1785,37 @@
     "theme": "nature",
     "ex": [
       {
-        "jp": "川で魚を釣ります。",
-        "r": "かわで さかなを つります。",
-        "en": "I fish in the river."
+        "jp": "川で泳ぎました。",
+        "r": "かわで およぎました。",
+        "en": "I swam in the river."
+      }
+    ]
+  },
+  {
+    "w": "海",
+    "r": "うみ",
+    "m": "sea, ocean",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "海が見えます。",
+        "r": "うみが みえます。",
+        "en": "I can see the sea."
+      }
+    ]
+  },
+  {
+    "w": "森",
+    "r": "もり",
+    "m": "forest",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "森を散歩しました。",
+        "r": "もりを さんぽしました。",
+        "en": "I took a walk in the forest."
       }
     ]
   },
@@ -1883,9 +1841,9 @@
     "theme": "nature",
     "ex": [
       {
-        "jp": "星がきれいです。",
-        "r": "ほしが きれいです。",
-        "en": "The stars are beautiful."
+        "jp": "今夜は星がきれいです。",
+        "r": "こんやは ほしが きれいです。",
+        "en": "The stars are beautiful tonight."
       }
     ]
   },
@@ -1897,79 +1855,65 @@
     "theme": "nature",
     "ex": [
       {
-        "jp": "月が見えます。",
-        "r": "つきが みえます。",
-        "en": "I can see the moon."
+        "jp": "月がきれいですね。",
+        "r": "つきが きれいですね。",
+        "en": "The moon is beautiful, isn't it?"
       }
     ]
   },
   {
-    "w": "決める",
-    "r": "きめる",
-    "m": "to decide",
+    "w": "伝える",
+    "r": "つたえる",
+    "m": "to tell, convey",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "行くかどうか決めました。",
-        "r": "いくか どうか きめました。",
-        "en": "I decided whether to go."
+        "jp": "母にメッセージを伝えます。",
+        "r": "ははに めっせーじを つたえます。",
+        "en": "I'll convey the message to my mother."
       }
     ]
   },
   {
-    "w": "増える",
-    "r": "ふえる",
-    "m": "to increase",
+    "w": "受ける",
+    "r": "うける",
+    "m": "to receive, take (an exam)",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "人口が増えています。",
-        "r": "じんこうが ふえて います。",
-        "en": "The population is increasing."
+        "jp": "試験を受けます。",
+        "r": "しけんを うけます。",
+        "en": "I'll take the exam."
       }
     ]
   },
   {
-    "w": "減る",
-    "r": "へる",
-    "m": "to decrease",
+    "w": "返す",
+    "r": "かえす",
+    "m": "to return (something)",
     "pos": "godan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "お金が減りました。",
-        "r": "おかねが へりました。",
-        "en": "My money decreased."
+        "jp": "本を図書館に返しました。",
+        "r": "ほんを としょかんに かえしました。",
+        "en": "I returned the book to the library."
       }
     ]
   },
   {
-    "w": "変える",
-    "r": "かえる",
-    "m": "to change (something)",
+    "w": "集める",
+    "r": "あつめる",
+    "m": "to collect, gather",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "計画を変えます。",
-        "r": "けいかくを かえます。",
-        "en": "I'll change the plan."
-      }
-    ]
-  },
-  {
-    "w": "変わる",
-    "r": "かわる",
-    "m": "to change (intransitive)",
-    "pos": "godan verb",
-    "theme": "verbs",
-    "ex": [
-      {
-        "jp": "季節が変わりました。",
-        "r": "きせつが かわりました。",
-        "en": "The seasons changed."
+        "jp": "切手を集めています。",
+        "r": "きってを あつめて います。",
+        "en": "I'm collecting stamps."
       }
     ]
   },
@@ -1990,14 +1934,14 @@
   {
     "w": "始める",
     "r": "はじめる",
-    "m": "to start",
+    "m": "to begin",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "会議を始めます。",
-        "r": "かいぎを はじめます。",
-        "en": "I'll start the meeting."
+        "jp": "新しい仕事を始めます。",
+        "r": "あたらしい しごとを はじめます。",
+        "en": "I'll start a new job."
       }
     ]
   },
@@ -2009,23 +1953,23 @@
     "theme": "verbs",
     "ex": [
       {
-        "jp": "仕事が終わりました。",
-        "r": "しごとが おわりました。",
-        "en": "Work is finished."
+        "jp": "映画が終わりました。",
+        "r": "えいがが おわりました。",
+        "en": "The movie ended."
       }
     ]
   },
   {
-    "w": "比べる",
-    "r": "くらべる",
-    "m": "to compare",
+    "w": "決める",
+    "r": "きめる",
+    "m": "to decide",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "AとBを比べます。",
-        "r": "えーと びーを くらべます。",
-        "en": "I'll compare A and B."
+        "jp": "行くことを決めました。",
+        "r": "いく ことを きめました。",
+        "en": "I decided to go."
       }
     ]
   },
@@ -2044,58 +1988,16 @@
     ]
   },
   {
-    "w": "集める",
-    "r": "あつめる",
-    "m": "to collect, gather",
+    "w": "間違える",
+    "r": "まちがえる",
+    "m": "to make a mistake",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "切手を集めています。",
-        "r": "きってを あつめて います。",
-        "en": "I'm collecting stamps."
-      }
-    ]
-  },
-  {
-    "w": "調べる",
-    "r": "しらべる",
-    "m": "to investigate, look up",
-    "pos": "ichidan verb",
-    "theme": "verbs",
-    "ex": [
-      {
-        "jp": "インターネットで調べます。",
-        "r": "いんたーねっとで しらべます。",
-        "en": "I'll look it up on the internet."
-      }
-    ]
-  },
-  {
-    "w": "覚える",
-    "r": "おぼえる",
-    "m": "to memorize, remember",
-    "pos": "ichidan verb",
-    "theme": "verbs",
-    "ex": [
-      {
-        "jp": "漢字を覚えます。",
-        "r": "かんじを おぼえます。",
-        "en": "I'll memorize kanji."
-      }
-    ]
-  },
-  {
-    "w": "忘れる",
-    "r": "わすれる",
-    "m": "to forget",
-    "pos": "ichidan verb",
-    "theme": "verbs",
-    "ex": [
-      {
-        "jp": "財布を忘れました。",
-        "r": "さいふを わすれました。",
-        "en": "I forgot my wallet."
+        "jp": "答えを間違えました。",
+        "r": "こたえを まちがえました。",
+        "en": "I got the answer wrong."
       }
     ]
   },
@@ -2114,58 +2016,86 @@
     ]
   },
   {
-    "w": "間違える",
-    "r": "まちがえる",
-    "m": "to make a mistake",
+    "w": "調べる",
+    "r": "しらべる",
+    "m": "to investigate, look up",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "道を間違えました。",
-        "r": "みちを まちがえました。",
-        "en": "I took the wrong road."
+        "jp": "インターネットで調べます。",
+        "r": "いんたーねっとで しらべます。",
+        "en": "I'll look it up on the internet."
       }
     ]
   },
   {
-    "w": "伝える",
-    "r": "つたえる",
-    "m": "to convey, communicate",
+    "w": "比べる",
+    "r": "くらべる",
+    "m": "to compare",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "母に伝えます。",
-        "r": "ははに つたえます。",
-        "en": "I'll tell my mother."
+        "jp": "二つの商品を比べます。",
+        "r": "ふたつの しょうひんを くらべます。",
+        "en": "I'll compare the two products."
       }
     ]
   },
   {
-    "w": "受ける",
-    "r": "うける",
-    "m": "to receive, take (a test)",
+    "w": "変える",
+    "r": "かえる",
+    "m": "to change (something)",
     "pos": "ichidan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "試験を受けます。",
-        "r": "しけんを うけます。",
-        "en": "I'll take the exam."
+        "jp": "髪型を変えました。",
+        "r": "かみがたを かえました。",
+        "en": "I changed my hairstyle."
       }
     ]
   },
   {
-    "w": "返す",
-    "r": "かえす",
-    "m": "to return (something)",
+    "w": "変わる",
+    "r": "かわる",
+    "m": "to change (intransitive)",
     "pos": "godan verb",
     "theme": "verbs",
     "ex": [
       {
-        "jp": "本を図書館に返します。",
-        "r": "ほんを としょかんに かえします。",
-        "en": "I'll return the book to the library."
+        "jp": "季節が変わりました。",
+        "r": "きせつが かわりました。",
+        "en": "The seasons have changed."
+      }
+    ]
+  },
+  {
+    "w": "増える",
+    "r": "ふえる",
+    "m": "to increase",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "観光客が増えています。",
+        "r": "かんこう きゃくが ふえて います。",
+        "en": "Tourists are increasing."
+      }
+    ]
+  },
+  {
+    "w": "減る",
+    "r": "へる",
+    "m": "to decrease",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "人口が減っています。",
+        "r": "じんこうが へって います。",
+        "en": "The population is decreasing."
       }
     ]
   },
@@ -2184,30 +2114,44 @@
     ]
   },
   {
-    "w": "重要",
-    "r": "じゅうよう",
-    "m": "important",
-    "pos": "na-adjective",
-    "theme": "adjectives",
+    "w": "約束",
+    "r": "やくそく",
+    "m": "promise, appointment",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
     "ex": [
       {
-        "jp": "これは重要な問題です。",
-        "r": "これは じゅうような もんだいです。",
-        "en": "This is an important problem."
+        "jp": "友達との約束があります。",
+        "r": "ともだちとの やくそくが あります。",
+        "en": "I have an appointment with a friend."
       }
     ]
   },
   {
     "w": "必要",
     "r": "ひつよう",
-    "m": "necessary",
-    "pos": "na-adjective, noun",
-    "theme": "adjectives",
+    "m": "necessary, need",
+    "pos": "noun, na-adjective",
+    "theme": "daily-life",
     "ex": [
       {
-        "jp": "パスポートが必要です。",
-        "r": "ぱすぽーとが ひつようです。",
-        "en": "A passport is necessary."
+        "jp": "水が必要です。",
+        "r": "みずが ひつようです。",
+        "en": "I need water."
+      }
+    ]
+  },
+  {
+    "w": "重要",
+    "r": "じゅうよう",
+    "m": "important",
+    "pos": "na-adjective",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "これは重要な問題です。",
+        "r": "これは じゅうような もんだいです。",
+        "en": "This is an important issue."
       }
     ]
   },
@@ -2219,51 +2163,23 @@
     "theme": "adjectives",
     "ex": [
       {
-        "jp": "これは簡単な問題です。",
-        "r": "これは かんたんな もんだいです。",
-        "en": "This is an easy problem."
+        "jp": "簡単な問題です。",
+        "r": "かんたんな もんだいです。",
+        "en": "It's an easy problem."
       }
     ]
   },
   {
     "w": "複雑",
     "r": "ふくざつ",
-    "m": "complicated",
+    "m": "complex, complicated",
     "pos": "na-adjective",
     "theme": "adjectives",
     "ex": [
       {
         "jp": "複雑な気持ちです。",
         "r": "ふくざつな きもちです。",
-        "en": "I have complicated feelings."
-      }
-    ]
-  },
-  {
-    "w": "正確",
-    "r": "せいかく",
-    "m": "accurate, exact",
-    "pos": "na-adjective",
-    "theme": "adjectives",
-    "ex": [
-      {
-        "jp": "正確な時間を教えてください。",
-        "r": "せいかくな じかんを おしえて ください。",
-        "en": "Please tell me the exact time."
-      }
-    ]
-  },
-  {
-    "w": "自由",
-    "r": "じゆう",
-    "m": "free, freedom",
-    "pos": "na-adjective, noun",
-    "theme": "adjectives",
-    "ex": [
-      {
-        "jp": "自由な時間が欲しいです。",
-        "r": "じゆうな じかんが ほしいです。",
-        "en": "I want free time."
+        "en": "I have mixed feelings."
       }
     ]
   },
@@ -2275,23 +2191,51 @@
     "theme": "adjectives",
     "ex": [
       {
-        "jp": "丁寧な言葉を使います。",
-        "r": "ていねいな ことばを つかいます。",
-        "en": "I use polite language."
+        "jp": "丁寧に話してください。",
+        "r": "ていねいに はなして ください。",
+        "en": "Please speak politely."
       }
     ]
   },
   {
-    "w": "素晴らしい",
-    "r": "すばらしい",
-    "m": "wonderful, splendid",
+    "w": "正確",
+    "r": "せいかく",
+    "m": "accurate, precise",
+    "pos": "na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "正確な情報が必要です。",
+        "r": "せいかくな じょうほうが ひつようです。",
+        "en": "Accurate information is needed."
+      }
+    ]
+  },
+  {
+    "w": "自由",
+    "r": "じゆう",
+    "m": "freedom, free",
+    "pos": "noun, na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "自由に話してください。",
+        "r": "じゆうに はなして ください。",
+        "en": "Please speak freely."
+      }
+    ]
+  },
+  {
+    "w": "優しい",
+    "r": "やさしい",
+    "m": "kind, gentle",
     "pos": "i-adjective",
     "theme": "adjectives",
     "ex": [
       {
-        "jp": "素晴らしい景色ですね。",
-        "r": "すばらしい けしきですね。",
-        "en": "What a wonderful view."
+        "jp": "彼は優しい人です。",
+        "r": "かれは やさしい ひとです。",
+        "en": "He is a kind person."
       }
     ]
   },
@@ -2310,16 +2254,16 @@
     ]
   },
   {
-    "w": "優しい",
-    "r": "やさしい",
-    "m": "kind, gentle",
+    "w": "詳しい",
+    "r": "くわしい",
+    "m": "detailed, well-informed",
     "pos": "i-adjective",
     "theme": "adjectives",
     "ex": [
       {
-        "jp": "彼女は優しい人です。",
-        "r": "かのじょは やさしい ひとです。",
-        "en": "She is a kind person."
+        "jp": "彼は車に詳しいです。",
+        "r": "かれは くるまに くわしいです。",
+        "en": "He's knowledgeable about cars."
       }
     ]
   },
@@ -2338,16 +2282,16 @@
     ]
   },
   {
-    "w": "詳しい",
-    "r": "くわしい",
-    "m": "detailed, knowledgeable",
+    "w": "素晴らしい",
+    "r": "すばらしい",
+    "m": "wonderful, splendid",
     "pos": "i-adjective",
     "theme": "adjectives",
     "ex": [
       {
-        "jp": "彼は車に詳しいです。",
-        "r": "かれは くるまに くわしいです。",
-        "en": "He is knowledgeable about cars."
+        "jp": "素晴らしい景色ですね。",
+        "r": "すばらしい けしきですね。",
+        "en": "What a wonderful view."
       }
     ]
   },
@@ -2376,6 +2320,4248 @@
         "jp": "プールは浅いです。",
         "r": "ぷーるは あさいです。",
         "en": "The pool is shallow."
+      }
+    ]
+  },
+  {
+    "w": "冷たい",
+    "r": "つめたい",
+    "m": "cold (to the touch)",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "水が冷たいです。",
+        "r": "みずが つめたいです。",
+        "en": "The water is cold."
+      }
+    ]
+  },
+  {
+    "w": "意見",
+    "r": "いけん",
+    "m": "opinion",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "あなたの意見を聞きたいです。",
+        "r": "あなたの いけんを ききたいです。",
+        "en": "I want to hear your opinion."
+      }
+    ]
+  },
+  {
+    "w": "暖かい",
+    "r": "あたたかい",
+    "m": "warm",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "今日は暖かいですね。",
+        "r": "きょうは あたたかいですね。",
+        "en": "It's warm today, isn't it?"
+      }
+    ]
+  },
+  {
+    "w": "涼しい",
+    "r": "すずしい",
+    "m": "cool (refreshing)",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "秋は涼しいです。",
+        "r": "あきは すずしいです。",
+        "en": "Autumn is cool."
+      }
+    ]
+  },
+  {
+    "w": "危ない",
+    "r": "あぶない",
+    "m": "dangerous",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "その道は危ないです。",
+        "r": "その みちは あぶないです。",
+        "en": "That road is dangerous."
+      }
+    ]
+  },
+  {
+    "w": "美しい",
+    "r": "うつくしい",
+    "m": "beautiful",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "美しい景色を見ました。",
+        "r": "うつくしい けしきを みました。",
+        "en": "I saw a beautiful view."
+      }
+    ]
+  },
+  {
+    "w": "多い",
+    "r": "おおい",
+    "m": "many, a lot",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "今日は人が多いです。",
+        "r": "きょうは ひとが おおいです。",
+        "en": "There are many people today."
+      }
+    ]
+  },
+  {
+    "w": "少ない",
+    "r": "すくない",
+    "m": "few, scarce",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "お金が少ないです。",
+        "r": "おかねが すくないです。",
+        "en": "I don't have much money."
+      }
+    ]
+  },
+  {
+    "w": "重い",
+    "r": "おもい",
+    "m": "heavy",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "このカバンは重いです。",
+        "r": "この かばんは おもいです。",
+        "en": "This bag is heavy."
+      }
+    ]
+  },
+  {
+    "w": "軽い",
+    "r": "かるい",
+    "m": "light (weight)",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "このバッグは軽いです。",
+        "r": "この ばっぐは かるいです。",
+        "en": "This bag is light."
+      }
+    ]
+  },
+  {
+    "w": "古い",
+    "r": "ふるい",
+    "m": "old (object), ancient",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "古い本を読みます。",
+        "r": "ふるい ほんを よみます。",
+        "en": "I read old books."
+      }
+    ]
+  },
+  {
+    "w": "短い",
+    "r": "みじかい",
+    "m": "short",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "髪を短く切りました。",
+        "r": "かみを みじかく きりました。",
+        "en": "I cut my hair short."
+      }
+    ]
+  },
+  {
+    "w": "小さい",
+    "r": "ちいさい",
+    "m": "small",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "小さい犬を飼っています。",
+        "r": "ちいさい いぬを かって います。",
+        "en": "I keep a small dog."
+      }
+    ]
+  },
+  {
+    "w": "暗い",
+    "r": "くらい",
+    "m": "dark, gloomy",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "部屋が暗いです。",
+        "r": "へやが くらいです。",
+        "en": "The room is dark."
+      }
+    ]
+  },
+  {
+    "w": "汚い",
+    "r": "きたない",
+    "m": "dirty",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "部屋が汚いです。",
+        "r": "へやが きたないです。",
+        "en": "The room is dirty."
+      }
+    ]
+  },
+  {
+    "w": "狭い",
+    "r": "せまい",
+    "m": "narrow, cramped",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "この部屋は狭いです。",
+        "r": "この へやは せまいです。",
+        "en": "This room is small."
+      }
+    ]
+  },
+  {
+    "w": "広い",
+    "r": "ひろい",
+    "m": "wide, spacious",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "広い部屋です。",
+        "r": "ひろい へやです。",
+        "en": "It's a spacious room."
+      }
+    ]
+  },
+  {
+    "w": "速い",
+    "r": "はやい",
+    "m": "fast (speed)",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "新幹線は速いです。",
+        "r": "しんかんせんは はやいです。",
+        "en": "The bullet train is fast."
+      }
+    ]
+  },
+  {
+    "w": "早い",
+    "r": "はやい",
+    "m": "early",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "朝早く起きます。",
+        "r": "あさ はやく おきます。",
+        "en": "I wake up early in the morning."
+      }
+    ]
+  },
+  {
+    "w": "難しい",
+    "r": "むずかしい",
+    "m": "difficult",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "漢字は難しいです。",
+        "r": "かんじは むずかしいです。",
+        "en": "Kanji is difficult."
+      }
+    ]
+  },
+  {
+    "w": "易しい",
+    "r": "やさしい",
+    "m": "easy",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "易しい問題です。",
+        "r": "やさしい もんだいです。",
+        "en": "It's an easy problem."
+      }
+    ]
+  },
+  {
+    "w": "柔らかい",
+    "r": "やわらかい",
+    "m": "soft",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "このパンは柔らかいです。",
+        "r": "この ぱんは やわらかいです。",
+        "en": "This bread is soft."
+      }
+    ]
+  },
+  {
+    "w": "豊か",
+    "r": "ゆたか",
+    "m": "rich, abundant",
+    "pos": "na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "豊かな国です。",
+        "r": "ゆたかな くにです。",
+        "en": "It's a rich country."
+      }
+    ]
+  },
+  {
+    "w": "不便",
+    "r": "ふべん",
+    "m": "inconvenient",
+    "pos": "na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "駅から遠くて不便です。",
+        "r": "えきから とおくて ふべんです。",
+        "en": "It's inconvenient because it's far from the station."
+      }
+    ]
+  },
+  {
+    "w": "親切",
+    "r": "しんせつ",
+    "m": "kind, kindness",
+    "pos": "na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "親切な人ですね。",
+        "r": "しんせつな ひとですね。",
+        "en": "What a kind person."
+      }
+    ]
+  },
+  {
+    "w": "素敵",
+    "r": "すてき",
+    "m": "wonderful, lovely",
+    "pos": "na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "素敵なドレスですね。",
+        "r": "すてきな どれすですね。",
+        "en": "What a lovely dress."
+      }
+    ]
+  },
+  {
+    "w": "地味",
+    "r": "じみ",
+    "m": "plain, simple",
+    "pos": "na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "地味な色が好きです。",
+        "r": "じみな いろが すきです。",
+        "en": "I like plain colors."
+      }
+    ]
+  },
+  {
+    "w": "濃い",
+    "r": "こい",
+    "m": "thick, strong (taste, color)",
+    "pos": "i-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "このコーヒーは濃いです。",
+        "r": "この こーひーは こいです。",
+        "en": "This coffee is strong."
+      }
+    ]
+  },
+  {
+    "w": "案外",
+    "r": "あんがい",
+    "m": "unexpectedly",
+    "pos": "adverb",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "試験は案外簡単でした。",
+        "r": "しけんは あんがい かんたんでした。",
+        "en": "The exam was unexpectedly easy."
+      }
+    ]
+  },
+  {
+    "w": "意外",
+    "r": "いがい",
+    "m": "surprising, unexpected",
+    "pos": "na-adjective",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "意外な結果でした。",
+        "r": "いがいな けっかでした。",
+        "en": "It was a surprising result."
+      }
+    ]
+  },
+  {
+    "w": "必ず",
+    "r": "かならず",
+    "m": "certainly, without fail",
+    "pos": "adverb",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "必ず連絡します。",
+        "r": "かならず れんらくします。",
+        "en": "I'll definitely contact you."
+      }
+    ]
+  },
+  {
+    "w": "絶対",
+    "r": "ぜったい",
+    "m": "absolutely, definitely",
+    "pos": "adverb, noun",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "絶対に行きます。",
+        "r": "ぜったいに いきます。",
+        "en": "I'll definitely go."
+      }
+    ]
+  },
+  {
+    "w": "全く",
+    "r": "まったく",
+    "m": "entirely, completely",
+    "pos": "adverb",
+    "theme": "adjectives",
+    "ex": [
+      {
+        "jp": "全く分かりません。",
+        "r": "まったく わかりません。",
+        "en": "I don't understand at all."
+      }
+    ]
+  },
+  {
+    "w": "汗",
+    "r": "あせ",
+    "m": "sweat",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "夏は汗をかきます。",
+        "r": "なつは あせを かきます。",
+        "en": "I sweat in summer."
+      }
+    ]
+  },
+  {
+    "w": "顔",
+    "r": "かお",
+    "m": "face",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "顔を洗います。",
+        "r": "かおを あらいます。",
+        "en": "I wash my face."
+      }
+    ]
+  },
+  {
+    "w": "腕",
+    "r": "うで",
+    "m": "arm, skill",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "腕が痛いです。",
+        "r": "うでが いたいです。",
+        "en": "My arm hurts."
+      }
+    ]
+  },
+  {
+    "w": "口",
+    "r": "くち",
+    "m": "mouth",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "口を開けてください。",
+        "r": "くちを あけて ください。",
+        "en": "Please open your mouth."
+      }
+    ]
+  },
+  {
+    "w": "声",
+    "r": "こえ",
+    "m": "voice",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "彼の声は大きいです。",
+        "r": "かれの こえは おおきいです。",
+        "en": "His voice is loud."
+      }
+    ]
+  },
+  {
+    "w": "骨",
+    "r": "ほね",
+    "m": "bone",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "足の骨を折りました。",
+        "r": "あしの ほねを おりました。",
+        "en": "I broke my leg bone."
+      }
+    ]
+  },
+  {
+    "w": "傷",
+    "r": "きず",
+    "m": "wound, scratch",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "手に傷があります。",
+        "r": "てに きずが あります。",
+        "en": "There's a wound on my hand."
+      }
+    ]
+  },
+  {
+    "w": "涙",
+    "r": "なみだ",
+    "m": "tears",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "涙が出ました。",
+        "r": "なみだが でました。",
+        "en": "Tears came out."
+      }
+    ]
+  },
+  {
+    "w": "姿勢",
+    "r": "しせい",
+    "m": "posture, attitude",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "姿勢を正してください。",
+        "r": "しせいを ただして ください。",
+        "en": "Please correct your posture."
+      }
+    ]
+  },
+  {
+    "w": "具合",
+    "r": "ぐあい",
+    "m": "condition (of health)",
+    "pos": "noun",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "具合が悪いです。",
+        "r": "ぐあいが わるいです。",
+        "en": "I don't feel well."
+      }
+    ]
+  },
+  {
+    "w": "運動",
+    "r": "うんどう",
+    "m": "exercise, sports",
+    "pos": "noun, suru-verb",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "毎日運動しています。",
+        "r": "まいにち うんどうして います。",
+        "en": "I exercise every day."
+      }
+    ]
+  },
+  {
+    "w": "痛む",
+    "r": "いたむ",
+    "m": "to hurt, ache",
+    "pos": "godan verb",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "足が痛みます。",
+        "r": "あしが いたみます。",
+        "en": "My foot hurts."
+      }
+    ]
+  },
+  {
+    "w": "眠る",
+    "r": "ねむる",
+    "m": "to sleep",
+    "pos": "godan verb",
+    "theme": "health",
+    "ex": [
+      {
+        "jp": "赤ちゃんが眠っています。",
+        "r": "あかちゃんが ねむって います。",
+        "en": "The baby is sleeping."
+      }
+    ]
+  },
+  {
+    "w": "油",
+    "r": "あぶら",
+    "m": "oil, fat",
+    "pos": "noun",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "フライパンに油を入れます。",
+        "r": "ふらいぱんに あぶらを いれます。",
+        "en": "I'll put oil in the frying pan."
+      }
+    ]
+  },
+  {
+    "w": "果物",
+    "r": "くだもの",
+    "m": "fruit",
+    "pos": "noun",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "果物が好きです。",
+        "r": "くだものが すきです。",
+        "en": "I like fruits."
+      }
+    ]
+  },
+  {
+    "w": "魚",
+    "r": "さかな",
+    "m": "fish",
+    "pos": "noun",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "魚を食べます。",
+        "r": "さかなを たべます。",
+        "en": "I eat fish."
+      }
+    ]
+  },
+  {
+    "w": "野菜",
+    "r": "やさい",
+    "m": "vegetable",
+    "pos": "noun",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "野菜をたくさん食べます。",
+        "r": "やさいを たくさん たべます。",
+        "en": "I eat a lot of vegetables."
+      }
+    ]
+  },
+  {
+    "w": "注文",
+    "r": "ちゅうもん",
+    "m": "order (at a restaurant)",
+    "pos": "noun, suru-verb",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "コーヒーを注文しました。",
+        "r": "こーひーを ちゅうもんしました。",
+        "en": "I ordered a coffee."
+      }
+    ]
+  },
+  {
+    "w": "沸く",
+    "r": "わく",
+    "m": "to boil (intransitive)",
+    "pos": "godan verb",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "お湯が沸きました。",
+        "r": "おゆが わきました。",
+        "en": "The water has boiled."
+      }
+    ]
+  },
+  {
+    "w": "沸かす",
+    "r": "わかす",
+    "m": "to boil (water)",
+    "pos": "godan verb",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "お湯を沸かします。",
+        "r": "おゆを わかします。",
+        "en": "I'll boil water."
+      }
+    ]
+  },
+  {
+    "w": "焼ける",
+    "r": "やける",
+    "m": "to burn (intransitive), to be cooked",
+    "pos": "ichidan verb",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "パンが焼けました。",
+        "r": "ぱんが やけました。",
+        "en": "The bread is baked."
+      }
+    ]
+  },
+  {
+    "w": "夕食",
+    "r": "ゆうしょく",
+    "m": "dinner, evening meal",
+    "pos": "noun",
+    "theme": "food",
+    "ex": [
+      {
+        "jp": "夕食を食べました。",
+        "r": "ゆうしょくを たべました。",
+        "en": "I had dinner."
+      }
+    ]
+  },
+  {
+    "w": "安全",
+    "r": "あんぜん",
+    "m": "safety, safe",
+    "pos": "noun, na-adjective",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "この町は安全です。",
+        "r": "この まちは あんぜんです。",
+        "en": "This town is safe."
+      }
+    ]
+  },
+  {
+    "w": "危険",
+    "r": "きけん",
+    "m": "danger, dangerous",
+    "pos": "noun, na-adjective",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "危険な道です。",
+        "r": "きけんな みちです。",
+        "en": "It's a dangerous road."
+      }
+    ]
+  },
+  {
+    "w": "計画",
+    "r": "けいかく",
+    "m": "plan",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "旅行の計画を立てます。",
+        "r": "りょこうの けいかくを たてます。",
+        "en": "I'll make travel plans."
+      }
+    ]
+  },
+  {
+    "w": "結果",
+    "r": "けっか",
+    "m": "result",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "試験の結果が出ました。",
+        "r": "しけんの けっかが でました。",
+        "en": "The exam results came out."
+      }
+    ]
+  },
+  {
+    "w": "国際",
+    "r": "こくさい",
+    "m": "international",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "国際交流に参加します。",
+        "r": "こくさい こうりゅうに さんかします。",
+        "en": "I'll participate in international exchange."
+      }
+    ]
+  },
+  {
+    "w": "国民",
+    "r": "こくみん",
+    "m": "citizen, national",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "国民の意見を聞きます。",
+        "r": "こくみんの いけんを ききます。",
+        "en": "We'll listen to citizens' opinions."
+      }
+    ]
+  },
+  {
+    "w": "平和",
+    "r": "へいわ",
+    "m": "peace",
+    "pos": "noun, na-adjective",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "世界の平和を願います。",
+        "r": "せかいの へいわを ねがいます。",
+        "en": "I wish for world peace."
+      }
+    ]
+  },
+  {
+    "w": "政府",
+    "r": "せいふ",
+    "m": "government",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "政府の決定を待ちます。",
+        "r": "せいふの けっていを まちます。",
+        "en": "We'll wait for the government's decision."
+      }
+    ]
+  },
+  {
+    "w": "世界",
+    "r": "せかい",
+    "m": "world",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "世界を旅したいです。",
+        "r": "せかいを たびしたいです。",
+        "en": "I want to travel the world."
+      }
+    ]
+  },
+  {
+    "w": "責任",
+    "r": "せきにん",
+    "m": "responsibility",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "責任を持ちます。",
+        "r": "せきにんを もちます。",
+        "en": "I'll take responsibility."
+      }
+    ]
+  },
+  {
+    "w": "福祉",
+    "r": "ふくし",
+    "m": "welfare",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "福祉サービスを利用します。",
+        "r": "ふくし さーびすを りようします。",
+        "en": "I use welfare services."
+      }
+    ]
+  },
+  {
+    "w": "反対",
+    "r": "はんたい",
+    "m": "opposition, opposite",
+    "pos": "noun, suru-verb, na-adjective",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "その意見に反対します。",
+        "r": "その いけんに はんたいします。",
+        "en": "I oppose that opinion."
+      }
+    ]
+  },
+  {
+    "w": "信頼",
+    "r": "しんらい",
+    "m": "trust, reliance",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "彼を信頼しています。",
+        "r": "かれを しんらいして います。",
+        "en": "I trust him."
+      }
+    ]
+  },
+  {
+    "w": "関係",
+    "r": "かんけい",
+    "m": "relationship, relation",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "二人の関係はいいです。",
+        "r": "ふたりの かんけいは いいです。",
+        "en": "Their relationship is good."
+      }
+    ]
+  },
+  {
+    "w": "機会",
+    "r": "きかい",
+    "m": "opportunity, chance",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "いい機会です。",
+        "r": "いい きかいです。",
+        "en": "It's a good opportunity."
+      }
+    ]
+  },
+  {
+    "w": "内容",
+    "r": "ないよう",
+    "m": "contents, content",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "本の内容を覚えています。",
+        "r": "ほんの ないようを おぼえて います。",
+        "en": "I remember the book's content."
+      }
+    ]
+  },
+  {
+    "w": "場所",
+    "r": "ばしょ",
+    "m": "place, location",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "いい場所を見つけました。",
+        "r": "いい ばしょを みつけました。",
+        "en": "I found a good place."
+      }
+    ]
+  },
+  {
+    "w": "場面",
+    "r": "ばめん",
+    "m": "scene, situation",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "その場面を覚えています。",
+        "r": "その ばめんを おぼえて います。",
+        "en": "I remember that scene."
+      }
+    ]
+  },
+  {
+    "w": "立場",
+    "r": "たちば",
+    "m": "position, standpoint",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "私の立場を理解してください。",
+        "r": "わたしの たちばを りかいして ください。",
+        "en": "Please understand my position."
+      }
+    ]
+  },
+  {
+    "w": "性質",
+    "r": "せいしつ",
+    "m": "nature, quality",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "水の性質を調べます。",
+        "r": "みずの せいしつを しらべます。",
+        "en": "I'll examine the properties of water."
+      }
+    ]
+  },
+  {
+    "w": "目標",
+    "r": "もくひょう",
+    "m": "goal, target",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "目標を達成しました。",
+        "r": "もくひょうを たっせいしました。",
+        "en": "I achieved my goal."
+      }
+    ]
+  },
+  {
+    "w": "理由",
+    "r": "りゆう",
+    "m": "reason",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "その理由を教えてください。",
+        "r": "その りゆうを おしえて ください。",
+        "en": "Please tell me the reason."
+      }
+    ]
+  },
+  {
+    "w": "距離",
+    "r": "きょり",
+    "m": "distance",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "駅までの距離は遠いです。",
+        "r": "えきまでの きょりは とおいです。",
+        "en": "The distance to the station is far."
+      }
+    ]
+  },
+  {
+    "w": "力",
+    "r": "ちから",
+    "m": "strength, power",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "力を合わせましょう。",
+        "r": "ちからを あわせましょう。",
+        "en": "Let's join forces."
+      }
+    ]
+  },
+  {
+    "w": "方法",
+    "r": "ほうほう",
+    "m": "method, way",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "いい方法を考えます。",
+        "r": "いい ほうほうを かんがえます。",
+        "en": "I'll think of a good method."
+      }
+    ]
+  },
+  {
+    "w": "影響",
+    "r": "えいきょう",
+    "m": "influence, effect",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "天気は気分に影響します。",
+        "r": "てんきは きぶんに えいきょうします。",
+        "en": "Weather affects mood."
+      }
+    ]
+  },
+  {
+    "w": "発見",
+    "r": "はっけん",
+    "m": "discovery",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "新しい星を発見しました。",
+        "r": "あたらしい ほしを はっけんしました。",
+        "en": "They discovered a new star."
+      }
+    ]
+  },
+  {
+    "w": "発展",
+    "r": "はってん",
+    "m": "development, growth",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "経済が発展しています。",
+        "r": "けいざいが はってんして います。",
+        "en": "The economy is developing."
+      }
+    ]
+  },
+  {
+    "w": "伝統",
+    "r": "でんとう",
+    "m": "tradition",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "日本の伝統を守ります。",
+        "r": "にほんの でんとうを まもります。",
+        "en": "We preserve Japanese tradition."
+      }
+    ]
+  },
+  {
+    "w": "差別",
+    "r": "さべつ",
+    "m": "discrimination",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "差別はいけません。",
+        "r": "さべつは いけません。",
+        "en": "Discrimination is wrong."
+      }
+    ]
+  },
+  {
+    "w": "参加",
+    "r": "さんか",
+    "m": "participation",
+    "pos": "noun, suru-verb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "会議に参加します。",
+        "r": "かいぎに さんかします。",
+        "en": "I'll attend the meeting."
+      }
+    ]
+  },
+  {
+    "w": "全部",
+    "r": "ぜんぶ",
+    "m": "all, everything",
+    "pos": "noun, adverb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "全部食べました。",
+        "r": "ぜんぶ たべました。",
+        "en": "I ate everything."
+      }
+    ]
+  },
+  {
+    "w": "全て",
+    "r": "すべて",
+    "m": "all, everything",
+    "pos": "noun, adverb",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "全てを話します。",
+        "r": "すべてを はなします。",
+        "en": "I'll tell you everything."
+      }
+    ]
+  },
+  {
+    "w": "問題",
+    "r": "もんだい",
+    "m": "problem, question",
+    "pos": "noun",
+    "theme": "society",
+    "ex": [
+      {
+        "jp": "大きな問題があります。",
+        "r": "おおきな もんだいが あります。",
+        "en": "There's a big problem."
+      }
+    ]
+  },
+  {
+    "w": "以上",
+    "r": "いじょう",
+    "m": "more than, above",
+    "pos": "noun, suffix",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "20歳以上の人だけです。",
+        "r": "はたち いじょうの ひと だけです。",
+        "en": "Only people 20 and over."
+      }
+    ]
+  },
+  {
+    "w": "以下",
+    "r": "いか",
+    "m": "less than, below",
+    "pos": "noun, suffix",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "5歳以下の子供は無料です。",
+        "r": "ご さい いかの こどもは むりょうです。",
+        "en": "Children 5 and under are free."
+      }
+    ]
+  },
+  {
+    "w": "一度",
+    "r": "いちど",
+    "m": "once, one time",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "もう一度言ってください。",
+        "r": "もう いちど いって ください。",
+        "en": "Please say it once more."
+      }
+    ]
+  },
+  {
+    "w": "毎日",
+    "r": "まいにち",
+    "m": "every day",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "毎日勉強しています。",
+        "r": "まいにち べんきょうして います。",
+        "en": "I study every day."
+      }
+    ]
+  },
+  {
+    "w": "昼間",
+    "r": "ひるま",
+    "m": "daytime",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "昼間は暑いです。",
+        "r": "ひるまは あついです。",
+        "en": "It's hot during the day."
+      }
+    ]
+  },
+  {
+    "w": "夕方",
+    "r": "ゆうがた",
+    "m": "evening",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "夕方に帰ります。",
+        "r": "ゆうがたに かえります。",
+        "en": "I'll return in the evening."
+      }
+    ]
+  },
+  {
+    "w": "夜中",
+    "r": "よなか",
+    "m": "middle of the night",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "夜中に目が覚めました。",
+        "r": "よなかに めが さめました。",
+        "en": "I woke up in the middle of the night."
+      }
+    ]
+  },
+  {
+    "w": "今度",
+    "r": "こんど",
+    "m": "next time, this time",
+    "pos": "noun",
+    "theme": "time",
+    "ex": [
+      {
+        "jp": "今度一緒に行きましょう。",
+        "r": "こんど いっしょに いきましょう。",
+        "en": "Let's go together next time."
+      }
+    ]
+  },
+  {
+    "w": "風",
+    "r": "かぜ",
+    "m": "wind",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "今日は風が強いです。",
+        "r": "きょうは かぜが つよいです。",
+        "en": "The wind is strong today."
+      }
+    ]
+  },
+  {
+    "w": "草",
+    "r": "くさ",
+    "m": "grass",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "庭に草が生えています。",
+        "r": "にわに くさが はえて います。",
+        "en": "Grass is growing in the garden."
+      }
+    ]
+  },
+  {
+    "w": "空気",
+    "r": "くうき",
+    "m": "air, atmosphere",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "山の空気はきれいです。",
+        "r": "やまの くうきは きれいです。",
+        "en": "Mountain air is clean."
+      }
+    ]
+  },
+  {
+    "w": "枝",
+    "r": "えだ",
+    "m": "branch (of a tree)",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "鳥が枝に止まっています。",
+        "r": "とりが えだに とまって います。",
+        "en": "A bird is perched on the branch."
+      }
+    ]
+  },
+  {
+    "w": "羽",
+    "r": "はね",
+    "m": "wing, feather",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "鳥には羽があります。",
+        "r": "とりには はねが あります。",
+        "en": "Birds have wings."
+      }
+    ]
+  },
+  {
+    "w": "砂",
+    "r": "すな",
+    "m": "sand",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "砂浜で遊びます。",
+        "r": "すなはまで あそびます。",
+        "en": "I play on the sandy beach."
+      }
+    ]
+  },
+  {
+    "w": "森林",
+    "r": "しんりん",
+    "m": "forest, woods",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "森林を守ります。",
+        "r": "しんりんを まもります。",
+        "en": "We'll protect the forest."
+      }
+    ]
+  },
+  {
+    "w": "湿気",
+    "r": "しっけ",
+    "m": "moisture, humidity",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "日本の夏は湿気が多いです。",
+        "r": "にほんの なつは しっけが おおいです。",
+        "en": "Japanese summers are humid."
+      }
+    ]
+  },
+  {
+    "w": "温度",
+    "r": "おんど",
+    "m": "temperature",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "今日の温度は25度です。",
+        "r": "きょうの おんどは にじゅうご どです。",
+        "en": "Today's temperature is 25 degrees."
+      }
+    ]
+  },
+  {
+    "w": "温泉",
+    "r": "おんせん",
+    "m": "hot spring",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "温泉に行きたいです。",
+        "r": "おんせんに いきたいです。",
+        "en": "I want to go to a hot spring."
+      }
+    ]
+  },
+  {
+    "w": "景色",
+    "r": "けしき",
+    "m": "scenery, view",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "きれいな景色です。",
+        "r": "きれいな けしきです。",
+        "en": "It's a beautiful view."
+      }
+    ]
+  },
+  {
+    "w": "光",
+    "r": "ひかり",
+    "m": "light",
+    "pos": "noun",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "太陽の光がまぶしいです。",
+        "r": "たいようの ひかりが まぶしいです。",
+        "en": "The sunlight is dazzling."
+      }
+    ]
+  },
+  {
+    "w": "鳴く",
+    "r": "なく",
+    "m": "to chirp, cry (animal)",
+    "pos": "godan verb",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "鳥が鳴いています。",
+        "r": "とりが ないて います。",
+        "en": "The bird is chirping."
+      }
+    ]
+  },
+  {
+    "w": "咲く",
+    "r": "さく",
+    "m": "to bloom",
+    "pos": "godan verb",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "桜が咲きました。",
+        "r": "さくらが さきました。",
+        "en": "The cherry blossoms bloomed."
+      }
+    ]
+  },
+  {
+    "w": "降る",
+    "r": "ふる",
+    "m": "to fall (rain, snow)",
+    "pos": "godan verb",
+    "theme": "nature",
+    "ex": [
+      {
+        "jp": "雨が降っています。",
+        "r": "あめが ふって います。",
+        "en": "It's raining."
+      }
+    ]
+  },
+  {
+    "w": "父親",
+    "r": "ちちおや",
+    "m": "father",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "父親と相談します。",
+        "r": "ちちおやと そうだんします。",
+        "en": "I'll consult with my father."
+      }
+    ]
+  },
+  {
+    "w": "母親",
+    "r": "ははおや",
+    "m": "mother",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "母親に電話します。",
+        "r": "ははおやに でんわします。",
+        "en": "I'll call my mother."
+      }
+    ]
+  },
+  {
+    "w": "祖父",
+    "r": "そふ",
+    "m": "grandfather",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "祖父は90歳です。",
+        "r": "そふは きゅうじゅっさいです。",
+        "en": "My grandfather is 90."
+      }
+    ]
+  },
+  {
+    "w": "祖母",
+    "r": "そぼ",
+    "m": "grandmother",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "祖母と話しました。",
+        "r": "そぼと はなしました。",
+        "en": "I talked with my grandmother."
+      }
+    ]
+  },
+  {
+    "w": "友人",
+    "r": "ゆうじん",
+    "m": "friend (formal)",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "古い友人と会いました。",
+        "r": "ふるい ゆうじんと あいました。",
+        "en": "I met an old friend."
+      }
+    ]
+  },
+  {
+    "w": "両親",
+    "r": "りょうしん",
+    "m": "parents",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "両親に会いに行きます。",
+        "r": "りょうしんに あいに いきます。",
+        "en": "I'm going to see my parents."
+      }
+    ]
+  },
+  {
+    "w": "客",
+    "r": "きゃく",
+    "m": "guest, customer",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "お客様がいらっしゃいました。",
+        "r": "おきゃくさまが いらっしゃいました。",
+        "en": "A customer has arrived."
+      }
+    ]
+  },
+  {
+    "w": "看護師",
+    "r": "かんごし",
+    "m": "nurse",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "姉は看護師です。",
+        "r": "あねは かんごしです。",
+        "en": "My older sister is a nurse."
+      }
+    ]
+  },
+  {
+    "w": "選手",
+    "r": "せんしゅ",
+    "m": "athlete, player",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "彼は野球の選手です。",
+        "r": "かれは やきゅうの せんしゅです。",
+        "en": "He is a baseball player."
+      }
+    ]
+  },
+  {
+    "w": "金持ち",
+    "r": "かねもち",
+    "m": "rich person",
+    "pos": "noun",
+    "theme": "people",
+    "ex": [
+      {
+        "jp": "彼は金持ちです。",
+        "r": "かれは かねもちです。",
+        "en": "He is rich."
+      }
+    ]
+  },
+  {
+    "w": "鏡",
+    "r": "かがみ",
+    "m": "mirror",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "鏡を見ます。",
+        "r": "かがみを みます。",
+        "en": "I look in the mirror."
+      }
+    ]
+  },
+  {
+    "w": "鍵",
+    "r": "かぎ",
+    "m": "key, lock",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "鍵を忘れました。",
+        "r": "かぎを わすれました。",
+        "en": "I forgot my keys."
+      }
+    ]
+  },
+  {
+    "w": "靴",
+    "r": "くつ",
+    "m": "shoes",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "新しい靴を買いました。",
+        "r": "あたらしい くつを かいました。",
+        "en": "I bought new shoes."
+      }
+    ]
+  },
+  {
+    "w": "庭",
+    "r": "にわ",
+    "m": "garden, yard",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "庭で花を育てています。",
+        "r": "にわで はなを そだてて います。",
+        "en": "I grow flowers in the garden."
+      }
+    ]
+  },
+  {
+    "w": "店",
+    "r": "みせ",
+    "m": "shop, store",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "新しい店ができました。",
+        "r": "あたらしい みせが できました。",
+        "en": "A new shop opened."
+      }
+    ]
+  },
+  {
+    "w": "袋",
+    "r": "ふくろ",
+    "m": "bag, sack",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "袋に入れてください。",
+        "r": "ふくろに いれて ください。",
+        "en": "Please put it in a bag."
+      }
+    ]
+  },
+  {
+    "w": "道具",
+    "r": "どうぐ",
+    "m": "tool, instrument",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "料理の道具を買いました。",
+        "r": "りょうりの どうぐを かいました。",
+        "en": "I bought cooking tools."
+      }
+    ]
+  },
+  {
+    "w": "廊下",
+    "r": "ろうか",
+    "m": "hallway, corridor",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "廊下を走らないでください。",
+        "r": "ろうかを はしらないで ください。",
+        "en": "Please don't run in the hallway."
+      }
+    ]
+  },
+  {
+    "w": "訪問",
+    "r": "ほうもん",
+    "m": "visit",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "先生のお宅を訪問しました。",
+        "r": "せんせいの おたくを ほうもんしました。",
+        "en": "I visited the teacher's home."
+      }
+    ]
+  },
+  {
+    "w": "自動",
+    "r": "じどう",
+    "m": "automatic",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "自動ドアです。",
+        "r": "じどう どあです。",
+        "en": "It's an automatic door."
+      }
+    ]
+  },
+  {
+    "w": "暮らす",
+    "r": "くらす",
+    "m": "to live, get along",
+    "pos": "godan verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "家族と暮らしています。",
+        "r": "かぞくと くらして います。",
+        "en": "I live with my family."
+      }
+    ]
+  },
+  {
+    "w": "連絡",
+    "r": "れんらく",
+    "m": "contact, communication",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "明日連絡します。",
+        "r": "あした れんらくします。",
+        "en": "I'll contact you tomorrow."
+      }
+    ]
+  },
+  {
+    "w": "散歩",
+    "r": "さんぽ",
+    "m": "walk, stroll",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "公園を散歩します。",
+        "r": "こうえんを さんぽします。",
+        "en": "I take walks in the park."
+      }
+    ]
+  },
+  {
+    "w": "配達",
+    "r": "はいたつ",
+    "m": "delivery",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "明日配達されます。",
+        "r": "あした はいたつ されます。",
+        "en": "It will be delivered tomorrow."
+      }
+    ]
+  },
+  {
+    "w": "利用",
+    "r": "りよう",
+    "m": "use, utilization",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "バスを利用します。",
+        "r": "ばすを りようします。",
+        "en": "I'll use the bus."
+      }
+    ]
+  },
+  {
+    "w": "申し込む",
+    "r": "もうしこむ",
+    "m": "to apply for, propose",
+    "pos": "godan verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "参加を申し込みました。",
+        "r": "さんかを もうしこみました。",
+        "en": "I applied to participate."
+      }
+    ]
+  },
+  {
+    "w": "通う",
+    "r": "かよう",
+    "m": "to commute, attend",
+    "pos": "godan verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "毎日学校に通っています。",
+        "r": "まいにち がっこうに かよって います。",
+        "en": "I commute to school every day."
+      }
+    ]
+  },
+  {
+    "w": "洗う",
+    "r": "あらう",
+    "m": "to wash",
+    "pos": "godan verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "食事の前に手を洗います。",
+        "r": "しょくじの まえに てを あらいます。",
+        "en": "I wash my hands before eating."
+      }
+    ]
+  },
+  {
+    "w": "飼う",
+    "r": "かう",
+    "m": "to keep (a pet)",
+    "pos": "godan verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "犬を飼っています。",
+        "r": "いぬを かって います。",
+        "en": "I keep a dog."
+      }
+    ]
+  },
+  {
+    "w": "留学",
+    "r": "りゅうがく",
+    "m": "studying abroad",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "アメリカに留学します。",
+        "r": "あめりかに りゅうがくします。",
+        "en": "I'll study abroad in America."
+      }
+    ]
+  },
+  {
+    "w": "用事",
+    "r": "ようじ",
+    "m": "errand, business",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "今日は用事があります。",
+        "r": "きょうは ようじが あります。",
+        "en": "I have errands today."
+      }
+    ]
+  },
+  {
+    "w": "忘れ物",
+    "r": "わすれもの",
+    "m": "forgotten item",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "電車に忘れ物をしました。",
+        "r": "でんしゃに わすれものを しました。",
+        "en": "I left something on the train."
+      }
+    ]
+  },
+  {
+    "w": "無料",
+    "r": "むりょう",
+    "m": "free of charge",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "入場は無料です。",
+        "r": "にゅうじょうは むりょうです。",
+        "en": "Admission is free."
+      }
+    ]
+  },
+  {
+    "w": "誕生日",
+    "r": "たんじょうび",
+    "m": "birthday",
+    "pos": "noun",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "明日は私の誕生日です。",
+        "r": "あしたの わたしの たんじょうびです。",
+        "en": "Tomorrow is my birthday."
+      }
+    ]
+  },
+  {
+    "w": "招待",
+    "r": "しょうたい",
+    "m": "invitation",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "パーティーに招待します。",
+        "r": "ぱーてぃーに しょうたいします。",
+        "en": "I'll invite you to the party."
+      }
+    ]
+  },
+  {
+    "w": "返事",
+    "r": "へんじ",
+    "m": "reply, answer",
+    "pos": "noun, suru-verb",
+    "theme": "daily-life",
+    "ex": [
+      {
+        "jp": "返事を待っています。",
+        "r": "へんじを まって います。",
+        "en": "I'm waiting for a reply."
+      }
+    ]
+  },
+  {
+    "w": "単語",
+    "r": "たんご",
+    "m": "word, vocabulary",
+    "pos": "noun",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "新しい単語を覚えます。",
+        "r": "あたらしい たんごを おぼえます。",
+        "en": "I memorize new words."
+      }
+    ]
+  },
+  {
+    "w": "質問",
+    "r": "しつもん",
+    "m": "question",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "質問はありますか。",
+        "r": "しつもんは ありますか。",
+        "en": "Do you have any questions?"
+      }
+    ]
+  },
+  {
+    "w": "答え",
+    "r": "こたえ",
+    "m": "answer",
+    "pos": "noun",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "答えを書いてください。",
+        "r": "こたえを かいて ください。",
+        "en": "Please write the answer."
+      }
+    ]
+  },
+  {
+    "w": "答える",
+    "r": "こたえる",
+    "m": "to answer",
+    "pos": "ichidan verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "質問に答えます。",
+        "r": "しつもんに こたえます。",
+        "en": "I'll answer the question."
+      }
+    ]
+  },
+  {
+    "w": "説明",
+    "r": "せつめい",
+    "m": "explanation",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "もう一度説明してください。",
+        "r": "もう いちど せつめいして ください。",
+        "en": "Please explain once more."
+      }
+    ]
+  },
+  {
+    "w": "練習",
+    "r": "れんしゅう",
+    "m": "practice",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "毎日練習しています。",
+        "r": "まいにち れんしゅうして います。",
+        "en": "I practice every day."
+      }
+    ]
+  },
+  {
+    "w": "発音",
+    "r": "はつおん",
+    "m": "pronunciation",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "発音を練習します。",
+        "r": "はつおんを れんしゅうします。",
+        "en": "I practice pronunciation."
+      }
+    ]
+  },
+  {
+    "w": "表現",
+    "r": "ひょうげん",
+    "m": "expression",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "自分の気持ちを表現します。",
+        "r": "じぶんの きもちを ひょうげんします。",
+        "en": "I express my feelings."
+      }
+    ]
+  },
+  {
+    "w": "教室",
+    "r": "きょうしつ",
+    "m": "classroom",
+    "pos": "noun",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "教室で勉強します。",
+        "r": "きょうしつで べんきょうします。",
+        "en": "I study in the classroom."
+      }
+    ]
+  },
+  {
+    "w": "専門",
+    "r": "せんもん",
+    "m": "specialty, major",
+    "pos": "noun",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "私の専門は経済です。",
+        "r": "わたしの せんもんは けいざいです。",
+        "en": "My major is economics."
+      }
+    ]
+  },
+  {
+    "w": "研究",
+    "r": "けんきゅう",
+    "m": "research",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "日本の文化を研究しています。",
+        "r": "にほんの ぶんかを けんきゅうして います。",
+        "en": "I'm researching Japanese culture."
+      }
+    ]
+  },
+  {
+    "w": "見学",
+    "r": "けんがく",
+    "m": "study tour, visit (for learning)",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "工場を見学します。",
+        "r": "こうじょうを けんがくします。",
+        "en": "I'll tour the factory."
+      }
+    ]
+  },
+  {
+    "w": "知識",
+    "r": "ちしき",
+    "m": "knowledge",
+    "pos": "noun",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "知識を増やしたいです。",
+        "r": "ちしきを ふやしたいです。",
+        "en": "I want to increase my knowledge."
+      }
+    ]
+  },
+  {
+    "w": "高校",
+    "r": "こうこう",
+    "m": "high school",
+    "pos": "noun",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "妹は高校生です。",
+        "r": "いもうとは こうこうせいです。",
+        "en": "My younger sister is a high school student."
+      }
+    ]
+  },
+  {
+    "w": "通学",
+    "r": "つうがく",
+    "m": "commuting to school",
+    "pos": "noun, suru-verb",
+    "theme": "education",
+    "ex": [
+      {
+        "jp": "自転車で通学します。",
+        "r": "じてんしゃで つうがくします。",
+        "en": "I commute to school by bicycle."
+      }
+    ]
+  },
+  {
+    "w": "愛",
+    "r": "あい",
+    "m": "love",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "家族への愛は深いです。",
+        "r": "かぞくへの あいは ふかいです。",
+        "en": "My love for my family is deep."
+      }
+    ]
+  },
+  {
+    "w": "応援",
+    "r": "おうえん",
+    "m": "cheering, support",
+    "pos": "noun, suru-verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "応援しています。",
+        "r": "おうえんして います。",
+        "en": "I'm rooting for you."
+      }
+    ]
+  },
+  {
+    "w": "我慢",
+    "r": "がまん",
+    "m": "patience, endurance",
+    "pos": "noun, suru-verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "暑さを我慢します。",
+        "r": "あつさを がまんします。",
+        "en": "I'll endure the heat."
+      }
+    ]
+  },
+  {
+    "w": "喧嘩",
+    "r": "けんか",
+    "m": "quarrel, fight",
+    "pos": "noun, suru-verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "兄と喧嘩しました。",
+        "r": "あにと けんかしました。",
+        "en": "I had a fight with my older brother."
+      }
+    ]
+  },
+  {
+    "w": "興味",
+    "r": "きょうみ",
+    "m": "interest",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "音楽に興味があります。",
+        "r": "おんがくに きょうみが あります。",
+        "en": "I'm interested in music."
+      }
+    ]
+  },
+  {
+    "w": "期待",
+    "r": "きたい",
+    "m": "expectation, hope",
+    "pos": "noun, suru-verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "結果を期待しています。",
+        "r": "けっかを きたいして います。",
+        "en": "I'm hopeful about the result."
+      }
+    ]
+  },
+  {
+    "w": "心",
+    "r": "こころ",
+    "m": "heart, mind",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "心から感謝しています。",
+        "r": "こころから かんしゃして います。",
+        "en": "I'm thankful from the bottom of my heart."
+      }
+    ]
+  },
+  {
+    "w": "想像",
+    "r": "そうぞう",
+    "m": "imagination",
+    "pos": "noun, suru-verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "想像できません。",
+        "r": "そうぞう できません。",
+        "en": "I can't imagine it."
+      }
+    ]
+  },
+  {
+    "w": "勇気",
+    "r": "ゆうき",
+    "m": "courage",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "勇気が必要です。",
+        "r": "ゆうきが ひつようです。",
+        "en": "Courage is needed."
+      }
+    ]
+  },
+  {
+    "w": "感謝",
+    "r": "かんしゃ",
+    "m": "gratitude, thanks",
+    "pos": "noun, suru-verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "感謝の気持ちを伝えます。",
+        "r": "かんしゃの きもちを つたえます。",
+        "en": "I'll express my gratitude."
+      }
+    ]
+  },
+  {
+    "w": "幸せ",
+    "r": "しあわせ",
+    "m": "happiness, happy",
+    "pos": "noun, na-adjective",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "今、とても幸せです。",
+        "r": "いま、とても しあわせです。",
+        "en": "I'm very happy now."
+      }
+    ]
+  },
+  {
+    "w": "恋",
+    "r": "こい",
+    "m": "romantic love",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "恋に落ちました。",
+        "r": "こいに おちました。",
+        "en": "I fell in love."
+      }
+    ]
+  },
+  {
+    "w": "喜ぶ",
+    "r": "よろこぶ",
+    "m": "to be glad",
+    "pos": "godan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "プレゼントをもらって喜びました。",
+        "r": "ぷれぜんとを もらって よろこびました。",
+        "en": "I was happy to receive the gift."
+      }
+    ]
+  },
+  {
+    "w": "悩む",
+    "r": "なやむ",
+    "m": "to worry, be troubled",
+    "pos": "godan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "将来について悩んでいます。",
+        "r": "しょうらいに ついて なやんで います。",
+        "en": "I'm worried about my future."
+      }
+    ]
+  },
+  {
+    "w": "困る",
+    "r": "こまる",
+    "m": "to be in trouble, troubled",
+    "pos": "godan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "お金がなくて困っています。",
+        "r": "おかねが なくて こまって います。",
+        "en": "I'm troubled because I have no money."
+      }
+    ]
+  },
+  {
+    "w": "恐れる",
+    "r": "おそれる",
+    "m": "to fear, be afraid of",
+    "pos": "ichidan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "失敗を恐れません。",
+        "r": "しっぱいを おそれません。",
+        "en": "I'm not afraid of failure."
+      }
+    ]
+  },
+  {
+    "w": "褒める",
+    "r": "ほめる",
+    "m": "to praise",
+    "pos": "ichidan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "先生に褒められました。",
+        "r": "せんせいに ほめられました。",
+        "en": "I was praised by the teacher."
+      }
+    ]
+  },
+  {
+    "w": "思い出",
+    "r": "おもいで",
+    "m": "memory, recollection",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "いい思い出になりました。",
+        "r": "いい おもいでに なりました。",
+        "en": "It became a good memory."
+      }
+    ]
+  },
+  {
+    "w": "思い出す",
+    "r": "おもいだす",
+    "m": "to remember, recall",
+    "pos": "godan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "昔のことを思い出します。",
+        "r": "むかしの ことを おもいだします。",
+        "en": "I remember old times."
+      }
+    ]
+  },
+  {
+    "w": "魅力",
+    "r": "みりょく",
+    "m": "charm, attractiveness",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "彼女には魅力があります。",
+        "r": "かのじょには みりょくが あります。",
+        "en": "She has charm."
+      }
+    ]
+  },
+  {
+    "w": "信じる",
+    "r": "しんじる",
+    "m": "to believe",
+    "pos": "ichidan verb",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "あなたを信じています。",
+        "r": "あなたを しんじて います。",
+        "en": "I believe in you."
+      }
+    ]
+  },
+  {
+    "w": "笑い",
+    "r": "わらい",
+    "m": "laughter, smile",
+    "pos": "noun",
+    "theme": "emotions",
+    "ex": [
+      {
+        "jp": "笑いが絶えません。",
+        "r": "わらいが たえません。",
+        "en": "The laughter doesn't stop."
+      }
+    ]
+  },
+  {
+    "w": "工場",
+    "r": "こうじょう",
+    "m": "factory",
+    "pos": "noun",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "父は工場で働いています。",
+        "r": "ちちは こうじょうで はたらいて います。",
+        "en": "My father works at a factory."
+      }
+    ]
+  },
+  {
+    "w": "商売",
+    "r": "しょうばい",
+    "m": "business, trade",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "商売がうまくいっています。",
+        "r": "しょうばいが うまく いって います。",
+        "en": "The business is going well."
+      }
+    ]
+  },
+  {
+    "w": "商品",
+    "r": "しょうひん",
+    "m": "merchandise, product",
+    "pos": "noun",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "新しい商品を発売します。",
+        "r": "あたらしい しょうひんを はつばいします。",
+        "en": "We'll launch a new product."
+      }
+    ]
+  },
+  {
+    "w": "消費",
+    "r": "しょうひ",
+    "m": "consumption",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "電気の消費が増えています。",
+        "r": "でんきの しょうひが ふえて います。",
+        "en": "Electricity consumption is increasing."
+      }
+    ]
+  },
+  {
+    "w": "処理",
+    "r": "しょり",
+    "m": "handling, processing",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "データを処理します。",
+        "r": "でーたを しょりします。",
+        "en": "I'll process the data."
+      }
+    ]
+  },
+  {
+    "w": "営業",
+    "r": "えいぎょう",
+    "m": "business, sales",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "営業時間は10時までです。",
+        "r": "えいぎょう じかんは じゅうじまでです。",
+        "en": "Business hours are until 10."
+      }
+    ]
+  },
+  {
+    "w": "翻訳",
+    "r": "ほんやく",
+    "m": "translation",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "日本語を英語に翻訳します。",
+        "r": "にほんごを えいごに ほんやくします。",
+        "en": "I translate Japanese to English."
+      }
+    ]
+  },
+  {
+    "w": "領収書",
+    "r": "りょうしゅうしょ",
+    "m": "receipt",
+    "pos": "noun",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "領収書をください。",
+        "r": "りょうしゅうしょを ください。",
+        "en": "Please give me a receipt."
+      }
+    ]
+  },
+  {
+    "w": "資格",
+    "r": "しかく",
+    "m": "qualification, license",
+    "pos": "noun",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "資格を取りたいです。",
+        "r": "しかくを とりたいです。",
+        "en": "I want to get a qualification."
+      }
+    ]
+  },
+  {
+    "w": "事務",
+    "r": "じむ",
+    "m": "office work, business affairs",
+    "pos": "noun",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "事務の仕事をしています。",
+        "r": "じむの しごとを して います。",
+        "en": "I do office work."
+      }
+    ]
+  },
+  {
+    "w": "代表",
+    "r": "だいひょう",
+    "m": "representative",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "会社の代表として参加します。",
+        "r": "かいしゃの だいひょうとして さんかします。",
+        "en": "I'll attend as company representative."
+      }
+    ]
+  },
+  {
+    "w": "完成",
+    "r": "かんせい",
+    "m": "completion",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "作品が完成しました。",
+        "r": "さくひんが かんせいしました。",
+        "en": "The work is complete."
+      }
+    ]
+  },
+  {
+    "w": "辞める",
+    "r": "やめる",
+    "m": "to quit, resign",
+    "pos": "ichidan verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "会社を辞めました。",
+        "r": "かいしゃを やめました。",
+        "en": "I quit the company."
+      }
+    ]
+  },
+  {
+    "w": "問い合わせ",
+    "r": "といあわせ",
+    "m": "inquiry",
+    "pos": "noun",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "お問い合わせはこちらまで。",
+        "r": "おといあわせは こちらまで。",
+        "en": "For inquiries, please contact us here."
+      }
+    ]
+  },
+  {
+    "w": "通勤",
+    "r": "つうきん",
+    "m": "commuting to work",
+    "pos": "noun, suru-verb",
+    "theme": "work",
+    "ex": [
+      {
+        "jp": "電車で通勤しています。",
+        "r": "でんしゃで つうきんして います。",
+        "en": "I commute to work by train."
+      }
+    ]
+  },
+  {
+    "w": "急行",
+    "r": "きゅうこう",
+    "m": "express (train)",
+    "pos": "noun",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "急行に乗りました。",
+        "r": "きゅうこうに のりました。",
+        "en": "I took the express train."
+      }
+    ]
+  },
+  {
+    "w": "高速",
+    "r": "こうそく",
+    "m": "high-speed",
+    "pos": "noun",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "高速道路を使います。",
+        "r": "こうそく どうろを つかいます。",
+        "en": "I'll use the highway."
+      }
+    ]
+  },
+  {
+    "w": "交通費",
+    "r": "こうつうひ",
+    "m": "transportation expenses",
+    "pos": "noun",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "交通費は会社が払います。",
+        "r": "こうつうひは かいしゃが はらいます。",
+        "en": "The company pays for transportation."
+      }
+    ]
+  },
+  {
+    "w": "駅員",
+    "r": "えきいん",
+    "m": "station staff",
+    "pos": "noun",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "駅員に道を聞きました。",
+        "r": "えきいんに みちを ききました。",
+        "en": "I asked the station staff for directions."
+      }
+    ]
+  },
+  {
+    "w": "運転",
+    "r": "うんてん",
+    "m": "driving",
+    "pos": "noun, suru-verb",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "安全運転をお願いします。",
+        "r": "あんぜん うんてんを おねがいします。",
+        "en": "Please drive safely."
+      }
+    ]
+  },
+  {
+    "w": "乗り換える",
+    "r": "のりかえる",
+    "m": "to transfer (trains)",
+    "pos": "ichidan verb",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "次の駅で乗り換えます。",
+        "r": "つぎの えきで のりかえます。",
+        "en": "I'll transfer at the next station."
+      }
+    ]
+  },
+  {
+    "w": "降りる",
+    "r": "おりる",
+    "m": "to get off, descend",
+    "pos": "ichidan verb",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "次の駅で降ります。",
+        "r": "つぎの えきで おります。",
+        "en": "I'll get off at the next station."
+      }
+    ]
+  },
+  {
+    "w": "地下鉄",
+    "r": "ちかてつ",
+    "m": "subway",
+    "pos": "noun",
+    "theme": "travel",
+    "ex": [
+      {
+        "jp": "地下鉄で行きます。",
+        "r": "ちかてつで いきます。",
+        "en": "I'll go by subway."
+      }
+    ]
+  },
+  {
+    "w": "合う",
+    "r": "あう",
+    "m": "to match, fit",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "このシャツは私に合います。",
+        "r": "この しゃつは わたしに あいます。",
+        "en": "This shirt fits me."
+      }
+    ]
+  },
+  {
+    "w": "合わせる",
+    "r": "あわせる",
+    "m": "to match, combine",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "色を合わせます。",
+        "r": "いろを あわせます。",
+        "en": "I'll match the colors."
+      }
+    ]
+  },
+  {
+    "w": "集まる",
+    "r": "あつまる",
+    "m": "to gather (intransitive)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "皆さんが集まりました。",
+        "r": "みなさんが あつまりました。",
+        "en": "Everyone has gathered."
+      }
+    ]
+  },
+  {
+    "w": "歩く",
+    "r": "あるく",
+    "m": "to walk",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "駅まで歩きます。",
+        "r": "えきまで あるきます。",
+        "en": "I'll walk to the station."
+      }
+    ]
+  },
+  {
+    "w": "言う",
+    "r": "いう",
+    "m": "to say",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "はっきり言ってください。",
+        "r": "はっきり いって ください。",
+        "en": "Please say it clearly."
+      }
+    ]
+  },
+  {
+    "w": "行く",
+    "r": "いく",
+    "m": "to go",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "明日東京に行きます。",
+        "r": "あした とうきょうに いきます。",
+        "en": "I'll go to Tokyo tomorrow."
+      }
+    ]
+  },
+  {
+    "w": "動く",
+    "r": "うごく",
+    "m": "to move (intransitive)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "車が動きません。",
+        "r": "くるまが うごきません。",
+        "en": "The car won't move."
+      }
+    ]
+  },
+  {
+    "w": "動かす",
+    "r": "うごかす",
+    "m": "to move (something)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "テーブルを動かします。",
+        "r": "てーぶるを うごかします。",
+        "en": "I'll move the table."
+      }
+    ]
+  },
+  {
+    "w": "売る",
+    "r": "うる",
+    "m": "to sell",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "車を売りました。",
+        "r": "くるまを うりました。",
+        "en": "I sold the car."
+      }
+    ]
+  },
+  {
+    "w": "起きる",
+    "r": "おきる",
+    "m": "to wake up, get up",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "毎朝7時に起きます。",
+        "r": "まいあさ しちじに おきます。",
+        "en": "I wake up at 7 every morning."
+      }
+    ]
+  },
+  {
+    "w": "思う",
+    "r": "おもう",
+    "m": "to think, feel",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "そう思います。",
+        "r": "そう おもいます。",
+        "en": "I think so."
+      }
+    ]
+  },
+  {
+    "w": "帰る",
+    "r": "かえる",
+    "m": "to return home",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "家に帰ります。",
+        "r": "いえに かえります。",
+        "en": "I'm going home."
+      }
+    ]
+  },
+  {
+    "w": "聞く",
+    "r": "きく",
+    "m": "to listen, ask",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "音楽を聞きます。",
+        "r": "おんがくを ききます。",
+        "en": "I listen to music."
+      }
+    ]
+  },
+  {
+    "w": "切る",
+    "r": "きる",
+    "m": "to cut",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "ケーキを切ります。",
+        "r": "けーきを きります。",
+        "en": "I'll cut the cake."
+      }
+    ]
+  },
+  {
+    "w": "着る",
+    "r": "きる",
+    "m": "to wear (upper body)",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "コートを着ます。",
+        "r": "こーとを きます。",
+        "en": "I'll wear a coat."
+      }
+    ]
+  },
+  {
+    "w": "立つ",
+    "r": "たつ",
+    "m": "to stand",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "立ってください。",
+        "r": "たって ください。",
+        "en": "Please stand."
+      }
+    ]
+  },
+  {
+    "w": "建てる",
+    "r": "たてる",
+    "m": "to build",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "新しい家を建てます。",
+        "r": "あたらしい いえを たてます。",
+        "en": "I'll build a new house."
+      }
+    ]
+  },
+  {
+    "w": "楽しむ",
+    "r": "たのしむ",
+    "m": "to enjoy",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "音楽を楽しみます。",
+        "r": "おんがくを たのしみます。",
+        "en": "I enjoy music."
+      }
+    ]
+  },
+  {
+    "w": "頼む",
+    "r": "たのむ",
+    "m": "to ask, request",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "友達に手伝いを頼みました。",
+        "r": "ともだちに てつだいを たのみました。",
+        "en": "I asked my friend for help."
+      }
+    ]
+  },
+  {
+    "w": "通る",
+    "r": "とおる",
+    "m": "to pass through",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "バスがこの道を通ります。",
+        "r": "ばすが この みちを とおります。",
+        "en": "The bus passes through this road."
+      }
+    ]
+  },
+  {
+    "w": "飛ぶ",
+    "r": "とぶ",
+    "m": "to fly, jump",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "鳥が空を飛びます。",
+        "r": "とりが そらを とびます。",
+        "en": "The bird flies in the sky."
+      }
+    ]
+  },
+  {
+    "w": "止まる",
+    "r": "とまる",
+    "m": "to stop (intransitive)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "車が止まりました。",
+        "r": "くるまが とまりました。",
+        "en": "The car stopped."
+      }
+    ]
+  },
+  {
+    "w": "止める",
+    "r": "とめる",
+    "m": "to stop (transitive)",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "車を止めます。",
+        "r": "くるまを とめます。",
+        "en": "I'll stop the car."
+      }
+    ]
+  },
+  {
+    "w": "取る",
+    "r": "とる",
+    "m": "to take",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "塩を取ってください。",
+        "r": "しおを とって ください。",
+        "en": "Please pass the salt."
+      }
+    ]
+  },
+  {
+    "w": "撮る",
+    "r": "とる",
+    "m": "to take (a photo)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "写真を撮ります。",
+        "r": "しゃしんを とります。",
+        "en": "I'll take a photo."
+      }
+    ]
+  },
+  {
+    "w": "流れる",
+    "r": "ながれる",
+    "m": "to flow",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "川が流れています。",
+        "r": "かわが ながれて います。",
+        "en": "The river is flowing."
+      }
+    ]
+  },
+  {
+    "w": "投げる",
+    "r": "なげる",
+    "m": "to throw",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "ボールを投げます。",
+        "r": "ぼーるを なげます。",
+        "en": "I'll throw the ball."
+      }
+    ]
+  },
+  {
+    "w": "並ぶ",
+    "r": "ならぶ",
+    "m": "to line up",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "レジに並びます。",
+        "r": "れじに ならびます。",
+        "en": "I'll line up at the register."
+      }
+    ]
+  },
+  {
+    "w": "慣れる",
+    "r": "なれる",
+    "m": "to get used to",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "日本の生活に慣れました。",
+        "r": "にほんの せいかつに なれました。",
+        "en": "I've gotten used to life in Japan."
+      }
+    ]
+  },
+  {
+    "w": "逃げる",
+    "r": "にげる",
+    "m": "to escape, run away",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "猫が逃げました。",
+        "r": "ねこが にげました。",
+        "en": "The cat ran away."
+      }
+    ]
+  },
+  {
+    "w": "乗る",
+    "r": "のる",
+    "m": "to ride, get on",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "電車に乗ります。",
+        "r": "でんしゃに のります。",
+        "en": "I'll get on the train."
+      }
+    ]
+  },
+  {
+    "w": "運ぶ",
+    "r": "はこぶ",
+    "m": "to carry, transport",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "荷物を運びます。",
+        "r": "にもつを はこびます。",
+        "en": "I'll carry the luggage."
+      }
+    ]
+  },
+  {
+    "w": "始まる",
+    "r": "はじまる",
+    "m": "to begin (intransitive)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "映画が始まりました。",
+        "r": "えいがが はじまりました。",
+        "en": "The movie started."
+      }
+    ]
+  },
+  {
+    "w": "走る",
+    "r": "はしる",
+    "m": "to run",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "公園を走ります。",
+        "r": "こうえんを はしります。",
+        "en": "I run in the park."
+      }
+    ]
+  },
+  {
+    "w": "働く",
+    "r": "はたらく",
+    "m": "to work",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "銀行で働いています。",
+        "r": "ぎんこうで はたらいて います。",
+        "en": "I work at a bank."
+      }
+    ]
+  },
+  {
+    "w": "話す",
+    "r": "はなす",
+    "m": "to speak, talk",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "日本語を話します。",
+        "r": "にほんごを はなします。",
+        "en": "I speak Japanese."
+      }
+    ]
+  },
+  {
+    "w": "引く",
+    "r": "ひく",
+    "m": "to pull, look up (in dictionary)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "辞書を引きます。",
+        "r": "じしょを ひきます。",
+        "en": "I look up in the dictionary."
+      }
+    ]
+  },
+  {
+    "w": "開く",
+    "r": "あく",
+    "m": "to open (intransitive)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "ドアが開きました。",
+        "r": "どあが あきました。",
+        "en": "The door opened."
+      }
+    ]
+  },
+  {
+    "w": "開ける",
+    "r": "あける",
+    "m": "to open (transitive)",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "窓を開けます。",
+        "r": "まどを あけます。",
+        "en": "I'll open the window."
+      }
+    ]
+  },
+  {
+    "w": "閉まる",
+    "r": "しまる",
+    "m": "to close (intransitive)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "店は8時に閉まります。",
+        "r": "みせは はちじに しまります。",
+        "en": "The store closes at 8."
+      }
+    ]
+  },
+  {
+    "w": "閉める",
+    "r": "しめる",
+    "m": "to close (transitive)",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "窓を閉めてください。",
+        "r": "まどを しめて ください。",
+        "en": "Please close the window."
+      }
+    ]
+  },
+  {
+    "w": "見る",
+    "r": "みる",
+    "m": "to see, watch",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "映画を見ます。",
+        "r": "えいがを みます。",
+        "en": "I'll watch a movie."
+      }
+    ]
+  },
+  {
+    "w": "見せる",
+    "r": "みせる",
+    "m": "to show",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "写真を見せてください。",
+        "r": "しゃしんを みせて ください。",
+        "en": "Please show me the photo."
+      }
+    ]
+  },
+  {
+    "w": "申す",
+    "r": "もうす",
+    "m": "to say (humble)",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "田中と申します。",
+        "r": "たなかと もうします。",
+        "en": "My name is Tanaka."
+      }
+    ]
+  },
+  {
+    "w": "休む",
+    "r": "やすむ",
+    "m": "to rest, take time off",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "今日は会社を休みます。",
+        "r": "きょうは かいしゃを やすみます。",
+        "en": "I'll take off work today."
+      }
+    ]
+  },
+  {
+    "w": "呼ぶ",
+    "r": "よぶ",
+    "m": "to call",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "タクシーを呼びます。",
+        "r": "たくしーを よびます。",
+        "en": "I'll call a taxi."
+      }
+    ]
+  },
+  {
+    "w": "読む",
+    "r": "よむ",
+    "m": "to read",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "本を読みます。",
+        "r": "ほんを よみます。",
+        "en": "I'll read a book."
+      }
+    ]
+  },
+  {
+    "w": "分かる",
+    "r": "わかる",
+    "m": "to understand",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "よく分かりました。",
+        "r": "よく わかりました。",
+        "en": "I understand well."
+      }
+    ]
+  },
+  {
+    "w": "渡す",
+    "r": "わたす",
+    "m": "to hand over",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "プレゼントを渡しました。",
+        "r": "ぷれぜんとを わたしました。",
+        "en": "I handed over the gift."
+      }
+    ]
+  },
+  {
+    "w": "渡る",
+    "r": "わたる",
+    "m": "to cross",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "橋を渡ります。",
+        "r": "はしを わたります。",
+        "en": "I'll cross the bridge."
+      }
+    ]
+  },
+  {
+    "w": "出る",
+    "r": "でる",
+    "m": "to leave, exit",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "家を出ます。",
+        "r": "いえを でます。",
+        "en": "I'll leave the house."
+      }
+    ]
+  },
+  {
+    "w": "出かける",
+    "r": "でかける",
+    "m": "to go out",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "買い物に出かけます。",
+        "r": "かいものに でかけます。",
+        "en": "I'm going out shopping."
+      }
+    ]
+  },
+  {
+    "w": "探す",
+    "r": "さがす",
+    "m": "to search for, look for",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "鍵を探しています。",
+        "r": "かぎを さがして います。",
+        "en": "I'm looking for the keys."
+      }
+    ]
+  },
+  {
+    "w": "進む",
+    "r": "すすむ",
+    "m": "to advance, proceed",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "工事は進んでいます。",
+        "r": "こうじは すすんで います。",
+        "en": "Construction is progressing."
+      }
+    ]
+  },
+  {
+    "w": "勧める",
+    "r": "すすめる",
+    "m": "to recommend, advise",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "この本をお勧めします。",
+        "r": "この ほんを おすすめします。",
+        "en": "I recommend this book."
+      }
+    ]
+  },
+  {
+    "w": "捨てる",
+    "r": "すてる",
+    "m": "to throw away",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "ゴミを捨てます。",
+        "r": "ごみを すてます。",
+        "en": "I'll throw away the trash."
+      }
+    ]
+  },
+  {
+    "w": "住む",
+    "r": "すむ",
+    "m": "to live, reside",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "東京に住んでいます。",
+        "r": "とうきょうに すんで います。",
+        "en": "I live in Tokyo."
+      }
+    ]
+  },
+  {
+    "w": "育てる",
+    "r": "そだてる",
+    "m": "to raise, bring up",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "子供を育てています。",
+        "r": "こどもを そだてて います。",
+        "en": "I'm raising a child."
+      }
+    ]
+  },
+  {
+    "w": "足りる",
+    "r": "たりる",
+    "m": "to be enough",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "お金が足りません。",
+        "r": "おかねが たりません。",
+        "en": "I don't have enough money."
+      }
+    ]
+  },
+  {
+    "w": "使う",
+    "r": "つかう",
+    "m": "to use",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "パソコンを使います。",
+        "r": "ぱそこんを つかいます。",
+        "en": "I use a computer."
+      }
+    ]
+  },
+  {
+    "w": "作る",
+    "r": "つくる",
+    "m": "to make",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "夕食を作ります。",
+        "r": "ゆうしょくを つくります。",
+        "en": "I'll make dinner."
+      }
+    ]
+  },
+  {
+    "w": "届く",
+    "r": "とどく",
+    "m": "to reach, arrive",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "荷物が届きました。",
+        "r": "にもつが とどきました。",
+        "en": "The package arrived."
+      }
+    ]
+  },
+  {
+    "w": "届ける",
+    "r": "とどける",
+    "m": "to deliver",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "プレゼントを届けます。",
+        "r": "ぷれぜんとを とどけます。",
+        "en": "I'll deliver the present."
+      }
+    ]
+  },
+  {
+    "w": "治す",
+    "r": "なおす",
+    "m": "to cure, heal",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "病気を治します。",
+        "r": "びょうきを なおします。",
+        "en": "I'll cure the illness."
+      }
+    ]
+  },
+  {
+    "w": "直す",
+    "r": "なおす",
+    "m": "to fix, repair",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "自転車を直します。",
+        "r": "じてんしゃを なおします。",
+        "en": "I'll fix the bicycle."
+      }
+    ]
+  },
+  {
+    "w": "似る",
+    "r": "にる",
+    "m": "to resemble",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "彼は父親に似ています。",
+        "r": "かれは ちちおやに にて います。",
+        "en": "He resembles his father."
+      }
+    ]
+  },
+  {
+    "w": "残る",
+    "r": "のこる",
+    "m": "to remain, be left",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "少し時間が残っています。",
+        "r": "すこし じかんが のこって います。",
+        "en": "A little time remains."
+      }
+    ]
+  },
+  {
+    "w": "払う",
+    "r": "はらう",
+    "m": "to pay",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "現金で払います。",
+        "r": "げんきんで はらいます。",
+        "en": "I'll pay in cash."
+      }
+    ]
+  },
+  {
+    "w": "離れる",
+    "r": "はなれる",
+    "m": "to be separated, leave",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "故郷を離れました。",
+        "r": "こきょうを はなれました。",
+        "en": "I left my hometown."
+      }
+    ]
+  },
+  {
+    "w": "含む",
+    "r": "ふくむ",
+    "m": "to include, contain",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "税金を含みます。",
+        "r": "ぜいきんを ふくみます。",
+        "en": "Tax included."
+      }
+    ]
+  },
+  {
+    "w": "曲がる",
+    "r": "まがる",
+    "m": "to bend, turn",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "次の角を右に曲がります。",
+        "r": "つぎの かどを みぎに まがります。",
+        "en": "Turn right at the next corner."
+      }
+    ]
+  },
+  {
+    "w": "待つ",
+    "r": "まつ",
+    "m": "to wait",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "友達を待っています。",
+        "r": "ともだちを まって います。",
+        "en": "I'm waiting for my friend."
+      }
+    ]
+  },
+  {
+    "w": "持つ",
+    "r": "もつ",
+    "m": "to hold, have",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "傘を持っていきます。",
+        "r": "かさを もって いきます。",
+        "en": "I'll take an umbrella."
+      }
+    ]
+  },
+  {
+    "w": "戻る",
+    "r": "もどる",
+    "m": "to return, go back",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "家に戻ります。",
+        "r": "いえに もどります。",
+        "en": "I'll return home."
+      }
+    ]
+  },
+  {
+    "w": "願う",
+    "r": "ねがう",
+    "m": "to wish, hope",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "幸せを願います。",
+        "r": "しあわせを ねがいます。",
+        "en": "I wish for your happiness."
+      }
+    ]
+  },
+  {
+    "w": "許す",
+    "r": "ゆるす",
+    "m": "to forgive, allow",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "友達を許します。",
+        "r": "ともだちを ゆるします。",
+        "en": "I forgive my friend."
+      }
+    ]
+  },
+  {
+    "w": "任せる",
+    "r": "まかせる",
+    "m": "to entrust, leave to",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "あなたに任せます。",
+        "r": "あなたに まかせます。",
+        "en": "I leave it to you."
+      }
+    ]
+  },
+  {
+    "w": "勝つ",
+    "r": "かつ",
+    "m": "to win",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "試合に勝ちました。",
+        "r": "しあいに かちました。",
+        "en": "We won the match."
+      }
+    ]
+  },
+  {
+    "w": "負ける",
+    "r": "まける",
+    "m": "to lose (a game)",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "試合に負けました。",
+        "r": "しあいに まけました。",
+        "en": "We lost the match."
+      }
+    ]
+  },
+  {
+    "w": "急ぐ",
+    "r": "いそぐ",
+    "m": "to hurry",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "時間がないので急ぎます。",
+        "r": "じかんが ないので いそぎます。",
+        "en": "I'll hurry since there's no time."
+      }
+    ]
+  },
+  {
+    "w": "押す",
+    "r": "おす",
+    "m": "to push, press",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "このボタンを押してください。",
+        "r": "この ぼたんを おして ください。",
+        "en": "Please press this button."
+      }
+    ]
+  },
+  {
+    "w": "遅れる",
+    "r": "おくれる",
+    "m": "to be late, delayed",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "電車が遅れました。",
+        "r": "でんしゃが おくれました。",
+        "en": "The train was delayed."
+      }
+    ]
+  },
+  {
+    "w": "落ちる",
+    "r": "おちる",
+    "m": "to fall (down)",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "葉っぱが落ちました。",
+        "r": "はっぱが おちました。",
+        "en": "The leaves fell."
+      }
+    ]
+  },
+  {
+    "w": "借りる",
+    "r": "かりる",
+    "m": "to borrow",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "友達から本を借りました。",
+        "r": "ともだちから ほんを かりました。",
+        "en": "I borrowed a book from a friend."
+      }
+    ]
+  },
+  {
+    "w": "考える",
+    "r": "かんがえる",
+    "m": "to think",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "よく考えてください。",
+        "r": "よく かんがえて ください。",
+        "en": "Please think carefully."
+      }
+    ]
+  },
+  {
+    "w": "汚れる",
+    "r": "よごれる",
+    "m": "to get dirty",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "服が汚れました。",
+        "r": "ふくが よごれました。",
+        "en": "My clothes got dirty."
+      }
+    ]
+  },
+  {
+    "w": "歌う",
+    "r": "うたう",
+    "m": "to sing",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "カラオケで歌います。",
+        "r": "からおけで うたいます。",
+        "en": "I sing at karaoke."
+      }
+    ]
+  },
+  {
+    "w": "踊る",
+    "r": "おどる",
+    "m": "to dance",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "音楽に合わせて踊ります。",
+        "r": "おんがくに あわせて おどります。",
+        "en": "I dance to the music."
+      }
+    ]
+  },
+  {
+    "w": "分ける",
+    "r": "わける",
+    "m": "to divide, separate",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "ケーキを分けます。",
+        "r": "けーきを わけます。",
+        "en": "I'll divide the cake."
+      }
+    ]
+  },
+  {
+    "w": "別れる",
+    "r": "わかれる",
+    "m": "to part, break up",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "友達と別れました。",
+        "r": "ともだちと わかれました。",
+        "en": "I parted with my friend."
+      }
+    ]
+  },
+  {
+    "w": "教える",
+    "r": "おしえる",
+    "m": "to teach, tell",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "日本語を教えています。",
+        "r": "にほんごを おしえて います。",
+        "en": "I teach Japanese."
+      }
+    ]
+  },
+  {
+    "w": "謝る",
+    "r": "あやまる",
+    "m": "to apologize",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "友達に謝りました。",
+        "r": "ともだちに あやまりました。",
+        "en": "I apologized to my friend."
+      }
+    ]
+  },
+  {
+    "w": "叱る",
+    "r": "しかる",
+    "m": "to scold",
+    "pos": "godan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "母に叱られました。",
+        "r": "ははに しかられました。",
+        "en": "I was scolded by my mother."
+      }
+    ]
+  },
+  {
+    "w": "認める",
+    "r": "みとめる",
+    "m": "to recognize, admit",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "間違いを認めます。",
+        "r": "まちがいを みとめます。",
+        "en": "I admit the mistake."
+      }
+    ]
+  },
+  {
+    "w": "避ける",
+    "r": "さける",
+    "m": "to avoid",
+    "pos": "ichidan verb",
+    "theme": "verbs",
+    "ex": [
+      {
+        "jp": "危険を避けてください。",
+        "r": "きけんを さけて ください。",
+        "en": "Please avoid danger."
       }
     ]
   }
