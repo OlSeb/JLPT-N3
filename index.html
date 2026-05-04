@@ -1,0 +1,2738 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JLPT N3 — 日本語学習</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #b91c1c;
+    --primary-light: #fee2e2;
+    --primary-dark: #7f1d1d;
+    --accent: #d97706;
+    --accent-light: #fef3c7;
+    --bg: #fafaf7;
+    --card-bg: #ffffff;
+    --text: #1c1917;
+    --muted: #78716c;
+    --border: #e7e5e4;
+    --success: #15803d;
+    --warning: #b45309;
+    --danger: #b91c1c;
+    --info: #1e40af;
+    --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.03);
+    --jp-serif: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    --jp-sans: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', sans-serif;
+    --en-sans: 'Inter', -apple-system, sans-serif;
+  }
+  [data-theme="dark"] {
+    --primary: #ef4444;
+    --primary-light: #450a0a;
+    --primary-dark: #fca5a5;
+    --accent: #f59e0b;
+    --accent-light: #422006;
+    --bg: #1c1917;
+    --card-bg: #292524;
+    --text: #f5f5f4;
+    --muted: #a8a29e;
+    --border: #44403c;
+    --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.4);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: var(--en-sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background 0.2s, color 0.2s;
+  }
+  .jp { font-family: var(--jp-sans); }
+  .jp-serif { font-family: var(--jp-serif); }
+
+  header {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+  }
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .logo {
+    font-family: var(--jp-serif);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--primary);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  .logo .kanji { font-size: 26px; margin-right: 4px; }
+  nav {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  nav button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  nav button:hover { background: var(--primary-light); }
+  nav button.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+  .theme-toggle {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  h1 {
+    font-family: var(--jp-serif);
+    font-size: 32px;
+    margin: 0 0 8px;
+    color: var(--text);
+    font-weight: 700;
+  }
+  h2 {
+    font-family: var(--jp-serif);
+    font-size: 22px;
+    margin: 24px 0 12px;
+    color: var(--text);
+  }
+  h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+  .card-accent {
+    border-left: 4px solid var(--primary);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  .module-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: var(--shadow);
+  }
+  .module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+  }
+  .module-card .icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .module-card h3 {
+    margin: 8px 0;
+    color: var(--text);
+  }
+  .module-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .stat {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+  }
+  .stat-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: var(--jp-serif);
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    transition: all 0.15s;
+    margin-right: 6px;
+  }
+  .btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
+  .btn.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .btn.secondary:hover { background: var(--bg); border-color: var(--primary); }
+  .btn.success { background: var(--success); }
+  .btn.success:hover { background: #166534; }
+  .btn.warning { background: var(--accent); }
+  .btn.small { padding: 6px 12px; font-size: 12px; }
+  .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+  .progress-bar {
+    background: var(--border);
+    border-radius: 999px;
+    height: 8px;
+    overflow: hidden;
+    margin: 8px 0;
+  }
+  .progress-fill {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    height: 100%;
+    transition: width 0.4s;
+  }
+
+  .skill-tag {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .question-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .question-num {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .question-text {
+    font-size: 17px;
+    margin: 8px 0 12px;
+    line-height: 1.7;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: var(--card-bg);
+    font-size: 15px;
+  }
+  .option:hover { background: var(--primary-light); border-color: var(--primary); }
+  .option.selected { background: var(--primary-light); border-color: var(--primary); font-weight: 500; }
+  .option.correct { background: #d1fae5; border-color: var(--success); color: #065f46; }
+  .option.wrong { background: #fee2e2; border-color: var(--danger); color: #991b1b; }
+  [data-theme="dark"] .option.correct { background: #064e3b; color: #6ee7b7; }
+  [data-theme="dark"] .option.wrong { background: #450a0a; color: #fca5a5; }
+
+  .lesson-content {
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  .lesson-content p { margin: 0 0 12px; }
+  .lesson-content ul, .lesson-content ol {
+    margin: 0 0 12px 0;
+    padding-left: 24px;
+  }
+  .lesson-content li { margin-bottom: 4px; }
+  .lesson-content code {
+    background: var(--bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: var(--jp-sans);
+    font-size: 0.95em;
+  }
+  .example-box {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 10px 0;
+  }
+  [data-theme="dark"] .example-box { background: rgba(245, 158, 11, 0.1); }
+  .example-jp {
+    font-family: var(--jp-serif);
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .example-en {
+    font-size: 14px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* Kanji hover tooltip */
+  .kj {
+    position: relative;
+    display: inline;
+    cursor: help;
+    border-bottom: 1px dotted rgba(185, 28, 28, 0.25);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .kj:hover { color: var(--primary); border-bottom-color: var(--primary); }
+  .kj .tip {
+    visibility: hidden;
+    opacity: 0;
+    background: var(--text);
+    color: var(--card-bg);
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 10px;
+    position: absolute;
+    z-index: 999;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.15s;
+    font-size: 13px;
+    font-family: var(--en-sans);
+    white-space: normal;
+    width: max-content;
+    max-width: 260px;
+    pointer-events: none;
+    box-shadow: var(--shadow-md);
+    line-height: 1.4;
+  }
+  .kj .tip .reading {
+    display: block;
+    font-family: var(--jp-sans);
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+  }
+  .kj .tip .meaning {
+    display: block;
+    font-size: 12px;
+    opacity: 0.9;
+  }
+  .kj:hover .tip { visibility: visible; opacity: 1; }
+  .kj .tip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--text) transparent transparent transparent;
+  }
+
+  /* Furigana */
+  ruby { ruby-position: over; }
+  rt { font-size: 0.55em; color: var(--muted); font-family: var(--jp-sans); }
+
+  /* Dictionary */
+  .search-box {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+  .search-box:focus { outline: 2px solid var(--primary); outline-offset: -1px; border-color: var(--primary); }
+
+  .dict-entry {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+  }
+  .dict-headword {
+    font-family: var(--jp-serif);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .dict-reading {
+    color: var(--accent);
+    font-family: var(--jp-sans);
+    margin-left: 8px;
+    font-size: 15px;
+  }
+  .dict-pos {
+    color: var(--muted);
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 6px;
+  }
+  .dict-meaning {
+    color: var(--text);
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .dict-example {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dashed var(--border);
+    font-size: 13px;
+  }
+  .dict-example .ex-jp {
+    font-family: var(--jp-serif);
+    color: var(--text);
+  }
+  .dict-example .ex-en {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* Filter chips */
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .chip {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--card-bg);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+  .chip:hover { background: var(--primary-light); }
+  .chip.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+  /* Flashcard */
+  .flashcard {
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 40px 24px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+    margin-bottom: 16px;
+  }
+  .flashcard:hover { border-color: var(--primary); }
+  .flashcard .front {
+    font-family: var(--jp-serif);
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .flashcard .back {
+    font-size: 18px;
+    color: var(--muted);
+  }
+
+  /* Mode toggle for kanji display */
+  .display-mode {
+    display: inline-flex;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .display-mode button {
+    background: var(--card-bg);
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text);
+    font-family: inherit;
+  }
+  .display-mode button.active {
+    background: var(--primary);
+    color: white;
+  }
+
+  .alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 3px solid;
+  }
+  .alert-info { background: var(--primary-light); border-color: var(--primary); }
+  .alert-success { background: #d1fae5; border-color: var(--success); color: #065f46; }
+  .alert-warning { background: var(--accent-light); border-color: var(--accent); color: var(--warning); }
+  [data-theme="dark"] .alert-success { background: #064e3b; color: #6ee7b7; }
+
+  .text-muted { color: var(--muted); }
+  .text-center { text-align: center; }
+  .mt-2 { margin-top: 8px; }
+  .mt-3 { margin-top: 16px; }
+  .mt-4 { margin-top: 24px; }
+  .mb-2 { margin-bottom: 8px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  th { background: var(--bg); font-weight: 600; }
+
+  /* ==== Added styles for modules, dictionaries, quizzes, exams ==== */
+  .module-grid, .theme-grid, .deck-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .theme-card, .deck-card {
+    cursor: pointer;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .theme-card:hover, .deck-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+  }
+  .lesson-list { display: grid; gap: 12px; margin-top: 16px; }
+  .lesson-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .lesson-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+  .lesson-num {
+    display: inline-block;
+    width: 28px; height: 28px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  /* Kanji entry */
+  .kanji-entry { display: flex; gap: 20px; align-items: flex-start; }
+  .kanji-display {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary);
+    flex-shrink: 0;
+    min-width: 90px;
+    text-align: center;
+  }
+  .kanji-info { flex: 1; }
+  .kanji-info p { margin: 4px 0; }
+  .reading-on { font-family: 'Noto Sans JP', sans-serif; color: var(--primary); font-weight: 500; }
+  .reading-kun { font-family: 'Noto Sans JP', sans-serif; color: var(--accent); font-weight: 500; }
+  .kanji-example {
+    display: inline-block;
+    background: var(--bg);
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 4px 4px 0 0;
+    font-size: 14px;
+  }
+  .big-kanji {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 88px;
+    font-weight: 600;
+    color: var(--primary);
+    display: block;
+    text-align: center;
+    margin: 12px 0;
+  }
+  /* Vocab entry */
+  .vocab-entry { padding: 14px 18px; }
+  .vocab-header { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; margin-bottom: 6px; }
+  .vocab-word {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  .vocab-reading { font-family: 'Noto Sans JP', sans-serif; color: var(--muted); font-size: 16px; }
+  .vocab-pos {
+    background: var(--accent-light, #fef3c7);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .vocab-meaning { font-size: 15px; margin-bottom: 8px; }
+  .vocab-example, .dict-example {
+    background: var(--bg);
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent);
+    margin-top: 8px;
+  }
+  .ex-jp { font-family: 'Noto Sans JP', sans-serif; margin: 0 0 4px 0; }
+  .ex-reading { color: var(--muted); font-size: 13px; margin: 0 0 4px 0; }
+  .ex-en { font-style: italic; margin: 0; }
+  /* Dict */
+  .dict-list { display: grid; gap: 10px; margin-top: 16px; }
+  .dict-entry {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    transition: border-color 0.15s;
+  }
+  .dict-entry:hover { border-color: var(--primary-light, #fee2e2); }
+  .dict-headword-row { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; margin-bottom: 6px; }
+  .dict-pos {
+    background: var(--accent-light, #fef3c7);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .dict-usage { font-size: 13px; color: var(--muted); margin: 4px 0; }
+  /* Filter chips */
+  .filter-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+  .chip {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+  .chip-active { background: var(--primary); color: white; border-color: var(--primary); }
+  .search-card { margin-bottom: 16px; }
+  /* Quiz options */
+  .options { display: grid; gap: 10px; margin-top: 12px; }
+  .option-btn {
+    text-align: left;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    color: var(--text);
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .option-btn:hover { border-color: var(--primary); background: var(--card-bg); }
+  .option-btn.selected { border-color: var(--primary); background: var(--primary-light, #fee2e2); }
+  .opt-letter {
+    width: 26px; height: 26px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+  .quiz-jp { font-family: 'Noto Serif JP', serif; font-size: 22px; }
+  .quiz-nav { display: flex; gap: 10px; justify-content: space-between; margin-top: 16px; }
+  /* Review */
+  .review-item {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--border);
+  }
+  .review-item.correct { border-left-color: var(--success, #10b981); background: rgba(16, 185, 129, 0.05); }
+  .review-item.wrong { border-left-color: var(--danger, #ef4444); background: rgba(239, 68, 68, 0.05); }
+  /* Exam grid */
+  .q-grid { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .q-num {
+    width: 32px; height: 32px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .q-num.answered { background: var(--accent-light, #fef3c7); border-color: var(--accent); }
+  .q-num.current { background: var(--primary); color: white; border-color: var(--primary); }
+  .exam-context {
+    background: var(--bg);
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 3px solid var(--accent);
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  /* Reading */
+  .reading-passage {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    line-height: 2;
+    padding: 16px;
+    background: var(--bg);
+    border-radius: 8px;
+  }
+  .reading-translation {
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--muted);
+    padding: 14px;
+  }
+  /* Listening */
+  .audio-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .transcript {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 2;
+    padding: 14px;
+    background: var(--bg);
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .transcript-en { font-style: italic; color: var(--muted); padding: 10px; }
+  /* Flashcards */
+  .flashcard {
+    perspective: 1000px;
+    height: 280px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+  .flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: var(--card-bg);
+    border: 2px solid var(--primary);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 32px;
+  }
+  .flashcard-back {
+    transform: rotateY(180deg);
+    background: var(--primary-light, #fef2f2);
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+  }
+  .flashcard-actions { display: flex; gap: 10px; justify-content: center; margin-top: 16px; }
+  .flash-direction-toggle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .flash-direction-toggle .btn { font-size: 13px; padding: 6px 12px; }
+  .card-jp {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.2;
+  }
+  .card-en, .card-en-front {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 8px 0;
+  }
+  .card-en-front {
+    font-size: 26px;
+    color: var(--text);
+  }
+  .card-reading {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 22px;
+    color: var(--accent);
+    margin: 6px 0;
+    font-weight: 500;
+  }
+  .card-pos {
+    font-size: 13px;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 6px;
+  }
+  /* Lesson */
+  .lesson-explanation { line-height: 1.8; font-size: 15px; }
+  .lesson-explanation code, .lesson-explanation strong { color: var(--primary); }
+  .example-block {
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    background: var(--bg);
+    border-radius: 0 8px 8px 0;
+  }
+  /* Progress history */
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .history-item:last-child { border-bottom: none; }
+  /* Display modes */
+  body[data-display="kanji"] ruby rt { display: none; }
+  body[data-display="kana"] ruby { ruby-position: over; }
+  body[data-display="kana"] ruby > :first-child { font-size: 0; }
+  body[data-display="kana"] ruby rt { font-size: 1em; }
+
+  /* Loading spinner */
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    margin: 24px auto 0;
+    border: 4px solid var(--border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 24px; }
+    main { padding: 16px; }
+    .header-inner { gap: 8px; padding: 10px 16px; }
+    nav button { padding: 6px 10px; font-size: 13px; }
+    .flashcard .front { font-size: 32px; }
+    .dict-headword { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><span class="kanji">日</span>JLPT N3</div>
+    <nav id="nav"></nav>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Theme">🌓</button>
+  </div>
+</header>
+
+<main id="main"></main>
+
+<script>
+/* ============================================================
+   JLPT N3 PREP APP — Single-file HTML
+   Japanese / English bilingual
+   Persists progress in localStorage
+   ============================================================ */
+
+// ============================================================
+//                         STATE
+// ============================================================
+const STORAGE_KEY = "jlpt_n3_app_v1";
+let state = loadState();
+
+function defaultState() {
+  return {
+    diagnostic: null,
+    moduleProgress: {},
+    examScores: {},
+    diagnosticHistory: [],
+    completedItems: {},
+    customCards: [],
+    cardStats: {},
+    theme: "light",
+    displayMode: "furigana", // furigana | kanji | kana
+  };
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return defaultState();
+    return { ...defaultState(), ...JSON.parse(raw) };
+  } catch { return defaultState(); }
+}
+
+function saveState() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+  catch (e) { console.warn("Storage unavailable", e); }
+}
+
+function toggleTheme() {
+  state.theme = state.theme === "light" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", state.theme);
+  saveState();
+}
+document.documentElement.setAttribute("data-theme", state.theme);
+
+// ============================================================
+//                       ROUTING
+// ============================================================
+const PAGES = [
+  { id: "home",       label: "🏠 ホーム" },
+  { id: "diagnostic", label: "📋 診断" },
+  { id: "modules",    label: "📚 学習" },
+  { id: "exams",      label: "📝 試験" },
+  { id: "vocab",      label: "📖 単語" },
+  { id: "expressions",label: "📘 表現" },
+  { id: "flashcards", label: "🎴 カード" },
+  { id: "progress",   label: "📊 進度" },
+];
+
+let currentPage = "home";
+let pageContext = {};
+
+function buildNav() {
+  const nav = document.getElementById("nav");
+  nav.innerHTML = PAGES.map(p =>
+    `<button data-page="${p.id}" class="${p.id === currentPage ? 'active' : ''}" onclick="navigate('${p.id}')">${p.label}</button>`
+  ).join("");
+}
+
+function navigate(pageId) {
+  currentPage = pageId;
+  pageContext = {};
+  buildNav();
+  render();
+  window.scrollTo(0, 0);
+}
+
+// Helper: render Japanese text with hover tooltips for kanji
+function jp(text, mode) {
+  // text is an array of segments: [{k:"kanji", r:"reading", m:"meaning"}, "plain text", ...]
+  // or a plain string (no kanji info)
+  if (typeof text === "string") return text;
+  mode = mode || state.displayMode;
+  return text.map(seg => {
+    if (typeof seg === "string") return seg;
+    if (mode === "kana") return seg.r;
+    if (mode === "kanji") {
+      return `<span class="kj">${seg.k}<span class="tip"><span class="reading">${seg.r}</span><span class="meaning">${seg.m || ""}</span></span></span>`;
+    }
+    // furigana mode
+    return `<ruby>${seg.k}<rt>${seg.r}</rt></ruby><span class="kj" style="border-bottom:none;"><span style="display:none;">${seg.k}</span><span class="tip"><span class="reading">${seg.r}</span><span class="meaning">${seg.m || ""}</span></span></span>`.replace('<span class="kj"', '<span class="kj-trigger" data-meaning="' + (seg.m || '').replace(/"/g, '&quot;') + '"');
+  }).join("");
+}
+
+// Simpler kanji renderer for inline use - just kanji with hover for reading + meaning
+function k(kanji, reading, meaning) {
+  return `<span class="kj">${kanji}<span class="tip"><span class="reading">${reading}</span><span class="meaning">${meaning}</span></span></span>`;
+}
+
+// Render Japanese sentence with furigana
+function withFurigana(parts) {
+  // parts: array of [kanji, reading, meaning] tuples or plain strings
+  return parts.map(p => {
+    if (typeof p === "string") return p;
+    const [kanji, reading, meaning] = p;
+    return `<ruby>${kanji}<rt>${reading}</rt></ruby>`;
+  }).join("");
+}
+
+// ============================================================
+//                   DATA (loaded from JSON files)
+// ============================================================
+// All data arrays are loaded asynchronously from /data/*.json
+// at startup. They start empty and get populated by loadAllData().
+
+let VOCAB = [];
+let KANJI = [];
+let EXPRESSIONS = [];
+let GRAMMAR_LESSONS = [];
+let READING_TEXTS = [];
+let LISTENING_TEXTS = [];
+let DIAGNOSTIC = [];
+let MOCK_EXAMS = [];
+
+async function loadAllData() {
+  const base = "data/";
+  const files = [
+    ["vocab.json",       arr => VOCAB = arr],
+    ["kanji.json",       arr => KANJI = arr],
+    ["expressions.json", arr => EXPRESSIONS = arr],
+    ["grammar.json",     arr => GRAMMAR_LESSONS = arr],
+    ["readings.json",    arr => READING_TEXTS = arr],
+    ["listening.json",   arr => LISTENING_TEXTS = arr],
+    ["diagnostic.json",  arr => DIAGNOSTIC = arr],
+    ["exams.json",       arr => MOCK_EXAMS = arr]
+  ];
+  // Fetch in parallel
+  const results = await Promise.all(files.map(([f]) => 
+    fetch(base + f).then(r => {
+      if (!r.ok) throw new Error("Failed to load " + f + " (" + r.status + ")");
+      return r.json();
+    })
+  ));
+  results.forEach((data, i) => files[i][1](data));
+  // Reset hover lookup since data is now populated
+  HOVER_LOOKUP = null;
+}
+
+
+// ============================================================
+//                   RENDER DISPATCH
+// ============================================================
+function render() {
+  const main = document.getElementById("main");
+  try {
+    // buildNav refresh
+    buildNav();
+    document.body.setAttribute('data-display', state.displayMode || 'furigana');
+
+    // Handle dynamic page IDs
+    const page = currentPage;
+
+    // Static pages that RETURN html strings:
+    if (page === "home") { main.innerHTML = renderHome(); }
+    else if (page === "diagnostic") { main.innerHTML = renderDiagnostic(); }
+    // Dynamic / self-rendering pages (write to main directly):
+    else if (page === "modules") { renderModules(); }
+    else if (page === "module-kanji") { renderKanjiModule(); }
+    else if (page === "module-vocab") { renderVocabModule(); }
+    else if (page === "module-grammar") { renderGrammarModule(); }
+    else if (page === "module-reading") { renderReadingModule(); }
+    else if (page === "module-listening") { renderListeningModule(); }
+    else if (page.startsWith("kanji-theme-")) { renderKanjiTheme(page.replace("kanji-theme-", "")); }
+    else if (page.startsWith("vocab-theme-")) { renderVocabTheme(page.replace("vocab-theme-", "")); }
+    else if (page.startsWith("grammar-")) { renderGrammarLesson(page.replace("grammar-", "")); }
+    else if (page.startsWith("reading-")) { renderReadingLesson(page.replace("reading-", "")); }
+    else if (page.startsWith("listening-")) { renderListeningLesson(page.replace("listening-", "")); }
+    else if (page === "exams") { renderExams(); }
+    else if (page === "vocab") { renderVocabDict(); }
+    else if (page === "expressions") { renderExpressionsDict(); }
+    else if (page === "flashcards") { renderFlashcards(); }
+    else if (page === "progress") { renderProgress(); }
+    else { main.innerHTML = renderHome(); }
+
+    if (typeof window.__afterRender === "function") {
+      window.__afterRender();
+      window.__afterRender = null;
+    }
+
+    // Auto-wrap Japanese words with hover tooltips
+    applyAutoHover(main);
+
+    // Scroll to top on page change
+    window.scrollTo(0, 0);
+  } catch (err) {
+    console.error("Render error", err);
+    main.innerHTML = '<div class="card" style="border-left:4px solid var(--danger);"><h2>Render error</h2><pre style="white-space:pre-wrap;">' + (err.stack || err.message) + '</pre></div>';
+  }
+}
+
+// ============================================================
+//                AUTO-HOVER LOOKUP SYSTEM
+// ============================================================
+// Build master lookup: word -> {reading, meaning}
+let HOVER_LOOKUP = null;
+let HOVER_KEYS_SORTED = null; // sorted by length desc for greedy matching
+let HOVER_KEYS_BY_FIRST = null; // first-char -> keys[] (already length-sorted)
+
+function buildHoverLookup() {
+  if (HOVER_LOOKUP) return;
+  HOVER_LOOKUP = {};
+
+  // Extra UI/structural words that appear throughout the app but aren't core vocab
+  const EXTRA = [
+    { w: "文法", r: "ぶんぽう", m: "grammar" },
+    { w: "読解", r: "どっかい", m: "reading comprehension" },
+    { w: "聴解", r: "ちょうかい", m: "listening comprehension" },
+    { w: "語彙", r: "ごい", m: "vocabulary" },
+    { w: "言語", r: "げんご", m: "language" },
+    { w: "知識", r: "ちしき", m: "knowledge" },
+    { w: "文字", r: "もじ", m: "characters, letters" },
+    { w: "漢字", r: "かんじ", m: "kanji, Chinese characters" },
+    { w: "日本", r: "にほん", m: "Japan" },
+    { w: "日本語", r: "にほんご", m: "Japanese (language)" },
+    { w: "日本人", r: "にほんじん", m: "Japanese person" },
+    { w: "能力", r: "のうりょく", m: "ability, capability" },
+    { w: "試験", r: "しけん", m: "exam, test" },
+    { w: "模擬", r: "もぎ", m: "mock, simulation" },
+    { w: "問題", r: "もんだい", m: "problem, question" },
+    { w: "正解", r: "せいかい", m: "correct answer" },
+    { w: "解答", r: "かいとう", m: "answer, solution" },
+    { w: "結果", r: "けっか", m: "result" },
+    { w: "成績", r: "せいせき", m: "grade, score" },
+    { w: "得点", r: "とくてん", m: "score, points" },
+    { w: "合格", r: "ごうかく", m: "pass (an exam)" },
+    { w: "不合格", r: "ふごうかく", m: "fail (an exam)" },
+    { w: "復習", r: "ふくしゅう", m: "review, revision" },
+    { w: "予習", r: "よしゅう", m: "preparatory study" },
+    { w: "勉強", r: "べんきょう", m: "study" },
+    { w: "学習", r: "がくしゅう", m: "learning" },
+    { w: "練習", r: "れんしゅう", m: "practice" },
+    { w: "先生", r: "せんせい", m: "teacher" },
+    { w: "学生", r: "がくせい", m: "student" },
+    { w: "学校", r: "がっこう", m: "school" },
+    { w: "大学", r: "だいがく", m: "university" },
+    { w: "授業", r: "じゅぎょう", m: "class, lesson" },
+    { w: "宿題", r: "しゅくだい", m: "homework" },
+    { w: "教える", r: "おしえる", m: "to teach" },
+    { w: "始める", r: "はじめる", m: "to begin" },
+    { w: "終わる", r: "おわる", m: "to end, finish" },
+    { w: "今日", r: "きょう", m: "today" },
+    { w: "明日", r: "あした", m: "tomorrow" },
+    { w: "昨日", r: "きのう", m: "yesterday" },
+    { w: "今", r: "いま", m: "now" },
+    { w: "時間", r: "じかん", m: "time, hour" },
+    { w: "分", r: "ふん", m: "minute" },
+    { w: "週末", r: "しゅうまつ", m: "weekend" },
+    { w: "週", r: "しゅう", m: "week" },
+    { w: "月", r: "つき", m: "month, moon" },
+    { w: "年", r: "とし", m: "year" },
+    { w: "ようこそ", r: "ようこそ", m: "welcome" },
+    { w: "始", r: "はじ", m: "begin" },
+    { w: "始めよう", r: "はじめよう", m: "let's start" },
+    { w: "場所", r: "ばしょ", m: "place" },
+    { w: "場合", r: "ばあい", m: "case, situation" },
+    { w: "彼", r: "かれ", m: "he, boyfriend" },
+    { w: "彼女", r: "かのじょ", m: "she, girlfriend" },
+    { w: "私", r: "わたし", m: "I, me" },
+    { w: "友達", r: "ともだち", m: "friend" },
+    { w: "家族", r: "かぞく", m: "family" },
+    { w: "会社", r: "かいしゃ", m: "company" },
+    { w: "仕事", r: "しごと", m: "work, job" },
+    { w: "人", r: "ひと", m: "person" }
+  ];
+  for (const e of EXTRA) {
+    HOVER_LOOKUP[e.w] = { r: e.r, m: e.m };
+  }
+
+  // From VOCAB
+  for (const v of VOCAB) {
+    if (v.w && !HOVER_LOOKUP[v.w]) HOVER_LOOKUP[v.w] = { r: v.r, m: v.m };
+  }
+  // From EXPRESSIONS — careful, some have "やはり / やっぱり" with slash; split
+  for (const e of EXPRESSIONS) {
+    if (!e.w) continue;
+    const variants = e.w.split(/\s*\/\s*/);
+    for (const v of variants) {
+      if (v && !HOVER_LOOKUP[v]) HOVER_LOOKUP[v] = { r: e.r ? e.r.split(/\s*\/\s*/)[0] : v, m: e.m };
+    }
+  }
+  // From KANJI compound examples (2-3 char words)
+  for (const k of KANJI) {
+    if (k.ex) {
+      for (const ex of k.ex) {
+        if (ex.w && !HOVER_LOOKUP[ex.w]) HOVER_LOOKUP[ex.w] = { r: ex.r, m: ex.m };
+      }
+    }
+  }
+  // From KANJI single chars (lowest priority)
+  for (const k of KANJI) {
+    if (k.k && !HOVER_LOOKUP[k.k]) {
+      const reading = k.kun ? k.kun.replace(/[（）()]/g, '') : (k.on || '');
+      HOVER_LOOKUP[k.k] = { r: reading, m: k.m };
+    }
+  }
+
+  // Sort keys by length desc, and index by first character for speed
+  const allKeys = Object.keys(HOVER_LOOKUP).sort((a, b) => b.length - a.length);
+  HOVER_KEYS_SORTED = allKeys;
+  HOVER_KEYS_BY_FIRST = {};
+  for (const k of allKeys) {
+    const f = k[0];
+    if (!HOVER_KEYS_BY_FIRST[f]) HOVER_KEYS_BY_FIRST[f] = [];
+    HOVER_KEYS_BY_FIRST[f].push(k);
+  }
+}
+
+// Regex test for Japanese chars (kanji + kana)
+const JP_CHAR_RE = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]/;
+// Tags whose contents we should NOT walk into
+const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'INPUT', 'TEXTAREA', 'BUTTON', 'RUBY', 'RT', 'RP']);
+// Class names that opt out of auto-hover (already have reading shown, or are interactive)
+const SKIP_CLASSES = ['kj', 'tip', 'no-hover', 'option-btn', 'opt-letter', 'q-num', 'chip', 'flashcard-front', 'flashcard-back', 'flashcard', 'big-kanji', 'kanji-display', 'dict-headword', 'dict-reading', 'vocab-word', 'vocab-reading', 'kanji-example', 'reading-on', 'reading-kun', 'ex-reading', 'lesson-num', 'card-jp', 'card-en', 'card-en-front', 'card-reading'];
+
+function applyAutoHover(root) {
+  if (!root) return;
+  buildHoverLookup();
+  if (!HOVER_KEYS_SORTED || HOVER_KEYS_SORTED.length === 0) return;
+
+  // Walk text nodes
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      // Skip if parent is in SKIP_TAGS or has a skip class
+      let p = node.parentElement;
+      while (p && p !== root) {
+        if (SKIP_TAGS.has(p.tagName)) return NodeFilter.FILTER_REJECT;
+        if (p.classList) {
+          for (const cls of SKIP_CLASSES) {
+            if (p.classList.contains(cls)) return NodeFilter.FILTER_REJECT;
+          }
+        }
+        p = p.parentElement;
+      }
+      // Only accept nodes containing Japanese chars
+      return JP_CHAR_RE.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }
+  });
+
+  const nodes = [];
+  let n;
+  while (n = walker.nextNode()) nodes.push(n);
+
+  for (const node of nodes) {
+    processTextNode(node);
+  }
+}
+
+function processTextNode(textNode) {
+  const text = textNode.nodeValue;
+  if (!text) return;
+
+  let out = '';
+  let i = 0;
+  let matched = false;
+  while (i < text.length) {
+    let found = null;
+    if (JP_CHAR_RE.test(text[i])) {
+      const candidates = HOVER_KEYS_BY_FIRST[text[i]];
+      if (candidates) {
+        for (const key of candidates) {
+          if (key.length > text.length - i) continue;
+          if (text.substr(i, key.length) === key) {
+            found = key;
+            break;
+          }
+        }
+      }
+    }
+    if (found) {
+      const info = HOVER_LOOKUP[found];
+      out += `<span class="kj">${escapeHtml(found)}<span class="tip"><span class="reading">${escapeHtml(info.r || '')}</span><span class="meaning">${escapeHtml(info.m || '')}</span></span></span>`;
+      i += found.length;
+      matched = true;
+    } else {
+      out += escapeHtml(text[i]);
+      i++;
+    }
+  }
+
+  if (matched) {
+    const span = document.createElement('span');
+    span.innerHTML = out;
+    const parent = textNode.parentNode;
+    while (span.firstChild) {
+      parent.insertBefore(span.firstChild, textNode);
+    }
+    parent.removeChild(textNode);
+  }
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// ============================================================
+//                          HOME
+// ============================================================
+function renderHome() {
+  const hasDiag = !!state.diagnostic;
+  const completedModules = Object.keys(state.moduleProgress).length;
+  const totalExams = Object.keys(state.examScores || {}).length;
+
+  return `
+    <h1>ようこそ! / Welcome</h1>
+    <p class="subtitle">JLPT N3 — 日本語能力試験 / Japanese Language Proficiency Test prep</p>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-value">${completedModules}</div><div class="stat-label">Modules studied</div></div>
+      <div class="stat"><div class="stat-value">${totalExams}</div><div class="stat-label">Mock exams taken</div></div>
+      <div class="stat"><div class="stat-value">${hasDiag ? state.diagnostic.score + '%' : '—'}</div><div class="stat-label">Diagnostic score</div></div>
+      <div class="stat"><div class="stat-value">${VOCAB.length}</div><div class="stat-label">Vocab entries</div></div>
+    </div>
+
+    <div class="card">
+      <h2>JLPT N3について / About the JLPT N3</h2>
+      <p>The <strong>Japanese Language Proficiency Test N3</strong> certifies the ability to understand Japanese used in everyday situations to a certain degree. The exam tests three areas:</p>
+      <table>
+        <tr><th>Section</th><th>Time</th><th>Points</th></tr>
+        <tr><td>言語知識 (文字・語彙) — Vocabulary & Kanji</td><td>30 min</td><td>60</td></tr>
+        <tr><td>言語知識 (文法) ・読解 — Grammar & Reading</td><td>70 min</td><td>60</td></tr>
+        <tr><td>聴解 — Listening</td><td>40 min</td><td>60</td></tr>
+      </table>
+      <p>Pass mark: <strong>95/180 total</strong>, with a minimum of <strong>19/60 in each section</strong>.</p>
+      <p class="text-muted" style="font-size:13px;">N3 covers ~3,750 vocabulary words, ~650 kanji, and ~150 grammar patterns.</p>
+    </div>
+
+    ${!hasDiag ? `
+      <div class="card card-accent">
+        <h2>🚀 Start here / ここから始めよう</h2>
+        <p>Take the diagnostic test to identify your weak areas and get personalized recommendations.</p>
+        <button class="btn" onclick="navigate('diagnostic')" style="margin-top: 12px;">Start diagnostic test →</button>
+      </div>
+    ` : `
+      <div class="card">
+        <h2>📚 Continue learning</h2>
+        <p>Based on your diagnostic, focus on:</p>
+        <p style="margin: 12px 0;">${state.diagnostic.recommendations.map(r => `<span class="skill-tag">${r}</span>`).join("")}</p>
+        <button class="btn" onclick="navigate('modules')">View modules →</button>
+        <button class="btn secondary" onclick="navigate('diagnostic')">Retake diagnostic</button>
+      </div>
+    `}
+
+    <div class="grid">
+      <div class="module-card" onclick="navigate('modules')">
+        <div class="icon">📚</div>
+        <h3>Learning Modules</h3>
+        <p>Kanji, vocabulary, grammar, reading, listening lessons + quizzes.</p>
+      </div>
+      <div class="module-card" onclick="navigate('exams')">
+        <div class="icon">📝</div>
+        <h3>Mock Exams</h3>
+        <p>Full N3-format mock exams with timed sections and scoring.</p>
+      </div>
+      <div class="module-card" onclick="navigate('vocab')">
+        <div class="icon">📖</div>
+        <h3>Vocabulary Dictionary</h3>
+        <p>Searchable N3 vocab with kanji, readings, meanings, and example sentences.</p>
+      </div>
+      <div class="module-card" onclick="navigate('expressions')">
+        <div class="icon">📘</div>
+        <h3>Expressions & Adverbs</h3>
+        <p>Adverbs, conjunctions, set phrases — all with examples.</p>
+      </div>
+      <div class="module-card" onclick="navigate('flashcards')">
+        <div class="icon">🎴</div>
+        <h3>Flashcards</h3>
+        <p>Review with preloaded decks or create your own.</p>
+      </div>
+      <div class="module-card" onclick="navigate('progress')">
+        <div class="icon">📊</div>
+        <h3>Progress</h3>
+        <p>Track scores and identify your strengths/weaknesses.</p>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <h3>💡 Tip: Hover over kanji</h3>
+      <p>Throughout this app, hover your mouse over any kanji like ${k("勉強","べんきょう","study")} or ${k("先生","せんせい","teacher")} to see its reading and meaning instantly.</p>
+    </div>
+  `;
+}
+
+// ============================================================
+//                       DIAGNOSTIC
+// ============================================================
+function renderDiagnostic() {
+  if (pageContext.mode === "running") return renderDiagnosticRunning();
+  if (pageContext.mode === "result") return renderDiagnosticResult();
+
+  const hasResult = !!state.diagnostic;
+  return `
+    <h1>📋 診断テスト / Diagnostic Test</h1>
+    <p class="subtitle">Identify your weak areas in ${DIAGNOSTIC.length} mixed questions (about 10–15 minutes).</p>
+
+    ${hasResult ? `
+      <div class="card">
+        <h2>Last result</h2>
+        <p><strong>Date:</strong> ${state.diagnostic.date}</p>
+        <p><strong>Score:</strong> ${state.diagnostic.score}%</p>
+        <p><strong>By category:</strong></p>
+        <ul>
+          ${Object.entries(state.diagnostic.byCategory).map(([cat, v]) => `<li><strong>${cat}:</strong> ${v.correct}/${v.total} (${Math.round(v.correct/v.total*100)}%)</li>`).join("")}
+        </ul>
+        <p><strong>Recommended focus:</strong> ${state.diagnostic.recommendations.join(", ")}</p>
+      </div>
+    ` : ""}
+
+    <div class="card card-accent">
+      <h3>Categories tested</h3>
+      <p>This test covers vocabulary, kanji, grammar, reading, and listening (text-based). At the end, you'll get a personalized report on what to study first.</p>
+      <button class="btn mt-2" onclick="startDiagnostic()">${hasResult ? "Retake test" : "Start test"} →</button>
+    </div>
+  `;
+}
+
+function startDiagnostic() {
+  pageContext = { mode: "running", index: 0, answers: new Array(DIAGNOSTIC.length).fill(null) };
+  render();
+}
+
+function renderDiagnosticRunning() {
+  const i = pageContext.index;
+  const total = DIAGNOSTIC.length;
+  const q = DIAGNOSTIC[i];
+  const selected = pageContext.answers[i];
+
+  return `
+    <h1>診断テスト ${i + 1} / ${total}</h1>
+    <div class="progress-bar"><div class="progress-fill" style="width: ${((i + 1) / total) * 100}%"></div></div>
+
+    <div class="question-card">
+      <div class="question-num">Question ${i + 1} · ${q.cat}</div>
+      <div class="question-text jp">${q.q}</div>
+      <div class="options">
+        ${q.choices.map((c, idx) => `
+          <div class="option ${selected === idx ? 'selected' : ''}" onclick="selectDiagnosticAnswer(${idx})">${c}</div>
+        `).join("")}
+      </div>
+    </div>
+
+    <div class="mt-3">
+      ${i > 0 ? `<button class="btn secondary" onclick="prevDiagnostic()">← Previous</button>` : ""}
+      ${i < total - 1
+        ? `<button class="btn" onclick="nextDiagnostic()" ${selected === null ? 'disabled' : ''}>Next →</button>`
+        : `<button class="btn success" onclick="submitDiagnostic()" ${selected === null ? 'disabled' : ''}>Finish & see results</button>`}
+    </div>
+  `;
+}
+
+function selectDiagnosticAnswer(idx) {
+  pageContext.answers[pageContext.index] = idx;
+  render();
+}
+function nextDiagnostic() { pageContext.index++; render(); }
+function prevDiagnostic() { pageContext.index--; render(); }
+
+function submitDiagnostic() {
+  const answers = pageContext.answers;
+  let correct = 0;
+  const byCat = {};
+  DIAGNOSTIC.forEach((q, i) => {
+    const cat = q.cat;
+    if (!byCat[cat]) byCat[cat] = { correct: 0, total: 0 };
+    byCat[cat].total++;
+    if (answers[i] === q.answer) {
+      correct++;
+      byCat[cat].correct++;
+    }
+  });
+  const score = Math.round(correct / DIAGNOSTIC.length * 100);
+
+  // Recommendations: any category < 60% gets recommended
+  const recommendations = Object.entries(byCat)
+    .filter(([cat, v]) => (v.correct / v.total) < 0.6)
+    .map(([cat]) => cat);
+  if (recommendations.length === 0) recommendations.push("All categories are strong! Try a mock exam.");
+
+  state.diagnostic = {
+    date: new Date().toISOString(),
+    score, byCategory: byCat, recommendations
+  };
+  if (!state.diagnosticHistory) state.diagnosticHistory = [];
+  state.diagnosticHistory.push({ date: state.diagnostic.date, score });
+  saveState();
+  pageContext.mode = "result";
+  render();
+}
+
+function renderDiagnosticResult() {
+  const d = state.diagnostic;
+  return `
+    <h1>📊 結果 / Diagnostic Results</h1>
+    <div class="card card-accent">
+      <h2>Overall score: ${d.score}%</h2>
+      <div class="progress-bar"><div class="progress-fill" style="width:${d.score}%"></div></div>
+    </div>
+
+    <div class="card">
+      <h3>By category</h3>
+      ${Object.entries(d.byCategory).map(([cat, v]) => {
+        const pct = Math.round(v.correct/v.total*100);
+        return `
+          <div style="margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between;">
+              <strong>${cat}</strong>
+              <span>${v.correct}/${v.total} (${pct}%)</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+          </div>
+        `;
+      }).join("")}
+    </div>
+
+    <div class="card">
+      <h3>📚 Recommendations</h3>
+      <p>Focus your study on these areas:</p>
+      <p style="margin-top: 12px;">${d.recommendations.map(r => `<span class="skill-tag">${r}</span>`).join("")}</p>
+      <button class="btn mt-2" onclick="navigate('modules')">Go to learning modules →</button>
+    </div>
+  `;
+}
+
+// ============= MODULES =============
+function renderModules() {
+  const app = document.getElementById("main");
+  const mp = state.moduleProgress;
+  app.innerHTML = `
+    <h1>📚 Learning modules</h1>
+    <p class="subtitle">Five comprehensive modules covering all JLPT N3 areas</p>
+
+    <div class="display-toggle card" style="margin-bottom: 20px;">
+      <strong>Display mode:</strong>
+      <button class="btn ${state.displayMode==='furigana'?'btn-accent':'btn-ghost'}" onclick="setDisplayMode('furigana')">Furigana</button>
+      <button class="btn ${state.displayMode==='kanji'?'btn-accent':'btn-ghost'}" onclick="setDisplayMode('kanji')">Kanji only</button>
+      <button class="btn ${state.displayMode==='kana'?'btn-accent':'btn-ghost'}" onclick="setDisplayMode('kana')">Kana only</button>
+      <p class="hint" style="margin-top: 8px;">Tip: hover over kanji anywhere in the app to see reading + meaning.</p>
+    </div>
+
+    <div class="module-grid">
+      <div class="card module-card" onclick="navigate('module-kanji')">
+        <h3>🔤 Kanji</h3>
+        <p>~80 kanji organized by theme with on'yomi/kun'yomi readings and example compounds.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:${mp.kanji||0}%"></div></div>
+        <p class="hint">${mp.kanji||0}% complete</p>
+      </div>
+
+      <div class="card module-card" onclick="navigate('module-vocab')">
+        <h3>📖 Vocabulary</h3>
+        <p>~300 essential N3 words organized by theme, with example sentences and quizzes.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:${mp.vocab||0}%"></div></div>
+        <p class="hint">${mp.vocab||0}% complete</p>
+      </div>
+
+      <div class="card module-card" onclick="navigate('module-grammar')">
+        <h3>📐 Grammar</h3>
+        <p>16 core grammar lessons (〜ようになる, 〜ばかり, passive, causative, keigo...).</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:${mp.grammar||0}%"></div></div>
+        <p class="hint">${mp.grammar||0}% complete</p>
+      </div>
+
+      <div class="card module-card" onclick="navigate('module-reading')">
+        <h3>📰 Reading</h3>
+        <p>Authentic-style passages with comprehension questions matching the exam format.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:${mp.reading||0}%"></div></div>
+        <p class="hint">${mp.reading||0}% complete</p>
+      </div>
+
+      <div class="card module-card" onclick="navigate('module-listening')">
+        <h3>🎧 Listening</h3>
+        <p>Audio dialogues using browser text-to-speech, with transcripts and questions.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:${mp.listening||0}%"></div></div>
+        <p class="hint">${mp.listening||0}% complete</p>
+      </div>
+    </div>
+  `;
+}
+
+function setDisplayMode(mode) {
+  state.displayMode = mode;
+  saveState();
+  document.body.setAttribute('data-display', mode);
+  render();
+}
+
+// ============= KANJI MODULE =============
+function renderKanjiModule() {
+  const app = document.getElementById("main");
+  const themes = [...new Set(KANJI.map(k => k.theme))];
+  const themeNames = {
+    thinking: "🧠 Thinking & mind",
+    movement: "🚶 Movement",
+    society: "🏛️ Society",
+    emotion: "💗 Emotions",
+    health: "🏥 Health & body",
+    nature: "🌳 Nature",
+    quantity: "🔢 Quantity",
+    time: "🕐 Time",
+    communication: "💬 Communication",
+    effort: "💪 Effort",
+    position: "📍 Position",
+    modern: "🌐 Modern life"
+  };
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('modules')">← Modules</button>
+    <h1>🔤 Kanji module</h1>
+    <p class="subtitle">${KANJI.length} N3-level kanji organized by theme</p>
+
+    <div class="theme-grid">
+      ${themes.map(t => {
+        const count = KANJI.filter(k => k.theme === t).length;
+        return `
+          <div class="card theme-card" onclick="navigate('kanji-theme-${t}')">
+            <h3>${themeNames[t] || t}</h3>
+            <p class="hint">${count} kanji</p>
+          </div>
+        `;
+      }).join("")}
+    </div>
+
+    <div class="card mt-2">
+      <h3>📝 Test your kanji knowledge</h3>
+      <p>Take a quiz covering kanji readings and meanings.</p>
+      <button class="btn btn-accent" onclick="startKanjiQuiz()">Start kanji quiz</button>
+    </div>
+  `;
+}
+
+function renderKanjiTheme(theme) {
+  const app = document.getElementById("main");
+  const items = KANJI.filter(k => k.theme === theme);
+  const themeNames = {
+    thinking: "Thinking & mind", movement: "Movement", society: "Society",
+    emotion: "Emotions", health: "Health & body", nature: "Nature",
+    quantity: "Quantity", time: "Time", communication: "Communication",
+    effort: "Effort", position: "Position", modern: "Modern life"
+  };
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('module-kanji')">← Kanji</button>
+    <h1>${themeNames[theme] || theme}</h1>
+    <p class="subtitle">${items.length} kanji in this theme</p>
+
+    ${items.map(item => `
+      <div class="card kanji-entry">
+        <div class="kanji-display">${item.k}</div>
+        <div class="kanji-info">
+          <p><strong>Meaning:</strong> ${item.m}</p>
+          <p><strong>On'yomi:</strong> <span class="reading-on">${item.on||'—'}</span></p>
+          <p><strong>Kun'yomi:</strong> <span class="reading-kun">${item.kun||'—'}</span></p>
+          <p><strong>Examples:</strong> ${item.ex.map(e => `<span class="kanji-example">${e.w} <em>(${e.r})</em> – ${e.m}</span>`).join("")}</p>
+        </div>
+      </div>
+    `).join("")}
+
+    <button class="btn btn-accent mt-2" onclick="markComplete('kanji', '${theme}')">Mark theme as studied</button>
+  `;
+}
+
+function markComplete(module, item) {
+  const totals = { kanji: 12, vocab: 13, grammar: 16, reading: 3, listening: 2 };
+  if (!state.completedItems) state.completedItems = {};
+  if (!state.completedItems[module]) state.completedItems[module] = [];
+  if (!state.completedItems[module].includes(item)) {
+    state.completedItems[module].push(item);
+  }
+  state.moduleProgress[module] = Math.round(state.completedItems[module].length / totals[module] * 100);
+  saveState();
+  alert("✓ Marked as studied!");
+  navigate('modules');
+}
+
+// ============= VOCAB MODULE =============
+function renderVocabModule() {
+  const app = document.getElementById("main");
+  const themes = [...new Set(VOCAB.map(v => v.theme))];
+  const themeNames = {
+    "daily-life": "🏠 Daily life",
+    "work": "💼 Work & career",
+    "travel": "✈️ Travel",
+    "emotions": "💭 Emotions & feelings",
+    "food": "🍱 Food & dining",
+    "health": "⚕️ Health",
+    "education": "🎓 Education",
+    "society": "🏙️ Society",
+    "people": "👥 People & relationships",
+    "time": "⏰ Time",
+    "nature": "🌸 Nature",
+    "verbs": "🏃 Common verbs",
+    "adjectives": "✨ Adjectives"
+  };
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('modules')">← Modules</button>
+    <h1>📖 Vocabulary module</h1>
+    <p class="subtitle">${VOCAB.length} N3 words organized by theme</p>
+
+    <div class="theme-grid">
+      ${themes.map(t => {
+        const count = VOCAB.filter(v => v.theme === t).length;
+        return `
+          <div class="card theme-card" onclick="navigate('vocab-theme-${t}')">
+            <h3>${themeNames[t] || t}</h3>
+            <p class="hint">${count} words</p>
+          </div>
+        `;
+      }).join("")}
+    </div>
+
+    <div class="card mt-2">
+      <h3>📝 Vocabulary quiz</h3>
+      <p>Test yourself with a randomly generated quiz.</p>
+      <button class="btn btn-accent" onclick="startVocabQuiz()">Start vocab quiz</button>
+    </div>
+  `;
+}
+
+function renderVocabTheme(theme) {
+  const app = document.getElementById("main");
+  const items = VOCAB.filter(v => v.theme === theme);
+  const themeNames = {
+    "daily-life": "Daily life", "work": "Work & career", "travel": "Travel",
+    "emotions": "Emotions & feelings", "food": "Food & dining", "health": "Health",
+    "education": "Education", "society": "Society", "people": "People & relationships",
+    "time": "Time", "nature": "Nature", "verbs": "Common verbs", "adjectives": "Adjectives"
+  };
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('module-vocab')">← Vocabulary</button>
+    <h1>${themeNames[theme] || theme}</h1>
+    <p class="subtitle">${items.length} words in this theme</p>
+
+    ${items.map(item => `
+      <div class="card vocab-entry">
+        <div class="vocab-header">
+          <span class="vocab-word">${item.w}</span>
+          <span class="vocab-reading">【${item.r}】</span>
+          <span class="vocab-pos">${item.pos}</span>
+        </div>
+        <p class="vocab-meaning">${item.m}</p>
+        ${item.ex ? `
+          <div class="vocab-example">
+            <p class="ex-jp">${item.ex[0].jp}</p>
+            <p class="ex-reading">${item.ex[0].r}</p>
+            <p class="ex-en">${item.ex[0].en}</p>
+          </div>
+        ` : ''}
+      </div>
+    `).join("")}
+
+    <button class="btn btn-accent mt-2" onclick="markComplete('vocab', '${theme}')">Mark theme as studied</button>
+  `;
+}
+
+// ============= GRAMMAR MODULE =============
+function renderGrammarModule() {
+  const app = document.getElementById("main");
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('modules')">← Modules</button>
+    <h1>📐 Grammar module</h1>
+    <p class="subtitle">${GRAMMAR_LESSONS.length} core N3 grammar points</p>
+
+    <div class="lesson-list">
+      ${GRAMMAR_LESSONS.map((lesson, i) => `
+        <div class="card lesson-card" onclick="navigate('grammar-${lesson.id}')">
+          <h3><span class="lesson-num">${i+1}</span> ${lesson.title}</h3>
+          <p class="hint">${lesson.titleEn}</p>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderGrammarLesson(id) {
+  const app = document.getElementById("main");
+  const lesson = GRAMMAR_LESSONS.find(l => l.id === id);
+  if (!lesson) { app.innerHTML = "<p>Lesson not found</p>"; return; }
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('module-grammar')">← Grammar</button>
+    <h1>${lesson.title}</h1>
+    <p class="subtitle">${lesson.titleEn}</p>
+
+    <div class="card">
+      <h3>📖 Explanation</h3>
+      <div class="lesson-explanation">${lesson.explanation}</div>
+    </div>
+
+    <div class="card">
+      <h3>📝 Examples</h3>
+      ${lesson.examples.map(ex => `
+        <div class="example-block">
+          <p class="ex-jp">${ex.jp}</p>
+          <p class="ex-reading">${ex.r}</p>
+          <p class="ex-en">${ex.en}</p>
+        </div>
+      `).join("")}
+    </div>
+
+    <div class="card card-accent">
+      <h3>✏️ Practice quiz</h3>
+      <p>Test your understanding with ${lesson.quiz.length} questions.</p>
+      <button class="btn btn-accent" onclick="startGrammarQuiz('${id}')">Start quiz</button>
+    </div>
+  `;
+}
+
+// ============= READING MODULE =============
+function renderReadingModule() {
+  const app = document.getElementById("main");
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('modules')">← Modules</button>
+    <h1>📰 Reading module</h1>
+    <p class="subtitle">${READING_TEXTS.length} authentic-style passages with comprehension questions</p>
+
+    <div class="lesson-list">
+      ${READING_TEXTS.map((text, i) => `
+        <div class="card lesson-card" onclick="navigate('reading-${text.id}')">
+          <h3><span class="lesson-num">${i+1}</span> ${text.title}</h3>
+          <p class="hint">${text.level ? text.level + ' · ' : ''}${text.questions.length} questions</p>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderReadingLesson(id) {
+  const app = document.getElementById("main");
+  const text = READING_TEXTS.find(t => t.id === id);
+  if (!text) { app.innerHTML = "<p>Text not found</p>"; return; }
+
+  // Title may be combined "Japanese / English" — split it
+  const [titleJp, titleEn] = text.title.includes(' / ')
+    ? text.title.split(' / ')
+    : [text.title, text.titleEn || ''];
+  const body = (text.body || text.text || '').replace(/\n/g, '<br>');
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('module-reading')">← Reading</button>
+    <h1>${titleJp}</h1>
+    <p class="subtitle">${titleEn}${text.level ? ' · ' + text.level : ''}</p>
+
+    <div class="card">
+      <h3>📖 Read the passage</h3>
+      <div class="reading-passage">${body}</div>
+    </div>
+
+    ${text.translation ? `
+      <div class="card">
+        <h3>🇬🇧 English translation</h3>
+        <div class="reading-translation">${text.translation}</div>
+      </div>
+    ` : ''}
+
+    <div class="card card-accent">
+      <h3>✏️ Comprehension questions</h3>
+      <p>${text.questions.length} questions to test your understanding.</p>
+      <button class="btn btn-accent" onclick="startReadingQuiz('${id}')">Answer questions</button>
+    </div>
+  `;
+}
+
+// ============= LISTENING MODULE =============
+function renderListeningModule() {
+  const app = document.getElementById("main");
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('modules')">← Modules</button>
+    <h1>🎧 Listening module</h1>
+    <p class="subtitle">${LISTENING_TEXTS.length} audio dialogues using browser text-to-speech</p>
+
+    <div class="card">
+      <p class="hint">💡 The audio is generated by your browser's Japanese voice. For best results, use Chrome, Edge, or Safari with Japanese TTS installed.</p>
+    </div>
+
+    <div class="lesson-list">
+      ${LISTENING_TEXTS.map((text, i) => `
+        <div class="card lesson-card" onclick="navigate('listening-${text.id}')">
+          <h3><span class="lesson-num">${i+1}</span> ${text.title}</h3>
+          <p class="hint">${text.questions.length} questions</p>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderListeningLesson(id) {
+  const app = document.getElementById("main");
+  const text = LISTENING_TEXTS.find(t => t.id === id);
+  if (!text) { app.innerHTML = "<p>Audio not found</p>"; return; }
+
+  const [titleJp, titleEn] = text.title.includes(' / ')
+    ? text.title.split(' / ')
+    : [text.title, ''];
+  const script = text.script || text.body || text.text || '';
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('module-listening')">← Listening</button>
+    <h1>${titleJp}</h1>
+    <p class="subtitle">${titleEn}</p>
+
+    <div class="card card-accent">
+      <h3>🔊 Audio</h3>
+      <p>Listen carefully — try to answer the questions before reading the transcript.</p>
+      <div class="audio-controls">
+        <button class="btn btn-accent" onclick="playAudio('${id}')">▶ Play</button>
+        <button class="btn btn-ghost" onclick="stopAudio()">⏹ Stop</button>
+        <button class="btn btn-ghost" onclick="playAudioSlow('${id}')">🐢 Slow</button>
+      </div>
+    </div>
+
+    <details class="card">
+      <summary><strong>📝 Show transcript</strong></summary>
+      <div class="transcript">${script}</div>
+      ${text.translation ? `<h4>English translation</h4><div class="transcript-en">${text.translation}</div>` : ''}
+    </details>
+
+    <div class="card card-accent">
+      <h3>✏️ Comprehension questions</h3>
+      <p>${text.questions.length} questions about this audio.</p>
+      <button class="btn btn-accent" onclick="startListeningQuiz('${id}')">Answer questions</button>
+    </div>
+  `;
+}
+
+let currentUtterance = null;
+function playAudio(id, slow=false) {
+  const text = LISTENING_TEXTS.find(t => t.id === id);
+  if (!text) return;
+  stopAudio();
+  const raw = text.script || text.body || text.text || '';
+  const plain = raw.replace(/<[^>]+>/g, '').replace(/【[^】]+】/g, '');
+  const u = new SpeechSynthesisUtterance(plain);
+  u.lang = 'ja-JP';
+  u.rate = slow ? 0.7 : 0.95;
+  currentUtterance = u;
+  speechSynthesis.speak(u);
+}
+function playAudioSlow(id) { playAudio(id, true); }
+function stopAudio() { speechSynthesis.cancel(); currentUtterance = null; }
+
+// ============= GENERIC QUIZ RUNNER =============
+let quizState = null;
+
+function startGrammarQuiz(id) {
+  const lesson = GRAMMAR_LESSONS.find(l => l.id === id);
+  quizState = {
+    type: 'grammar',
+    parent: id,
+    questions: lesson.quiz,
+    current: 0,
+    answers: [],
+    title: lesson.title + " — quiz"
+  };
+  renderQuiz();
+}
+
+function startReadingQuiz(id) {
+  const text = READING_TEXTS.find(t => t.id === id);
+  quizState = {
+    type: 'reading',
+    parent: id,
+    questions: text.questions,
+    current: 0,
+    answers: [],
+    title: text.title + " — comprehension"
+  };
+  renderQuiz();
+}
+
+function startListeningQuiz(id) {
+  const text = LISTENING_TEXTS.find(t => t.id === id);
+  quizState = {
+    type: 'listening',
+    parent: id,
+    questions: text.questions,
+    current: 0,
+    answers: [],
+    title: text.title + " — questions"
+  };
+  renderQuiz();
+}
+
+function startKanjiQuiz() {
+  // Auto-generate from KANJI array — pick 10 random kanji, ask for meaning
+  const sample = [...KANJI].sort(() => Math.random() - 0.5).slice(0, 10);
+  const questions = sample.map(k => {
+    const wrongs = KANJI.filter(x => x.k !== k.k).sort(() => Math.random() - 0.5).slice(0, 3).map(x => x.m);
+    const options = [...wrongs, k.m].sort(() => Math.random() - 0.5);
+    return {
+      q: `What does <span class="big-kanji">${k.k}</span> mean?`,
+      options: options,
+      answer: options.indexOf(k.m)
+    };
+  });
+  quizState = { type: 'kanji', parent: null, questions, current: 0, answers: [], title: "Kanji quiz" };
+  renderQuiz();
+}
+
+function startVocabQuiz() {
+  // Auto-generate from VOCAB
+  const sample = [...VOCAB].sort(() => Math.random() - 0.5).slice(0, 12);
+  const questions = sample.map(v => {
+    const wrongs = VOCAB.filter(x => x.w !== v.w).sort(() => Math.random() - 0.5).slice(0, 3).map(x => x.m);
+    const options = [...wrongs, v.m].sort(() => Math.random() - 0.5);
+    return {
+      q: `What does <strong class="quiz-jp">${v.w}</strong> 【${v.r}】 mean?`,
+      options: options,
+      answer: options.indexOf(v.m)
+    };
+  });
+  quizState = { type: 'vocab', parent: null, questions, current: 0, answers: [], title: "Vocabulary quiz" };
+  renderQuiz();
+}
+
+function renderQuiz() {
+  const app = document.getElementById("main");
+  if (!quizState) { app.innerHTML = "<p>No quiz active</p>"; return; }
+  const q = quizState.questions[quizState.current];
+  const total = quizState.questions.length;
+
+  app.innerHTML = `
+    <h1>${quizState.title}</h1>
+    <p class="subtitle">Question ${quizState.current+1} of ${total}</p>
+
+    <div class="progress-bar"><div class="progress-fill" style="width:${(quizState.current+1)/total*100}%"></div></div>
+
+    <div class="card">
+      <h3>${q.q}</h3>
+      <div class="options">
+        ${(q.options || q.choices).map((opt, i) => `
+          <button class="option-btn ${quizState.answers[quizState.current]===i?'selected':''}"
+                  onclick="selectQuizAnswer(${i})">
+            <span class="opt-letter">${String.fromCharCode(65+i)}</span> ${opt}
+          </button>
+        `).join("")}
+      </div>
+    </div>
+
+    <div class="quiz-nav">
+      ${quizState.current>0 ? `<button class="btn btn-ghost" onclick="prevQuizQ()">← Previous</button>` : ''}
+      ${quizState.current<total-1
+        ? `<button class="btn btn-accent" onclick="nextQuizQ()" ${quizState.answers[quizState.current]===undefined?'disabled':''}>Next →</button>`
+        : `<button class="btn btn-accent" onclick="submitQuiz()" ${quizState.answers[quizState.current]===undefined?'disabled':''}>Submit ✓</button>`
+      }
+    </div>
+  `;
+}
+
+function selectQuizAnswer(i) {
+  quizState.answers[quizState.current] = i;
+  renderQuiz();
+}
+function nextQuizQ() { quizState.current++; renderQuiz(); }
+function prevQuizQ() { quizState.current--; renderQuiz(); }
+
+function submitQuiz() {
+  let correct = 0;
+  quizState.questions.forEach((q, i) => { if (quizState.answers[i] === q.answer) correct++; });
+  const score = Math.round(correct / quizState.questions.length * 100);
+
+  const app = document.getElementById("main");
+  app.innerHTML = `
+    <h1>📊 Quiz results — ${quizState.title}</h1>
+    <div class="card card-accent">
+      <h2>Score: ${correct}/${quizState.questions.length} (${score}%)</h2>
+      <div class="progress-bar"><div class="progress-fill" style="width:${score}%"></div></div>
+      <p class="hint">${score>=80?'🎉 Excellent!':score>=60?'👍 Good — keep practicing!':'📚 Review the lesson and try again.'}</p>
+    </div>
+
+    <div class="card">
+      <h3>Review answers</h3>
+      ${quizState.questions.map((q, i) => {
+        const correct = quizState.answers[i] === q.answer;
+        return `
+          <div class="review-item ${correct?'correct':'wrong'}">
+            <p><strong>Q${i+1}:</strong> ${q.q}</p>
+            <p>Your answer: <strong>${(q.options || q.choices)[quizState.answers[i]] ?? '—'}</strong> ${correct?'✓':'✗'}</p>
+            ${!correct ? `<p class="hint">Correct: <strong>${(q.options || q.choices)[q.answer]}</strong></p>` : ''}
+          </div>
+        `;
+      }).join("")}
+    </div>
+
+    <div class="quiz-nav">
+      <button class="btn" onclick="navigate('modules')">Back to modules</button>
+      <button class="btn btn-ghost" onclick="retryQuiz()">Retry quiz</button>
+    </div>
+  `;
+
+  // Save progress
+  if (quizState.parent && quizState.type === 'grammar') {
+    if (!state.completedItems) state.completedItems = {};
+    if (!state.completedItems.grammar) state.completedItems.grammar = [];
+    if (score >= 60 && !state.completedItems.grammar.includes(quizState.parent)) {
+      state.completedItems.grammar.push(quizState.parent);
+      state.moduleProgress.grammar = Math.round(state.completedItems.grammar.length / 16 * 100);
+    }
+  }
+  saveState();
+}
+
+function retryQuiz() {
+  quizState.current = 0;
+  quizState.answers = [];
+  renderQuiz();
+}
+
+// ============= MOCK EXAMS =============
+function renderExams() {
+  const app = document.getElementById("main");
+  app.innerHTML = `
+    <h1>📝 Mock exams</h1>
+    <p class="subtitle">Two complete JLPT N3-style exams matching official format</p>
+
+    <div class="card">
+      <h3>📋 Real JLPT N3 format</h3>
+      <table class="info-table">
+        <tr><th>Section</th><th>Time</th><th>Score</th></tr>
+        <tr><td>Language Knowledge (Vocab)</td><td>30 min</td><td>0–60</td></tr>
+        <tr><td>Language Knowledge (Grammar) + Reading</td><td>70 min</td><td>0–60</td></tr>
+        <tr><td>Listening</td><td>40 min</td><td>0–60</td></tr>
+      </table>
+      <p class="hint">Pass: 95/180 total AND ≥19/60 in each section</p>
+    </div>
+
+    ${MOCK_EXAMS.map(exam => {
+      const lastScore = state.examScores[exam.id];
+      return `
+        <div class="card exam-card">
+          <h3>${exam.title}</h3>
+          <p>${exam.description||''}</p>
+          <p class="hint">${exam.sections.length} sections · ${exam.sections.reduce((s,sec)=>s+sec.questions.length,0)} questions</p>
+          ${lastScore ? `<p class="hint">Last score: <strong>${lastScore.score}%</strong> — ${new Date(lastScore.date).toLocaleDateString()}</p>` : ''}
+          <button class="btn btn-accent" onclick="startExam('${exam.id}')">${lastScore?'Retake exam':'Start exam'}</button>
+        </div>
+      `;
+    }).join("")}
+  `;
+}
+
+let examState = null;
+function startExam(id) {
+  const exam = MOCK_EXAMS.find(e => e.id === id);
+  // Flatten sections into one question array but keep section info
+  const questions = [];
+  exam.sections.forEach(sec => {
+    sec.questions.forEach(q => questions.push({ ...q, section: sec.name }));
+  });
+  examState = { id, exam, questions, current: 0, answers: [] };
+  renderExam();
+}
+
+function renderExam() {
+  const app = document.getElementById("main");
+  if (!examState) return;
+  const q = examState.questions[examState.current];
+  const total = examState.questions.length;
+
+  app.innerHTML = `
+    <h1>${examState.exam.title}</h1>
+    <p class="subtitle">Question ${examState.current+1} of ${total} · Section: <strong>${q.section}</strong></p>
+
+    <div class="progress-bar"><div class="progress-fill" style="width:${(examState.current+1)/total*100}%"></div></div>
+
+    <div class="card">
+      ${q.context ? `<div class="exam-context">${q.context}</div>` : ''}
+      <h3>${q.q}</h3>
+      <div class="options">
+        ${(q.options || q.choices).map((opt, i) => `
+          <button class="option-btn ${examState.answers[examState.current]===i?'selected':''}"
+                  onclick="selectExamAnswer(${i})">
+            <span class="opt-letter">${String.fromCharCode(65+i)}</span> ${opt}
+          </button>
+        `).join("")}
+      </div>
+    </div>
+
+    <div class="quiz-nav">
+      ${examState.current>0 ? `<button class="btn btn-ghost" onclick="prevExamQ()">← Previous</button>` : ''}
+      ${examState.current<total-1
+        ? `<button class="btn btn-accent" onclick="nextExamQ()">Next →</button>`
+        : `<button class="btn btn-accent" onclick="submitExam()">Submit exam ✓</button>`
+      }
+    </div>
+
+    <div class="card">
+      <p class="hint">Question grid:</p>
+      <div class="q-grid">
+        ${examState.questions.map((_, i) => `
+          <button class="q-num ${examState.answers[i]!==undefined?'answered':''} ${i===examState.current?'current':''}"
+                  onclick="goToExamQ(${i})">${i+1}</button>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function selectExamAnswer(i) { examState.answers[examState.current] = i; renderExam(); }
+function nextExamQ() { examState.current++; renderExam(); }
+function prevExamQ() { examState.current--; renderExam(); }
+function goToExamQ(i) { examState.current = i; renderExam(); }
+
+function submitExam() {
+  let correct = 0;
+  const sectionResults = {};
+  examState.questions.forEach((q, i) => {
+    const isCorrect = examState.answers[i] === q.answer;
+    if (isCorrect) correct++;
+    if (!sectionResults[q.section]) sectionResults[q.section] = { correct: 0, total: 0 };
+    sectionResults[q.section].total++;
+    if (isCorrect) sectionResults[q.section].correct++;
+  });
+  const score = Math.round(correct / examState.questions.length * 100);
+
+  state.examScores[examState.id] = { score, date: new Date().toISOString(), sections: sectionResults };
+  saveState();
+
+  const app = document.getElementById("main");
+  app.innerHTML = `
+    <h1>📊 Exam results — ${examState.exam.title}</h1>
+    <div class="card card-accent">
+      <h2>Total score: ${correct}/${examState.questions.length} (${score}%)</h2>
+      <div class="progress-bar"><div class="progress-fill" style="width:${score}%"></div></div>
+      <p class="hint">${score>=53?'🎉 Above N3 passing line (95/180 ≈ 53%)':'📚 Below passing line — keep studying!'}</p>
+    </div>
+
+    <div class="card">
+      <h3>By section</h3>
+      ${Object.entries(sectionResults).map(([sec, v]) => {
+        const pct = Math.round(v.correct/v.total*100);
+        return `
+          <div style="margin-bottom: 12px;">
+            <div style="display:flex; justify-content:space-between;">
+              <strong>${sec}</strong>
+              <span>${v.correct}/${v.total} (${pct}%)</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+          </div>
+        `;
+      }).join("")}
+    </div>
+
+    <div class="card">
+      <h3>Review answers</h3>
+      ${examState.questions.map((q, i) => {
+        const isCorrect = examState.answers[i] === q.answer;
+        return `
+          <div class="review-item ${isCorrect?'correct':'wrong'}">
+            <p class="hint">[${q.section}] Q${i+1}</p>
+            <p>${q.q}</p>
+            <p>Your answer: <strong>${(q.options || q.choices)[examState.answers[i]] ?? '—'}</strong> ${isCorrect?'✓':'✗'}</p>
+            ${!isCorrect ? `<p class="hint">Correct: <strong>${(q.options || q.choices)[q.answer]}</strong></p>` : ''}
+          </div>
+        `;
+      }).join("")}
+    </div>
+
+    <div class="quiz-nav">
+      <button class="btn" onclick="navigate('exams')">Back to exams</button>
+      <button class="btn btn-ghost" onclick="navigate('progress')">View progress</button>
+    </div>
+  `;
+}
+
+// ============= VOCAB DICTIONARY =============
+let vocabDictFilters = { search: '', theme: 'all' };
+
+function renderVocabDict() {
+  const app = document.getElementById("main");
+  const themes = [...new Set(VOCAB.map(v => v.theme))];
+  const themeNames = {
+    "daily-life": "Daily life", "work": "Work", "travel": "Travel",
+    "emotions": "Emotions", "food": "Food", "health": "Health",
+    "education": "Education", "society": "Society", "people": "People",
+    "time": "Time", "nature": "Nature", "verbs": "Verbs", "adjectives": "Adjectives"
+  };
+
+  let filtered = VOCAB;
+  if (vocabDictFilters.theme !== 'all') {
+    filtered = filtered.filter(v => v.theme === vocabDictFilters.theme);
+  }
+  if (vocabDictFilters.search) {
+    const s = vocabDictFilters.search.toLowerCase();
+    filtered = filtered.filter(v =>
+      v.w.includes(s) || v.r.includes(s) || v.m.toLowerCase().includes(s)
+    );
+  }
+
+  app.innerHTML = `
+    <h1>📖 Vocabulary dictionary</h1>
+    <p class="subtitle">${VOCAB.length} N3 words · search by Japanese, reading, or English</p>
+
+    <div class="card search-card">
+      <input type="text" class="search-box" placeholder="🔍 Search (e.g. 約束, やくそく, promise)"
+             value="${vocabDictFilters.search}" oninput="updateVocabSearch(this.value)" />
+
+      <div class="filter-chips">
+        <button class="chip ${vocabDictFilters.theme==='all'?'chip-active':''}" onclick="setVocabTheme('all')">All (${VOCAB.length})</button>
+        ${themes.map(t => `
+          <button class="chip ${vocabDictFilters.theme===t?'chip-active':''}" onclick="setVocabTheme('${t}')">
+            ${themeNames[t]||t} (${VOCAB.filter(v=>v.theme===t).length})
+          </button>
+        `).join("")}
+      </div>
+    </div>
+
+    <p class="hint">Showing ${filtered.length} entries</p>
+
+    <div class="dict-list">
+      ${filtered.length === 0 ? '<p class="card">No results.</p>' : filtered.map(item => `
+        <div class="dict-entry">
+          <div class="dict-headword-row">
+            <span class="dict-headword">${item.w}</span>
+            <span class="dict-reading">【${item.r}】</span>
+            <span class="dict-pos">${item.pos}</span>
+          </div>
+          <p class="dict-meaning">${item.m}</p>
+          ${item.ex ? `
+            <div class="dict-example">
+              <p class="ex-jp">📝 ${item.ex[0].jp}</p>
+              <p class="ex-reading">${item.ex[0].r}</p>
+              <p class="ex-en">→ ${item.ex[0].en}</p>
+            </div>
+          ` : ''}
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function updateVocabSearch(v) {
+  vocabDictFilters.search = v;
+  // Re-render only the list, preserving focus on search box
+  const app = document.getElementById("main");
+  const scrollY = window.scrollY;
+  renderVocabDict();
+  // Restore focus
+  const box = document.querySelector('.search-box');
+  if (box) {
+    box.focus();
+    box.setSelectionRange(v.length, v.length);
+  }
+  window.scrollTo(0, scrollY);
+}
+
+function setVocabTheme(t) { vocabDictFilters.theme = t; renderVocabDict(); }
+
+// ============= EXPRESSIONS DICTIONARY =============
+let exprDictFilters = { search: '', type: 'all' };
+
+function renderExpressionsDict() {
+  const app = document.getElementById("main");
+  const types = [...new Set(EXPRESSIONS.map(e => e.type))];
+  const typeNames = {
+    "adverb": "🌀 Adverbs",
+    "conjunction": "🔗 Conjunctions",
+    "set-phrase": "💬 Set phrases",
+    "particle": "🔣 Particles",
+    "expression": "✨ Expressions"
+  };
+
+  let filtered = EXPRESSIONS;
+  if (exprDictFilters.type !== 'all') {
+    filtered = filtered.filter(e => e.type === exprDictFilters.type);
+  }
+  if (exprDictFilters.search) {
+    const s = exprDictFilters.search.toLowerCase();
+    filtered = filtered.filter(e =>
+      e.w.includes(s) || (e.r||'').includes(s) || e.m.toLowerCase().includes(s)
+    );
+  }
+
+  app.innerHTML = `
+    <h1>💬 Expressions & adverbs dictionary</h1>
+    <p class="subtitle">${EXPRESSIONS.length} essential N3 expressions, adverbs, and connectors</p>
+
+    <div class="card search-card">
+      <input type="text" class="search-box" placeholder="🔍 Search expressions"
+             value="${exprDictFilters.search}" oninput="updateExprSearch(this.value)" />
+
+      <div class="filter-chips">
+        <button class="chip ${exprDictFilters.type==='all'?'chip-active':''}" onclick="setExprType('all')">All (${EXPRESSIONS.length})</button>
+        ${types.map(t => `
+          <button class="chip ${exprDictFilters.type===t?'chip-active':''}" onclick="setExprType('${t}')">
+            ${typeNames[t]||t} (${EXPRESSIONS.filter(e=>e.type===t).length})
+          </button>
+        `).join("")}
+      </div>
+    </div>
+
+    <p class="hint">Showing ${filtered.length} entries</p>
+
+    <div class="dict-list">
+      ${filtered.length === 0 ? '<p class="card">No results.</p>' : filtered.map(item => `
+        <div class="dict-entry">
+          <div class="dict-headword-row">
+            <span class="dict-headword">${item.w}</span>
+            ${item.r ? `<span class="dict-reading">【${item.r}】</span>` : ''}
+            <span class="dict-pos">${item.type}</span>
+          </div>
+          <p class="dict-meaning">${item.m}</p>
+          ${item.usage ? `<p class="dict-usage"><em>Usage:</em> ${item.usage}</p>` : ''}
+          ${item.ex ? `
+            <div class="dict-example">
+              <p class="ex-jp">📝 ${item.ex[0].jp}</p>
+              ${item.ex[0].r ? `<p class="ex-reading">${item.ex[0].r}</p>` : ''}
+              <p class="ex-en">→ ${item.ex[0].en}</p>
+            </div>
+          ` : ''}
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function updateExprSearch(v) {
+  exprDictFilters.search = v;
+  const scrollY = window.scrollY;
+  renderExpressionsDict();
+  const box = document.querySelector('.search-box');
+  if (box) {
+    box.focus();
+    box.setSelectionRange(v.length, v.length);
+  }
+  window.scrollTo(0, scrollY);
+}
+
+function setExprType(t) { exprDictFilters.type = t; renderExpressionsDict(); }
+
+// ============= FLASHCARDS =============
+let flashState = null;
+
+function renderFlashcards() {
+  const app = document.getElementById("main");
+  const decks = [
+    { id: 'vocab-all', name: '📖 All vocabulary', count: VOCAB.length, source: 'vocab' },
+    { id: 'kanji-all', name: '🔤 All kanji', count: KANJI.length, source: 'kanji' },
+    { id: 'expr-all', name: '💬 All expressions', count: EXPRESSIONS.length, source: 'expr' },
+    ...[...new Set(VOCAB.map(v=>v.theme))].map(t => ({
+      id: 'vocab-'+t, name: '📖 Vocab: '+t, count: VOCAB.filter(v=>v.theme===t).length, source: 'vocab', filter: t
+    }))
+  ];
+
+  app.innerHTML = `
+    <h1>🃏 Flashcards</h1>
+    <p class="subtitle">Review with spaced-repetition style flashcards</p>
+
+    <div class="card">
+      <h3>📚 Choose a deck</h3>
+      <div class="deck-grid">
+        ${decks.map(d => `
+          <div class="card deck-card" onclick="startFlashcards('${d.id}', '${d.source}', '${d.filter||''}')">
+            <h4>${d.name}</h4>
+            <p class="hint">${d.count} cards</p>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+
+    ${state.customCards.length>0 ? `
+      <div class="card">
+        <h3>✨ Your custom cards (${state.customCards.length})</h3>
+        <button class="btn btn-accent" onclick="startCustomFlashcards()">Review custom cards</button>
+      </div>
+    ` : ''}
+
+    <div class="card">
+      <h3>➕ Add a custom card</h3>
+      <input type="text" id="customFront" class="search-box" placeholder="Front (Japanese)" />
+      <input type="text" id="customBack" class="search-box" placeholder="Back (English)" style="margin-top:8px;" />
+      <button class="btn mt-2" onclick="addCustomCard()">Add card</button>
+    </div>
+  `;
+}
+
+function addCustomCard() {
+  const front = document.getElementById('customFront').value.trim();
+  const back = document.getElementById('customBack').value.trim();
+  if (!front || !back) { alert("Both sides required"); return; }
+  state.customCards.push({ front, back, ease: 2.5, due: Date.now() });
+  saveState();
+  renderFlashcards();
+}
+
+function startFlashcards(deckId, source, filter) {
+  // Default direction stored on flashState; user can toggle mid-session
+  const direction = (flashState && flashState.deckId === deckId) ? flashState.direction : 'jp-to-en';
+  let items = [];
+  if (source === 'vocab') {
+    let pool = filter ? VOCAB.filter(v=>v.theme===filter) : VOCAB;
+    items = pool.map(v => ({ jp: v.w, reading: v.r, en: v.m, pos: v.pos }));
+  } else if (source === 'kanji') {
+    items = KANJI.map(k => ({
+      jp: k.k, reading: (k.kun || k.on || ''), en: k.m,
+      onyomi: k.on, kunyomi: k.kun
+    }));
+  } else if (source === 'expr') {
+    items = EXPRESSIONS.map(e => ({ jp: e.w, reading: e.r || e.w, en: e.m }));
+  }
+  items.sort(() => Math.random() - 0.5);
+  flashState = { deckId, source, items, current: 0, flipped: false, knownCount: 0, direction };
+  renderFlashcardSession();
+}
+
+function startCustomFlashcards() {
+  const items = state.customCards.map(c => ({ jp: c.front, reading: '', en: c.back, custom: true }));
+  items.sort(() => Math.random() - 0.5);
+  flashState = { deckId: 'custom', source: 'custom', items, current: 0, flipped: false, knownCount: 0, direction: 'jp-to-en' };
+  renderFlashcardSession();
+}
+
+function setFlashDirection(dir) {
+  if (!flashState) return;
+  flashState.direction = dir;
+  flashState.flipped = false;
+  renderFlashcardSession();
+}
+
+function buildCardSides(item, direction, source) {
+  // Returns { front, back } HTML
+  const isKanji = source === 'kanji';
+  if (direction === 'jp-to-en') {
+    // Front: Japanese only (you guess reading + meaning)
+    // Back: reading + English
+    const front = `<div class="card-jp">${item.jp}</div>`;
+    let back;
+    if (isKanji) {
+      back = `<div class="card-reading">On: ${item.onyomi || '—'}<br>Kun: ${item.kunyomi || '—'}</div><div class="card-en">${item.en}</div>`;
+    } else {
+      back = `<div class="card-reading">${item.reading || ''}</div><div class="card-en">${item.en}</div>${item.pos?`<div class="card-pos">${item.pos}</div>`:''}`;
+    }
+    return { front, back };
+  } else {
+    // en-to-jp: Front English (you guess kanji + reading)
+    // Back: kanji + reading
+    const front = `<div class="card-en-front">${item.en}</div>${item.pos?`<div class="card-pos">${item.pos}</div>`:''}`;
+    let back;
+    if (isKanji) {
+      back = `<div class="card-jp">${item.jp}</div><div class="card-reading">On: ${item.onyomi || '—'}<br>Kun: ${item.kunyomi || '—'}</div>`;
+    } else {
+      back = `<div class="card-jp">${item.jp}</div><div class="card-reading">${item.reading || ''}</div>`;
+    }
+    return { front, back };
+  }
+}
+
+function renderFlashcardSession() {
+  const app = document.getElementById("main");
+  if (!flashState || flashState.current >= flashState.items.length) {
+    app.innerHTML = `
+      <h1>🎉 Deck complete!</h1>
+      <div class="card card-accent">
+        <p>You went through ${flashState?.items.length || 0} cards.</p>
+        <p>Marked as known: <strong>${flashState?.knownCount || 0}</strong></p>
+      </div>
+      <button class="btn btn-accent" onclick="navigate('flashcards')">Back to decks</button>
+    `;
+    return;
+  }
+  const item = flashState.items[flashState.current];
+  const sides = buildCardSides(item, flashState.direction, flashState.source);
+  const dir = flashState.direction;
+
+  app.innerHTML = `
+    <button class="btn btn-ghost" onclick="navigate('flashcards')">← Decks</button>
+    <h1>🃏 Flashcards</h1>
+    <p class="subtitle">Card ${flashState.current+1} of ${flashState.items.length}</p>
+
+    <div class="card flash-direction-toggle">
+      <strong>Direction:</strong>
+      <button class="btn ${dir==='jp-to-en'?'btn-accent':'btn-ghost'}" onclick="setFlashDirection('jp-to-en')">JP → guess reading + meaning</button>
+      <button class="btn ${dir==='en-to-jp'?'btn-accent':'btn-ghost'}" onclick="setFlashDirection('en-to-jp')">EN → guess kanji + reading</button>
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" style="width:${(flashState.current+1)/flashState.items.length*100}%"></div></div>
+
+    <div class="flashcard ${flashState.flipped?'flipped':''}" onclick="flipCard()">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">${sides.front}</div>
+        <div class="flashcard-back">${sides.back}</div>
+      </div>
+    </div>
+
+    <p class="hint" style="text-align:center;">Click card to flip</p>
+
+    <div class="flashcard-actions">
+      ${flashState.flipped ? `
+        <button class="btn" onclick="flashAnswer(false)">❌ Don't know</button>
+        <button class="btn btn-accent" onclick="flashAnswer(true)">✓ I know it</button>
+      ` : `
+        <button class="btn btn-accent" onclick="flipCard()">Show answer</button>
+      `}
+    </div>
+  `;
+}
+
+function flipCard() { flashState.flipped = !flashState.flipped; renderFlashcardSession(); }
+function flashAnswer(known) {
+  if (known) flashState.knownCount++;
+  flashState.current++;
+  flashState.flipped = false;
+  renderFlashcardSession();
+}
+
+// ============= PROGRESS =============
+function renderProgress() {
+  const app = document.getElementById("main");
+  const mp = {
+    kanji: state.moduleProgress.kanji || 0,
+    vocab: state.moduleProgress.vocab || 0,
+    grammar: state.moduleProgress.grammar || 0,
+    reading: state.moduleProgress.reading || 0,
+    listening: state.moduleProgress.listening || 0
+  };
+  const overall = Math.round((mp.kanji + mp.vocab + mp.grammar + mp.reading + mp.listening) / 5);
+  const examEntries = Object.entries(state.examScores || {});
+
+  app.innerHTML = `
+    <h1>📊 Progress</h1>
+    <p class="subtitle">Track your JLPT N3 preparation journey</p>
+
+    <div class="card card-accent">
+      <h2>Overall progress: ${overall}%</h2>
+      <div class="progress-bar"><div class="progress-fill" style="width:${overall}%"></div></div>
+    </div>
+
+    <div class="card">
+      <h3>📚 By module</h3>
+      ${Object.entries(mp).map(([mod, pct]) => `
+        <div style="margin-bottom: 10px;">
+          <div style="display:flex; justify-content:space-between;">
+            <strong>${mod.charAt(0).toUpperCase()+mod.slice(1)}</strong>
+            <span>${pct}%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+        </div>
+      `).join("")}
+    </div>
+
+    ${state.diagnosticHistory && state.diagnosticHistory.length > 0 ? `
+      <div class="card">
+        <h3>🔍 Diagnostic history</h3>
+        ${state.diagnosticHistory.slice(-5).reverse().map(d => `
+          <div class="history-item">
+            <span>${new Date(d.date).toLocaleDateString()}</span>
+            <span><strong>${d.score}%</strong></span>
+          </div>
+        `).join("")}
+      </div>
+    ` : ''}
+
+    ${examEntries.length>0 ? `
+      <div class="card">
+        <h3>📝 Mock exam scores</h3>
+        ${examEntries.map(([id, data]) => {
+          const exam = MOCK_EXAMS.find(e=>e.id===id);
+          return `
+            <div class="history-item">
+              <span>${exam?.title || id}</span>
+              <span><strong>${data.score}%</strong> · ${new Date(data.date).toLocaleDateString()}</span>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    ` : ''}
+
+    <div class="card">
+      <h3>⚙️ Reset progress</h3>
+      <p class="hint">This will erase all your progress and saved data. Cannot be undone.</p>
+      <button class="btn" onclick="resetAllProgress()">Reset everything</button>
+    </div>
+  `;
+}
+
+function resetAllProgress() {
+  if (!confirm("Are you sure? This will erase ALL progress.")) return;
+  localStorage.removeItem(STORAGE_KEY);
+  state = defaultState();
+  saveState();
+  navigate('home');
+}
+
+
+// ============= INIT =============
+// Load data from JSON files, then initialize the app.
+(async function init() {
+  const main = document.getElementById("main");
+  // Show loading screen
+  main.innerHTML = '<div class="card" style="text-align:center; padding:60px 20px;"><h2>📚 Loading JLPT N3 data…</h2><p class="hint">Fetching vocab, kanji, grammar, and exam data.</p><div class="loading-spinner"></div></div>';
+
+  try {
+    await loadAllData();
+  } catch (err) {
+    main.innerHTML = '<div class="card" style="border-left:4px solid var(--danger); padding:24px;"><h2>⚠️ Could not load app data</h2><p>The app needs to load JSON data files from <code>data/</code> next to this HTML.</p><p><strong>Error:</strong> ' + (err.message || err) + '</p><p class="hint">If you are opening this file directly with file://, browsers block fetch requests. Either:</p><ul><li>Host this on GitHub Pages or any web server</li><li>Or run a local server: <code>python3 -m http.server</code> in this folder, then visit <code>http://localhost:8000</code></li></ul></div>';
+    return;
+  }
+
+  document.body.setAttribute('data-display', state.displayMode || 'furigana');
+  buildNav();
+  render();
+})();
+
+</script>
+</body>
+</html>
