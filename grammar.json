@@ -1,0 +1,756 @@
+[
+  {
+    "w": "やはり / やっぱり",
+    "r": "やはり / やっぱり",
+    "m": "as expected, after all",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "やはり彼が一番速いです。",
+        "r": "やはり かれが いちばん はやいです。",
+        "en": "As expected, he's the fastest."
+      }
+    ]
+  },
+  {
+    "w": "ぜひ",
+    "r": "ぜひ",
+    "m": "by all means, definitely",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "ぜひ来てください。",
+        "r": "ぜひ きて ください。",
+        "en": "Please definitely come."
+      }
+    ]
+  },
+  {
+    "w": "なるべく",
+    "r": "なるべく",
+    "m": "as much as possible",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "なるべく早く来てください。",
+        "r": "なるべく はやく きて ください。",
+        "en": "Please come as early as possible."
+      }
+    ]
+  },
+  {
+    "w": "できるだけ",
+    "r": "できるだけ",
+    "m": "as much as one can",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "できるだけ頑張ります。",
+        "r": "できるだけ がんばります。",
+        "en": "I'll do my best."
+      }
+    ]
+  },
+  {
+    "w": "もしかしたら",
+    "r": "もしかしたら",
+    "m": "perhaps, maybe",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "もしかしたら雨が降るかもしれません。",
+        "r": "もしかしたら あめが ふるかも しれません。",
+        "en": "It might rain."
+      }
+    ]
+  },
+  {
+    "w": "たぶん",
+    "r": "たぶん",
+    "m": "probably, perhaps",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "たぶん明日来ます。",
+        "r": "たぶん あした きます。",
+        "en": "I'll probably come tomorrow."
+      }
+    ]
+  },
+  {
+    "w": "きっと",
+    "r": "きっと",
+    "m": "surely, certainly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "彼はきっと成功します。",
+        "r": "かれは きっと せいこうします。",
+        "en": "He will surely succeed."
+      }
+    ]
+  },
+  {
+    "w": "必ず",
+    "r": "かならず",
+    "m": "without fail, certainly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "必ず来てください。",
+        "r": "かならず きて ください。",
+        "en": "Please come without fail."
+      }
+    ]
+  },
+  {
+    "w": "ぜったいに",
+    "r": "ぜったいに",
+    "m": "absolutely, never (with neg.)",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "絶対にあきらめません。",
+        "r": "ぜったいに あきらめません。",
+        "en": "I'll absolutely not give up."
+      }
+    ]
+  },
+  {
+    "w": "そろそろ",
+    "r": "そろそろ",
+    "m": "soon, gradually",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "そろそろ帰りましょう。",
+        "r": "そろそろ かえりましょう。",
+        "en": "Let's go home soon."
+      }
+    ]
+  },
+  {
+    "w": "ちょうど",
+    "r": "ちょうど",
+    "m": "exactly, just",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "今、ちょうど6時です。",
+        "r": "いま、ちょうど ろくじです。",
+        "en": "It's exactly 6 o'clock now."
+      }
+    ]
+  },
+  {
+    "w": "ほとんど",
+    "r": "ほとんど",
+    "m": "almost, hardly (with neg.)",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "ほとんど終わりました。",
+        "r": "ほとんど おわりました。",
+        "en": "It's almost finished."
+      }
+    ]
+  },
+  {
+    "w": "全然",
+    "r": "ぜんぜん",
+    "m": "(not) at all",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "全然分かりません。",
+        "r": "ぜんぜん わかりません。",
+        "en": "I don't understand at all."
+      }
+    ]
+  },
+  {
+    "w": "あまり",
+    "r": "あまり",
+    "m": "(not) very, (not) much",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "あまり好きじゃないです。",
+        "r": "あまり すきじゃないです。",
+        "en": "I don't like it very much."
+      }
+    ]
+  },
+  {
+    "w": "もちろん",
+    "r": "もちろん",
+    "m": "of course",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "もちろん知っています。",
+        "r": "もちろん しって います。",
+        "en": "Of course I know."
+      }
+    ]
+  },
+  {
+    "w": "実は",
+    "r": "じつは",
+    "m": "actually, in fact",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "実は、私も日本人です。",
+        "r": "じつは、わたしも にほんじんです。",
+        "en": "Actually, I'm also Japanese."
+      }
+    ]
+  },
+  {
+    "w": "案外",
+    "r": "あんがい",
+    "m": "unexpectedly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "案外簡単でした。",
+        "r": "あんがい かんたんでした。",
+        "en": "It was unexpectedly easy."
+      }
+    ]
+  },
+  {
+    "w": "意外と",
+    "r": "いがいと",
+    "m": "surprisingly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "意外とおいしいです。",
+        "r": "いがいと おいしいです。",
+        "en": "It's surprisingly delicious."
+      }
+    ]
+  },
+  {
+    "w": "急に",
+    "r": "きゅうに",
+    "m": "suddenly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "急に雨が降りました。",
+        "r": "きゅうに あめが ふりました。",
+        "en": "It rained suddenly."
+      }
+    ]
+  },
+  {
+    "w": "突然",
+    "r": "とつぜん",
+    "m": "suddenly, abruptly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "突然、彼が現れました。",
+        "r": "とつぜん、かれが あらわれました。",
+        "en": "Suddenly, he appeared."
+      }
+    ]
+  },
+  {
+    "w": "だんだん",
+    "r": "だんだん",
+    "m": "gradually",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "だんだん寒くなります。",
+        "r": "だんだん さむく なります。",
+        "en": "It's gradually getting cold."
+      }
+    ]
+  },
+  {
+    "w": "ますます",
+    "r": "ますます",
+    "m": "more and more, increasingly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "ますます難しくなります。",
+        "r": "ますます むずかしく なります。",
+        "en": "It's getting more and more difficult."
+      }
+    ]
+  },
+  {
+    "w": "やっと",
+    "r": "やっと",
+    "m": "finally, at last",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "やっと終わりました。",
+        "r": "やっと おわりました。",
+        "en": "It's finally finished."
+      }
+    ]
+  },
+  {
+    "w": "ようやく",
+    "r": "ようやく",
+    "m": "finally, at last (formal)",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "ようやく春が来ました。",
+        "r": "ようやく はるが きました。",
+        "en": "Spring has finally come."
+      }
+    ]
+  },
+  {
+    "w": "すぐに",
+    "r": "すぐに",
+    "m": "immediately, right away",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "すぐに行きます。",
+        "r": "すぐに いきます。",
+        "en": "I'll go right away."
+      }
+    ]
+  },
+  {
+    "w": "じっと",
+    "r": "じっと",
+    "m": "still, fixedly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "じっと見ています。",
+        "r": "じっと みて います。",
+        "en": "I'm staring fixedly."
+      }
+    ]
+  },
+  {
+    "w": "ゆっくり",
+    "r": "ゆっくり",
+    "m": "slowly, leisurely",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "ゆっくり話してください。",
+        "r": "ゆっくり はなして ください。",
+        "en": "Please speak slowly."
+      }
+    ]
+  },
+  {
+    "w": "しっかり",
+    "r": "しっかり",
+    "m": "firmly, properly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "しっかり勉強してください。",
+        "r": "しっかり べんきょうして ください。",
+        "en": "Study properly."
+      }
+    ]
+  },
+  {
+    "w": "はっきり",
+    "r": "はっきり",
+    "m": "clearly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "はっきり言ってください。",
+        "r": "はっきり いって ください。",
+        "en": "Please say it clearly."
+      }
+    ]
+  },
+  {
+    "w": "もうすぐ",
+    "r": "もうすぐ",
+    "m": "soon, before long",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "もうすぐ夏休みです。",
+        "r": "もうすぐ なつやすみです。",
+        "en": "It's almost summer vacation."
+      }
+    ]
+  },
+  {
+    "w": "わざわざ",
+    "r": "わざわざ",
+    "m": "go out of one's way to",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "わざわざ来てくれてありがとう。",
+        "r": "わざわざ きて くれて ありがとう。",
+        "en": "Thank you for going out of your way to come."
+      }
+    ]
+  },
+  {
+    "w": "わざと",
+    "r": "わざと",
+    "m": "on purpose, intentionally",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "わざと間違えました。",
+        "r": "わざと まちがえました。",
+        "en": "I made the mistake on purpose."
+      }
+    ]
+  },
+  {
+    "w": "なかなか",
+    "r": "なかなか",
+    "m": "quite, very (or 'not easily' with neg.)",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "なかなか難しいです。",
+        "r": "なかなか むずかしいです。",
+        "en": "It's quite difficult."
+      }
+    ]
+  },
+  {
+    "w": "別に",
+    "r": "べつに",
+    "m": "(not) particularly",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "別に気にしません。",
+        "r": "べつに きに しません。",
+        "en": "I don't particularly mind."
+      }
+    ]
+  },
+  {
+    "w": "実際に",
+    "r": "じっさいに",
+    "m": "actually, in reality",
+    "type": "adverb",
+    "ex": [
+      {
+        "jp": "実際に見たいです。",
+        "r": "じっさいに みたいです。",
+        "en": "I want to actually see it."
+      }
+    ]
+  },
+  {
+    "w": "しかし",
+    "r": "しかし",
+    "m": "however, but (formal)",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "頑張りました。しかし、失敗しました。",
+        "r": "がんばりました。しかし、しっぱいしました。",
+        "en": "I tried hard. However, I failed."
+      }
+    ]
+  },
+  {
+    "w": "ところが",
+    "r": "ところが",
+    "m": "however (unexpected)",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "晴れだと思いました。ところが、雨でした。",
+        "r": "はれだと おもいました。ところが、あめでした。",
+        "en": "I thought it would be sunny. However, it rained."
+      }
+    ]
+  },
+  {
+    "w": "それに",
+    "r": "それに",
+    "m": "moreover, in addition",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "このレストランは安いです。それに、おいしいです。",
+        "r": "この れすとらんは やすいです。それに、おいしいです。",
+        "en": "This restaurant is cheap. Moreover, it's delicious."
+      }
+    ]
+  },
+  {
+    "w": "それで",
+    "r": "それで",
+    "m": "and so, therefore",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "雨が降りました。それで、家にいました。",
+        "r": "あめが ふりました。それで、いえに いました。",
+        "en": "It rained. So, I stayed home."
+      }
+    ]
+  },
+  {
+    "w": "だから",
+    "r": "だから",
+    "m": "so, therefore",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "忙しかったです。だから、行けませんでした。",
+        "r": "いそがしかったです。だから、いけませんでした。",
+        "en": "I was busy. So, I couldn't go."
+      }
+    ]
+  },
+  {
+    "w": "つまり",
+    "r": "つまり",
+    "m": "in other words, that is",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "つまり、彼は来ないということです。",
+        "r": "つまり、かれは こないと いう ことです。",
+        "en": "In other words, he won't come."
+      }
+    ]
+  },
+  {
+    "w": "例えば",
+    "r": "たとえば",
+    "m": "for example",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "例えば、リンゴやバナナです。",
+        "r": "たとえば、りんごや ばななです。",
+        "en": "For example, apples and bananas."
+      }
+    ]
+  },
+  {
+    "w": "または",
+    "r": "または",
+    "m": "or, alternatively",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "電話または、メールしてください。",
+        "r": "でんわ または、めーるして ください。",
+        "en": "Please call or email."
+      }
+    ]
+  },
+  {
+    "w": "それとも",
+    "r": "それとも",
+    "m": "or (in questions)",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "コーヒー、それとも紅茶?",
+        "r": "こーひー、それとも こうちゃ?",
+        "en": "Coffee, or tea?"
+      }
+    ]
+  },
+  {
+    "w": "ただし",
+    "r": "ただし",
+    "m": "however, provided that",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "参加できます。ただし、会費が必要です。",
+        "r": "さんかできます。ただし、かいひが ひつようです。",
+        "en": "You can join. However, a fee is required."
+      }
+    ]
+  },
+  {
+    "w": "なお",
+    "r": "なお",
+    "m": "furthermore, also (formal)",
+    "type": "conjunction",
+    "ex": [
+      {
+        "jp": "なお、明日は休みです。",
+        "r": "なお、あしたは やすみです。",
+        "en": "Furthermore, tomorrow is a holiday."
+      }
+    ]
+  },
+  {
+    "w": "お疲れ様",
+    "r": "おつかれさま",
+    "m": "thanks for your hard work",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "お疲れ様でした!",
+        "r": "おつかれさまでした!",
+        "en": "Thanks for your hard work!"
+      }
+    ]
+  },
+  {
+    "w": "お世話になります",
+    "r": "おせわになります",
+    "m": "thank you for your help / taking care of me",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "いつもお世話になっています。",
+        "r": "いつも おせわに なって います。",
+        "en": "Thank you for always taking care of me."
+      }
+    ]
+  },
+  {
+    "w": "気をつけて",
+    "r": "きをつけて",
+    "m": "take care, be careful",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "道中、気をつけてください。",
+        "r": "どうちゅう、きを つけて ください。",
+        "en": "Take care on the way."
+      }
+    ]
+  },
+  {
+    "w": "おかげさまで",
+    "r": "おかげさまで",
+    "m": "thanks to you",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "おかげさまで、元気です。",
+        "r": "おかげさまで、げんきです。",
+        "en": "Thanks to you, I'm fine."
+      }
+    ]
+  },
+  {
+    "w": "とんでもない",
+    "r": "とんでもない",
+    "m": "not at all, you're welcome",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "とんでもないです、こちらこそ。",
+        "r": "とんでもないです、こちらこそ。",
+        "en": "Not at all, the pleasure is mine."
+      }
+    ]
+  },
+  {
+    "w": "しかたがない",
+    "r": "しかたがない",
+    "m": "it can't be helped",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "雨だから、しかたがない。",
+        "r": "あめだから、しかたがない。",
+        "en": "Since it's raining, it can't be helped."
+      }
+    ]
+  },
+  {
+    "w": "気にしないで",
+    "r": "きにしないで",
+    "m": "don't worry about it",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "気にしないでください。",
+        "r": "きに しないで ください。",
+        "en": "Please don't worry about it."
+      }
+    ]
+  },
+  {
+    "w": "そういえば",
+    "r": "そういえば",
+    "m": "come to think of it, by the way",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "そういえば、田中さんは?",
+        "r": "そう いえば、たなかさんは?",
+        "en": "Come to think of it, where's Tanaka?"
+      }
+    ]
+  },
+  {
+    "w": "なるほど",
+    "r": "なるほど",
+    "m": "I see, indeed",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "なるほど、分かりました。",
+        "r": "なるほど、わかりました。",
+        "en": "I see, I understand."
+      }
+    ]
+  },
+  {
+    "w": "とにかく",
+    "r": "とにかく",
+    "m": "anyway, in any case",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "とにかく、行きましょう。",
+        "r": "とにかく、いきましょう。",
+        "en": "Anyway, let's go."
+      }
+    ]
+  },
+  {
+    "w": "ちなみに",
+    "r": "ちなみに",
+    "m": "by the way, incidentally",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "ちなみに、私は30歳です。",
+        "r": "ちなみに、わたしは さんじゅっさいです。",
+        "en": "By the way, I'm 30."
+      }
+    ]
+  },
+  {
+    "w": "そろそろ失礼します",
+    "r": "そろそろしつれいします",
+    "m": "I'll be leaving soon (polite)",
+    "type": "set phrase",
+    "ex": [
+      {
+        "jp": "遅いので、そろそろ失礼します。",
+        "r": "おそいので、そろそろ しつれいします。",
+        "en": "Since it's late, I'll be leaving soon."
+      }
+    ]
+  }
+]
