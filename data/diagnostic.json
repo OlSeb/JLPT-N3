@@ -1,0 +1,222 @@
+[
+  {
+    "cat": "vocab",
+    "q": "「習慣」の読み方は?",
+    "choices": [  
+      "しゅうかん",
+      "しゅかん",
+      "しゅうがん",
+      "しゅかつ"
+    ],
+    "answer": 0
+  },
+  {
+    "cat": "vocab",
+    "q": "「準備」の意味に近いのは?",
+    "choices": [
+      "休むこと",
+      "用意すること",
+      "終わること",
+      "決めること"
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "vocab",
+    "q": "「失敗」の反対の言葉は?",
+    "choices": [
+      "問題",
+      "成功",
+      "経験",
+      "確認"
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "vocab",
+    "q": "「珍しい」と同じような意味は?",
+    "choices": [
+      "普通の",
+      "簡単な",
+      "めったにない",
+      "新鮮な"
+    ],
+    "answer": 2
+  },
+  {
+    "cat": "vocab",
+    "q": "「途中」の使い方は?",
+    "choices": [
+      "友達の途中",
+      "会議の途中",
+      "本の途中",
+      "BとCの両方"
+    ],
+    "answer": 3
+  },
+  {
+    "cat": "kanji",
+    "q": "「考える」の読み方は?",
+    "choices": [
+      "かんがえる",
+      "おぼえる",
+      "おしえる",
+      "あんがえる"
+    ],
+    "answer": 0
+  },
+  {
+    "cat": "kanji",
+    "q": "「経済」の読み方は?",
+    "choices": [
+      "けいざい",
+      "けいさい",
+      "きょうざい",
+      "きょうさい"
+    ],
+    "answer": 0
+  },
+  {
+    "cat": "kanji",
+    "q": "「げんき」を漢字で書くと?",
+    "choices": [
+      "元気",
+      "原気",
+      "現気",
+      "源気"
+    ],
+    "answer": 0
+  },
+  {
+    "cat": "kanji",
+    "q": "「びょういん」の漢字は?",
+    "choices": [
+      "美容院",
+      "病院",
+      "美院",
+      "病員"
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "kanji",
+    "q": "「研究」の読み方は?",
+    "choices": [
+      "けんきゅう",
+      "けんきょう",
+      "ぎんきゅう",
+      "がんきゅう"
+    ],
+    "answer": 0
+  },
+  {
+    "cat": "grammar",
+    "q": "勉強した___、テストに失敗しました。",
+    "choices": [
+      "ので",
+      "から",
+      "のに",
+      "けど"
+    ],
+    "answer": 2
+  },
+  {
+    "cat": "grammar",
+    "q": "彼は新しい車を欲し___。",
+    "choices": [
+      "います",
+      "がっています",
+      "そうです",
+      "らしいです"
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "grammar",
+    "q": "明日、雨が降る___。",
+    "choices": [
+      "かもしれません",
+      "はずがあります",
+      "つもりです",
+      "ようにします"
+    ],
+    "answer": 0
+  },
+  {
+    "cat": "grammar",
+    "q": "今、出かける___です。",
+    "choices": [
+      "ばかり",
+      "ところ",
+      "とき",
+      "あいだ"
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "grammar",
+    "q": "彼は宿題を___ばかりいる。",
+    "choices": [
+      "して",
+      "した",
+      "する",
+      "しない"
+    ],
+    "answer": 0
+  },
+  {
+    "cat": "reading",
+    "q": "「先週は忙しくて、勉強する時間がなかった。」 What does this mean?",
+    "choices": [
+      "I was busy and had time to study.",
+      "I was busy and didn't have time to study.",
+      "I'll be busy next week.",
+      "I have to study next week."
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "reading",
+    "q": "「会議の途中で、電話が鳴った。」 When did the phone ring?",
+    "choices": [
+      "Before the meeting",
+      "After the meeting",
+      "During the meeting",
+      "Instead of the meeting"
+    ],
+    "answer": 2
+  },
+  {
+    "cat": "reading",
+    "q": "「3時間も待たされた。」 What happened?",
+    "choices": [
+      "I waited 3 hours willingly.",
+      "I was kept waiting for 3 hours (frustrating).",
+      "I'll wait 3 hours.",
+      "Someone waited 3 hours for me."
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "listening",
+    "q": "Choose the most polite refusal: 「映画に行きませんか?」",
+    "choices": [
+      "いやです",
+      "ちょっと…",
+      "やめてください",
+      "全然行かない"
+    ],
+    "answer": 1
+  },
+  {
+    "cat": "listening",
+    "q": "What does 「お疲れ様でした」 mean in workplace context?",
+    "choices": [
+      "You look tired",
+      "Thanks for your hard work",
+      "Goodbye forever",
+      "I'm sorry"
+    ],
+    "answer": 1
+  }
+]
