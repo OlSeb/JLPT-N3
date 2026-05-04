@@ -2013,9 +2013,12 @@ function startListeningQuiz(id) {
   renderQuiz();
 }
 
-function startKanjiQuiz() {
-  // Auto-generate from KANJI array — pick 10 random kanji, ask for meaning
-  const sample = [...KANJI].sort(() => Math.random() - 0.5).slice(0, 10);
+function startKanjiQuiz(avoid = []) {
+  // Auto-generate from KANJI array — pick 10 random kanji, prefer ones not recently seen
+  let pool = KANJI.filter(k => !avoid.includes(k.k));
+  // If we've exhausted (avoid covers most), fall back to full pool
+  if (pool.length < 10) pool = KANJI;
+  const sample = [...pool].sort(() => Math.random() - 0.5).slice(0, 10);
   const questions = sample.map(k => {
     const wrongs = KANJI.filter(x => x.k !== k.k).sort(() => Math.random() - 0.5).slice(0, 3).map(x => x.m);
     const options = [...wrongs, k.m].sort(() => Math.random() - 0.5);
@@ -2025,13 +2028,16 @@ function startKanjiQuiz() {
       answer: options.indexOf(k.m)
     };
   });
-  quizState = { type: 'kanji', parent: null, questions, current: 0, answers: [], title: "Kanji quiz" };
+  // Track which kanji this round used, plus the previous avoid list, capped to last ~30
+  const seen = [...avoid, ...sample.map(k => k.k)].slice(-30);
+  quizState = { type: 'kanji', parent: null, questions, current: 0, answers: [], title: "Kanji quiz", recentlySeen: seen };
   renderQuiz();
 }
 
-function startVocabQuiz() {
-  // Auto-generate from VOCAB
-  const sample = [...VOCAB].sort(() => Math.random() - 0.5).slice(0, 12);
+function startVocabQuiz(avoid = []) {
+  let pool = VOCAB.filter(v => !avoid.includes(v.w));
+  if (pool.length < 12) pool = VOCAB;
+  const sample = [...pool].sort(() => Math.random() - 0.5).slice(0, 12);
   const questions = sample.map(v => {
     const wrongs = VOCAB.filter(x => x.w !== v.w).sort(() => Math.random() - 0.5).slice(0, 3).map(x => x.m);
     const options = [...wrongs, v.m].sort(() => Math.random() - 0.5);
@@ -2041,7 +2047,8 @@ function startVocabQuiz() {
       answer: options.indexOf(v.m)
     };
   });
-  quizState = { type: 'vocab', parent: null, questions, current: 0, answers: [], title: "Vocabulary quiz" };
+  const seen = [...avoid, ...sample.map(v => v.w)].slice(-40);
+  quizState = { type: 'vocab', parent: null, questions, current: 0, answers: [], title: "Vocabulary quiz", recentlySeen: seen };
   renderQuiz();
 }
 
@@ -2133,6 +2140,18 @@ function submitQuiz() {
 }
 
 function retryQuiz() {
+  // For auto-generated quizzes (kanji/vocab), regenerate fresh questions
+  // avoiding recently-seen items. For predefined quizzes (grammar/reading/listening),
+  // reuse the same questions since they're a fixed lesson set.
+  if (quizState && quizState.type === 'kanji') {
+    startKanjiQuiz(quizState.recentlySeen || []);
+    return;
+  }
+  if (quizState && quizState.type === 'vocab') {
+    startVocabQuiz(quizState.recentlySeen || []);
+    return;
+  }
+  // Predefined quizzes — just reset state
   quizState.current = 0;
   quizState.answers = [];
   renderQuiz();
